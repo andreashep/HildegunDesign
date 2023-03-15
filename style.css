@@ -6,24 +6,26 @@
 }
 
 h1 {
-    font-family: 'dancing script';
+    font-family: 'Source Sans Pro';
     text-align: center;
-    color: rgb(124, 139, 81);
+    color: rgb(40, 99, 143);
     margin: 25px 75px;
-    font-size: 50px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 h2 {
-    font-family: 'dancing script';
+    font-family: 'Source Sans Pro';
 }
 
 h3 {
-    font-family: 'dancing script';
+    font-family: 'Source Sans Pro';
 }
 
 p {
-    font-family: 'noto serif';
-    font-size: 12pt;
+    font-family: 'Source Sans Pro';
+    font-size: 14pt;
+    color: rgb(81, 49, 39);
 }
 .header {
     /* display: flex;
@@ -46,21 +48,21 @@ overflow-y: scroll;
 
 }
 
-.nav ul li {
+.navbar ul li {
     display: inline;
     list-style: none;
     margin: 10px;
     /* text-align: center; */
 }
 
-.nav li img {
+.navbar li img {
     height: 50px; 
     /* flex-direction: row; */
     padding-top: 25px;
     text-align: center;
 }
 
-.nav a:hover {
+.navbar a:hover {
    color: rgb(124, 139, 81);
    
 }
@@ -76,7 +78,7 @@ overflow-y: scroll;
 
 
 
-.main {
+.intro {
     display: flex;
     min-height: 150px;
     min-width: 100vw;
@@ -87,30 +89,18 @@ overflow-y: scroll;
     padding-top: 25px;
 }
 
-.main img {
+.intro img {
     max-height: 100px;
     margin: 0 150px
 }
 
-.content {
+.about {
     display: flex;
     flex-direction: row;
     align-content: space-around;
 }
 
-aside {
-    display: flex;
-    height: 425px;
-    width: 20vw;
-    margin-left: 25px;
-    border: double 5px burlywood;
-    text-align: center;
-    align-content: center;
-    align-self: center;
-   
-    color: rgb(124, 139, 81);
-    display: block;
-}
+
 
 aside img {
     height: 325px;
@@ -184,9 +174,38 @@ aside img {
     color: rgb(124, 139, 81);
 }
 
-.other {
+.four {
+    flex-basis: 30%;
+    flex-flow: row wrap;
+    border: 2px solid rgb(124, 139, 81);
+    text-align: center;
+    color: black;
 
 }
+
+
+.four img {
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.four a {
+    color: rgb(124, 139, 81);
+}
+
+.experience {
+
+}
+
+.skills {
+
+}
+
+.projects {
+
+}
+
 
 footer {
     display: flex;
