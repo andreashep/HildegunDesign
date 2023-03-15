@@ -1,0 +1,220 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+h1 {
+    font-family: 'dancing script';
+    text-align: center;
+    color: rgb(124, 139, 81);
+    margin: 25px 75px;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'dancing script';
+}
+
+h3 {
+    font-family: 'dancing script';
+}
+
+p {
+    font-family: 'noto serif';
+    font-size: 12pt;
+}
+.header {
+    /* display: flex;
+    max-height: 200px;
+    min-width: 100vw;
+    border: 3px double burlywood;
+    background-color: rgb(252, 245, 235);
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 7px;*/
+    position: absolute;
+width: 1440px;
+height: 200px;
+left: 0px;
+top: 0px;
+background-color: rgb(252, 245, 235);
+border: 3px solid rgb(40, 99, 143);
+overflow-y: scroll;
+
+}
+
+.nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    /* text-align: center; */
+}
+
+.nav li img {
+    height: 50px; 
+    /* flex-direction: row; */
+    padding-top: 25px;
+    text-align: center;
+}
+
+.nav a:hover {
+   color: rgb(124, 139, 81);
+   
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    border: 1px solid rgb(124, 139, 81);
+    align-self: center;
+    justify-self: flex-start;
+}
+
+
+
+.main {
+    display: flex;
+    min-height: 150px;
+    min-width: 100vw;
+    background-color: cadetblue;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.main img {
+    max-height: 100px;
+    margin: 0 150px
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+aside {
+    display: flex;
+    height: 425px;
+    width: 20vw;
+    margin-left: 25px;
+    border: double 5px burlywood;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+   
+    color: rgb(124, 139, 81);
+    display: block;
+}
+
+aside img {
+    height: 325px;
+}
+
+.articles {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    width: 67vw;
+    justify-content: flex-end;
+    align-content: center;
+    column-gap: 10px;
+    margin: 25px 50px;
+    padding: 0;
+    
+}
+
+.one {
+    flex-basis: 30%;
+    flex-flow: row wrap;
+    border: 2px solid rgb(124, 139, 81);
+    text-align: center;
+    color: black;
+}
+
+.one img {
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.one a {
+    color: rgb(124, 139, 81)
+}
+
+.two {
+    flex-basis: 30%;
+    flex-flow: row wrap;
+    border: 2px solid rgb(124, 139, 81);
+    text-align: center;
+    color: black;
+}
+
+.two img {
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.two a {
+    color: rgb(124, 139, 81);
+}
+
+.three {
+    flex-basis: 30%;
+    flex-flow: row wrap;
+    border: 2px solid rgb(124, 139, 81);
+    text-align: center;
+    color: black;
+
+}
+
+.three img {
+    height: 100px;
+    margin: 10px;
+    align-content: center;
+}
+
+.three a {
+    color: rgb(124, 139, 81);
+}
+
+.other {
+
+}
+
+footer {
+    display: flex;
+    min-height: 200px;
+    min-width: 100vw;
+    background-color: rgb(252, 245, 235);
+    border: 3px solid rgb(40, 99, 143);
+    justify-content: center;
+    align-content: center;
+}
+
+footer p em {
+    font-size: larger;
+}
+
+.footer img {
+    height: 75px;
+    margin: 10px;
+    
+}
+
+a {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    color: purple;
+    border: double 3px white;
+}
