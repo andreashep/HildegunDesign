@@ -35,15 +35,20 @@ header {
     margin-bottom: 7px
 }
 
+
+nav {
+    display: flex;
+    align-self: center;
+    color: rgb(40, 99, 143);
+}
+
+
 nav ul li {
     display: inline-flex;
     list-style: none;
-    
     font-size: 14pt;
     justify-content: space-between;   
     margin: 30px;
-    color: rgb(40, 99, 143);
-    
 }
 
 
@@ -60,7 +65,6 @@ nav a:hover {
     background-color: rgb(40, 99, 143);
     margin: 0;
     border: 1px solid rgb(124, 139, 81);
-    
     justify-content: flex-start;
 }
 
@@ -87,6 +91,8 @@ nav a:hover {
     text-align: center;
 }
 
+
+
 .meet button {
     background-color: rgb(252, 245, 235);
     margin-top: 30px;
@@ -95,7 +101,6 @@ nav a:hover {
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
     font-size: 14px;
-
 }
 
 
@@ -111,7 +116,7 @@ nav a:hover {
 }
 
 .bgi {
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100px;
     margin-bottom: 10px;
     padding-bottom: 25px;
@@ -123,7 +128,7 @@ nav a:hover {
     flex-direction: row;
     background-color: #fff;
     align-content: center;
-    height: 300px;
+    height: 400px;
     justify-content: space-around;
 }
 
@@ -131,8 +136,9 @@ nav a:hover {
     display: flex;
     width: 300px;
     height: 200px;
-    background-color: rgb(40, 99, 143);
+    background-color:rgb(252, 245, 235);
     align-self: center;
+    text-align: center;
 }
 
 
@@ -140,49 +146,66 @@ nav a:hover {
     display: flex;
     flex-flow: column;
     width: 50%;
+    height: 250px;
     background-color: #fff;
-    margin: 0px;
+    margin: 10px 0;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 50px 25px 75px 25px;
     border: 3px solid rgb(81, 49, 39);
-    text-align: center;
-    
-
 }
 
+
+.about-tb-btn {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
 .about-tb button {
-    display: -moz-inline-grid;
+    display: flex; 
     background-color: rgb(252, 245, 235);
-    margin-top: 30px;
+    margin: 50px ;
     width: 150px;
     height: 35px;
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
     font-size: 14px;
-    align-content: space-between;
-    justify-items: baseline;
+    align-content: space-around;
+  
 }
-
 
 
 .cards {
     display: flex;
     flex-flow: row wrap;
-    height: 400px;
-    width: 67vw;
-    justify-content: flex-end;
-    align-content: center;
-    column-gap: 10px;
-    margin: 25px 50px;
-    padding: 0;
-    
+    height: 500px;
+    width: 100%;
+    background-color: rgb(40, 99, 143);
+    border: 3px double rgb(81, 49, 39);
+    justify-content: center;
+    column-gap: 30px;
+    margin: 30px 0;
+    padding: 10px 0 30px 0;
 }
 
+
+.cards h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: rgb(252, 245, 235);
+}
+
+ 
 .one {
-    flex-basis: 30%;
+    flex-basis: 25%;
     flex-flow: row wrap;
-    border: 2px solid rgb(124, 139, 81);
+    border: 2px solid rgb(252, 245, 235);
     text-align: center;
 }
 
@@ -193,13 +216,13 @@ nav a:hover {
 }
 
 .one a {
-    color: rgb(124, 139, 81)
+    color: rgb(252, 245, 235)
 }
 
 .two {
-    flex-basis: 30%;
+    flex-basis: 25%;
     flex-flow: row wrap;
-    border: 2px solid rgb(124, 139, 81);
+    border: 2px solid rgb(252, 245, 235);
     text-align: center;
 }
 
@@ -210,13 +233,13 @@ nav a:hover {
 }
 
 .two a {
-    color: rgb(124, 139, 81);
+    color: rgb(252, 245, 235);
 }
 
 .three {
-    flex-basis: 30%;
+    flex-basis: 25%;
     flex-flow: row wrap;
-    border: 2px solid rgb(124, 139, 81);
+    border: 2px solid rgb(252, 245, 235);
     text-align: center;
 }
 
@@ -227,58 +250,93 @@ nav a:hover {
 }
 
 .three a {
-    color: rgb(124, 139, 81);
+    color: rgb(252, 245, 235);
 }
 
-.four {
-    flex-basis: 30%;
-    flex-flow: row wrap;
-    border: 2px solid rgb(124, 139, 81);
-    text-align: center;
-
-}
-
-
-.four img {
-    height: 100px;
-    margin: 10px;
-    align-content: center;
-}
-
-.four a {
-    color: rgb(124, 139, 81);
-}
 
 .experience {
-
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border: 3px double rgb(40, 99, 143);
 }
+
+.experience h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: rgb(40, 99, 143);
+}
+
 
 .skills {
-
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color:rgb(40, 99, 143);
+    border: 3px double rgb(81, 49, 39);
 }
 
-.projects {
+.skills h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: rgb(252, 245, 235);
+}
 
+
+.projects {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border: 3px double rgb(40, 99, 143);
+}
+
+.projects h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: rgb(40, 99, 143);
 }
 
 
 footer {
     display: flex;
-    min-height: 200px;
-    min-width: 100vw;
+    min-height: 150px;
+    width: 100%;
     background-color: rgb(252, 245, 235);
     border: 3px solid rgb(40, 99, 143);
-    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
+   
+}
+
+
+footer p {
+    display: flex;
+    justify-content: left;
     align-content: center;
 }
 
-footer p em {
-    font-size: larger;
+
+.lglogo {
+    display: block;
+    align-self: stretch;
+    text-align: center;
+    background-color: rgb(40, 99, 143);
+    justify-content: center;
 }
 
-.footer img {
-    height: 75px;
-    margin: 10px;
-    
+.lglogo h2 {
+    color: rgb(252, 245, 235);
+}
+
+.lglogo img {
+    height: 50%;
 }
 
