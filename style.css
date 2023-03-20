@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 1440px;
     justify-content: flex-end;
     font-family: 'Source Sans Pro', sans-serif;
+    padding: 30px
 }
 
 h1 {
@@ -26,13 +28,13 @@ h3 {
 header {
     display: flex;
     max-height: 200px;
-    min-width: 100vw;
+    min-width: 1440px;;
     border: 3px double rgb(81, 49, 39);
     background-color: rgb(252, 245, 235);
     flex-flow: row;
     align-content: center;
     justify-content: space-around;
-    margin-bottom: 7px
+
 }
 
 
@@ -73,7 +75,7 @@ nav a:hover {
 .intro {
     display: flex;
     min-height: 150px;
-    min-width: 100vw;
+    min-width: 1440px;
     background-color: #fff;
     margin: 0px;
     align-content: center;
@@ -115,16 +117,17 @@ nav a:hover {
     align-self: center;
 }
 
-.bgi {
-    min-width: 100vw;
+.bgi_img {
+    min-width: 1440px;
     min-height: 100px;
     margin-bottom: 10px;
     padding-bottom: 25px;
+    
 }
 
 .about {
     display: flex;
-    width: 100%;
+    min-width: 1440px;
     flex-direction: row;
     background-color: #fff;
     align-content: center;
@@ -179,14 +182,16 @@ nav a:hover {
 }
 
 
+
 .cards {
     display: flex;
     flex-flow: row wrap;
-    height: 500px;
+    height: 525px;
     width: 100%;
     background-color: rgb(40, 99, 143);
     border: 3px double rgb(81, 49, 39);
-    justify-content: center;
+    justify-content: space-around;
+    align-content: space-between;
     column-gap: 30px;
     margin: 30px 0;
     padding: 10px 0 30px 0;
@@ -196,70 +201,124 @@ nav a:hover {
 .cards h1 {
     display: flex;
     width: 100%;
+    margin-top: 5px;
     justify-content: center;
     align-content: center;
-    color: rgb(252, 245, 235);
+    color: rgb(252, 245, 235)
 }
 
- 
-.one {
-    flex-basis: 25%;
-    flex-flow: row wrap;
-    border: 2px solid rgb(252, 245, 235);
-    text-align: center;
+.example {
+    display: flex; 
+    background-color: rgb(252, 245, 235);
+    margin: 50px ;
+    width: 150px;
+    height: 35px;
+    border: .5px solid rgb(81, 49, 39);
+    border-radius: 25px;
+    font-size: 14px;
+    align-content: center;
+    justify-content: center;
 }
+
+
+.one {
+    display: flex;
+    flex-basis: 25%;
+    height: 425px;
+    flex-flow: row wrap;
+    background-color: #fff;
+    border: 2px solid rgb(81, 49, 39);
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+}
+
 
 .one img {
-    height: 100px;
+    height: 150px;
     margin: 10px;
     align-content: center;
 }
 
 .one a {
-    color: rgb(252, 245, 235)
+    color: rgb(40, 99, 143);
+    text-decoration: none;
+    align-self: center;
 }
 
+.one a:hover {
+    color: rgb(81, 49, 39);
+}
+
+
 .two {
+    display: flex;
     flex-basis: 25%;
+    height: 425px;
     flex-flow: row wrap;
-    border: 2px solid rgb(252, 245, 235);
+    background-color: #fff;
+    border: 2px solid rgb(81, 49, 39);
     text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
 }
 
 .two img {
-    height: 100px;
+    height: 150px;
     margin: 10px;
     align-content: center;
 }
 
 .two a {
-    color: rgb(252, 245, 235);
+    color: rgb(40, 99, 143);
+    text-decoration: none;
+    align-self: center;
+}
+
+.two a:hover {
+    color: rgb(81, 49, 39);
 }
 
 .three {
+    display: flex;
     flex-basis: 25%;
+    height: 425px;
     flex-flow: row wrap;
-    border: 2px solid rgb(252, 245, 235);
+    background-color: #fff;
+    border: 2px solid rgb(81, 49, 39);
     text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
 }
 
 .three img {
-    height: 100px;
+    height: 150px;
     margin: 10px;
     align-content: center;
 }
 
+
 .three a {
-    color: rgb(252, 245, 235);
+    color: rgb(40, 99, 143);
+    text-decoration: none;
+    align-self: center;
 }
 
+.three a:hover {
+    color: rgb(81, 49, 39);
+}
 
 .experience {
     display: flex;
+    flex-flow: row wrap;
     height: 500px;
     width: 100%;
     background-color: #fff;
     border: 3px double rgb(40, 99, 143);
+    justify-content: center;
 }
 
 .experience h1 {
@@ -267,7 +326,13 @@ nav a:hover {
     width: 100%;
     justify-content: center;
     align-content: center;
+    margin-top: 5px;
     color: rgb(40, 99, 143);
+}
+
+.experience img {
+    display: flex;
+    height: 400px;
 }
 
 
@@ -282,6 +347,7 @@ nav a:hover {
 .skills h1 {
     display: flex;
     width: 100%;
+    margin-top: 5px;
     justify-content: center;
     align-content: center;
     color: rgb(252, 245, 235);
@@ -292,6 +358,7 @@ nav a:hover {
     display: flex;
     height: 500px;
     width: 100%;
+    margin-top: 5px;
     background-color: #fff;
     border: 3px double rgb(40, 99, 143);
 }
@@ -299,9 +366,15 @@ nav a:hover {
 .projects h1 {
     display: flex;
     width: 100%;
+    margin-top: 5px;
     justify-content: center;
     align-content: center;
     color: rgb(40, 99, 143);
+}
+
+
+.bgi_img2 {
+    width: 1440px;
 }
 
 
