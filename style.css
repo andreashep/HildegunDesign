@@ -20,20 +20,20 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
-   
+    font-size: 20px;  
 }
 
 
 header {
     display: flex;
-    max-height: 200px;
-    min-width: 1440px;;
+    height: 200px;
+    width: 1440px;
     border: 3px double rgb(81, 49, 39);
     background-color: rgb(252, 245, 235);
     flex-flow: row;
     align-content: center;
     justify-content: space-around;
+    
 
 }
 
@@ -51,13 +51,15 @@ nav ul li {
     font-size: 14pt;
     justify-content: space-between;   
     margin: 30px;
+    color: rgb(40, 99, 143);
 }
 
 
 nav a:hover {
    color: rgb(81, 49, 39)
-   
-}
+   }
+
+
 
 .logo {
     display: flex;
@@ -74,9 +76,10 @@ nav a:hover {
 
 .intro {
     display: flex;
-    min-height: 150px;
-    min-width: 1440px;
+    height: 400px;
+    width: 1440px;
     background-color: #fff;
+    border: 3px double rgb(81, 49, 39);
     margin: 0px;
     align-content: center;
     justify-content: center;
@@ -100,6 +103,7 @@ nav a:hover {
     margin-top: 30px;
     width: 150px;
     height: 35px;
+    color: rgb(81, 49, 39);
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
     font-size: 14px;
@@ -119,15 +123,12 @@ nav a:hover {
 
 .bgi_img {
     min-width: 1440px;
-    min-height: 100px;
-    margin-bottom: 10px;
-    padding-bottom: 25px;
-    
+    min-height: 100px;    
 }
 
 .about {
     display: flex;
-    min-width: 1440px;
+    width: 1440px;
     flex-direction: row;
     background-color: #fff;
     align-content: center;
@@ -193,7 +194,6 @@ nav a:hover {
     justify-content: space-around;
     align-content: space-between;
     column-gap: 30px;
-    margin: 30px 0;
     padding: 10px 0 30px 0;
 }
 
@@ -213,7 +213,7 @@ nav a:hover {
     margin: 50px ;
     width: 150px;
     height: 35px;
-    border: .5px solid rgb(81, 49, 39);
+    border: 3px double rgb(81, 49, 39);;
     border-radius: 25px;
     font-size: 14px;
     align-content: center;
@@ -318,7 +318,7 @@ nav a:hover {
     height: 600px;
     width: 1440px;
     background-color: #fff;
-    border: 3px double rgb(40, 99, 143);
+    border: 3px double rgb(81, 49, 39);
     justify-content: center;
 }
 
@@ -354,6 +354,7 @@ nav a:hover {
     align-content: space-around;
 }
 
+
 .years_one {
     display: flex;
     flex-direction: column;
@@ -364,8 +365,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    margin-bottom: 35px;
-    
+    margin-bottom: 35px;  
 }
 
 .years_one h2 {
@@ -513,30 +513,10 @@ nav a:hover {
     display: flex;
     height: 500px;
     width: 100%;
-    background-color:rgb(40, 99, 143);
-    border: 3px double rgb(81, 49, 39);
+    background-color:rgb(252, 245, 235);
 }
 
 .skills h1 {
-    display: flex;
-    width: 100%;
-    margin-top: 5px;
-    justify-content: center;
-    align-content: center;
-    color: rgb(252, 245, 235);
-}
-
-
-.projects {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    margin-top: 5px;
-    background-color: #fff;
-    border: 3px double rgb(40, 99, 143);
-}
-
-.projects h1 {
     display: flex;
     width: 100%;
     margin-top: 5px;
@@ -546,26 +526,22 @@ nav a:hover {
 }
 
 
-.bgi_img2 {
-    width: 1440px;
-}
-
 
 footer {
     display: flex;
     min-height: 150px;
-    width: 100%;
+    width: 1440px;
     background-color: rgb(252, 245, 235);
-    border: 3px solid rgb(40, 99, 143);
-    justify-content: space-around;
+    border: 3px double rgb(81, 49, 39);
     align-content: center;
+    justify-content: center;
    
 }
 
 
 footer p {
     display: flex;
-    justify-content: left;
+    padding: 30px;
     align-content: center;
 }
 
@@ -573,16 +549,19 @@ footer p {
 .lglogo {
     display: block;
     align-self: stretch;
+    width: 300px;
     text-align: center;
     background-color: rgb(40, 99, 143);
     justify-content: center;
 }
 
+
 .lglogo h2 {
     color: rgb(252, 245, 235);
 }
 
+
 .lglogo img {
-    height: 50%;
+    height: 75%;
 }
 
