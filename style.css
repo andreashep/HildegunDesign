@@ -1,11 +1,19 @@
-.wrapper {
-    display: flex;
+body {
+    width: 100vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 1440px;
-    justify-content: flex-end;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 30px
+    justify-content: center;   */
+} 
+
+.fixed-container {
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 h1 {
@@ -25,16 +33,10 @@ h3 {
 
 
 header {
-    display: flex;
     height: 200px;
-    width: 1440px;
+    width: 100%;
     border: 3px double rgb(81, 49, 39);
     background-color: rgb(252, 245, 235);
-    flex-flow: row;
-    align-content: center;
-    justify-content: space-around;
-    
-
 }
 
 
@@ -48,10 +50,14 @@ nav {
 nav ul li {
     display: inline-flex;
     list-style: none;
-    font-size: 14pt;
-    justify-content: space-between;   
-    margin: 30px;
+    justify-content: space-between;
+}
+
+nav ul li a {
     color: rgb(40, 99, 143);
+    text-decoration: none;
+    font-size: 14pt;
+    padding: 15px;
 }
 
 
