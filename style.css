@@ -1,11 +1,10 @@
 body {
     width: 100vw;
     font-family: 'Source Sans Pro', sans-serif;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1440px;
-    justify-content: center;   */
+    justify-content: center;   
 } 
 
 .fixed-container {
@@ -33,112 +32,92 @@ h3 {
 
 
 header {
+    display: flex;
+    max-height: 200px;
+    min-width: 100vw;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
     height: 200px;
-    width: 100%;
-    border: 3px double rgb(81, 49, 39);
     background-color: rgb(252, 245, 235);
+    border: 3px solid rgb(40, 99, 143);
 }
 
 
 nav {
     display: flex;
+    margin: 0 5%;
 }
-p {
-    font-family: 'Source Sans Pro';
-    font-size: 14pt;
-    color: rgb(81, 49, 39);
-}
-.header {
-    display: flex;
-    max-height: 200px;
-    min-width: 100vw;
-    border: 3px double burlywood;
-    background-color: rgb(252, 245, 235);
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: space-between;
-    margin-bottom: 7px;
-    padding: 20px;
-/*width: 1440px;
-height: 200px;
-left: 0px;
-top: 0px;*/
-background-color: rgb(252, 245, 235);
-border: 3px solid rgb(40, 99, 143);
-overflow-y: scroll;
 
-}
+
+
+
 
 .nav-links ul li {
-    display: inline;
-    list-style: none;
-    margin: 10px;
+    padding: 30px;
     color: rgb(40, 99, 143);
-    /* text-align: center; */
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: rgb(40, 99, 143);
-}
-
-.nav-links a:hover {
-   color: rgb(81, 49, 39)
-}
-
-.d-flex input-group w-auto {
-    display: inline;
-    align-items: flex-end;
-    border-radius: 25%;
-}
-
-
-.logo img {
-    height: 100px;
-    width: 100px;
-    margin: 25px;
-    align-self: center;
-    color: rgb(40, 99, 143);
-}
-
-
-nav ul li {
     display: inline-flex;
     list-style: none;
     justify-content: space-between;
 }
 
-nav ul li a {
-    color: rgb(40, 99, 143);
+.nav-links a {
     text-decoration: none;
+    color: rgb(40, 99, 143);
     font-size: 14pt;
     padding: 15px;
 }
 
+.nav-links a:hover {
+   color: rgb(81, 49, 39);
+   border: solid 1px rgb(40, 99, 143);
+   border-radius: 25px;
+}
 
-nav a:hover {
-   color: rgb(81, 49, 39)
-   }
-
+.d-flex input-group w-auto {
+    display: flex;
+    /* align-content: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: rgb(252, 245, 235);
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    color: rgb(81, 49, 39);
+    border: .5px solid rgb(81, 49, 39);
+    border-radius: 25px;
+    font-size: 14px; */
+}
 
 
 .logo {
     display: flex;
-    align-self: stretch ;
+    max-height: 200px;
     min-height: 100%;
-    min-width: 150px;
+    min-width: 250px;
     background-color: rgb(40, 99, 143);
-    margin: 0;
-    border: 1px solid rgb(124, 139, 81);
-    justify-content: flex-start;
+    margin: 0 100px;
+    border: 1px solid rgb(81, 49, 39);
+    justify-content: center;
 }
+
+
+.logo img {
+    display: flex;  
+    min-height: 75px;
+    min-width:  75px;
+    margin: 15px;
+    color: rgb(40, 99, 143);
+}
+
 
 
 
 .intro {
     display: flex;
     height: 400px;
-    width: 1440px;
+    min-width: 100vw;
     background-color: #fff;
     border: 3px double rgb(81, 49, 39);
     margin: 0px;
@@ -149,7 +128,6 @@ nav a:hover {
 
 
 .meet {
-    color: rgb(81, 49, 39);
     margin: 50px;
     padding: 10px 100px 50px 100px;
     border: 3px solid rgb(81, 49, 39);
@@ -157,19 +135,44 @@ nav a:hover {
     text-align: center;
 }
 
+.meet h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(81, 49, 39);
+}
+
 
 
 .meet button {
+    display: flex; 
     background-color: rgb(252, 245, 235);
-    margin-top: 30px;
+    margin: 50px ;
     width: 150px;
     height: 35px;
-    color: rgb(81, 49, 39);
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
-    font-size: 14px;
+    font-size: 16px;
+    justify-content: center;
+    align-content: center;
 }
 
+
+.meet button a {
+    text-decoration: none;
+    color: rgb(40, 99, 143);
+    align-self: center;
+}
+.meet button a:hover {
+    color: rgb(252, 245, 235);
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+.meet button:hover {
+    color: rgb(252, 245, 235);
+    background-color: rgb(40, 99, 143);
+}
+  
 
 .intro img {
     display: flex;
@@ -182,14 +185,16 @@ nav a:hover {
     align-self: center;
 }
 
-.bgi_img {
-    min-width: 1440px;
-    min-height: 100px;    
+.bg_img img {
+    min-width: 100vw;
+    min-height: 100px;
+    max-width: 1280px;
+    background-image: url(/homepage_images/BackgroundImage.png);    
 }
 
 .about {
     display: flex;
-    width: 1440px;
+    width: 100vw;
     flex-direction: row;
     background-color: #fff;
     align-content: center;
@@ -239,7 +244,9 @@ nav a:hover {
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
     font-size: 14px;
-    align-content: space-around;
+    align-content: center;
+    color:rgb(40, 99, 143);
+    text-decoration: none;
   
 }
 
@@ -249,7 +256,7 @@ nav a:hover {
     display: flex;
     flex-flow: row wrap;
     height: 525px;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(40, 99, 143);
     border: 3px double rgb(81, 49, 39);
     justify-content: space-around;
@@ -309,9 +316,13 @@ nav a:hover {
 }
 
 .one a:hover {
-    color: rgb(81, 49, 39);
+    color: rgb(252, 245, 235);
 }
 
+.one button:hover {
+    color: rgb(252, 245, 235);
+    background-color: rgb(40, 99, 143);
+}
 
 .two {
     display: flex;
@@ -339,7 +350,12 @@ nav a:hover {
 }
 
 .two a:hover {
-    color: rgb(81, 49, 39);
+    color: rgb(252, 245, 235)
+}
+
+.two button:hover {
+    color: rgb(252, 245, 235);
+    background-color: rgb(40, 99, 143);
 }
 
 .three {
@@ -369,7 +385,12 @@ nav a:hover {
 }
 
 .three a:hover {
-    color: rgb(81, 49, 39);
+    color: rgb(252, 245, 235);
+}
+
+.three button:hover {
+    color: rgb(252, 245, 235);
+    background-color: rgb(40, 99, 143);
 }
 
 .experience {
@@ -377,7 +398,7 @@ nav a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     height: 600px;
-    width: 1440px;
+    min-width: 100vw;
     background-color: #fff;
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
@@ -570,14 +591,21 @@ nav a:hover {
 }
 
 
-.skills {
-    display: flex;
-    height: 500px;
-    width: 100%;
+.pod {
     background-color:rgb(252, 245, 235);
+    display: flex;
+    flex-flow: row wrap;
+    height: 525px;
+    width: 100vw;
+    border: 3px double rgb(81, 49, 39);
+    justify-content: space-around;
+    align-content: space-between;
+    column-gap: 30px;
+    padding: 10px 0 30px 0;
 }
 
-.skills h1 {
+
+.pod h1 {
     display: flex;
     width: 100%;
     margin-top: 5px;
@@ -590,39 +618,48 @@ nav a:hover {
 
 footer {
     display: flex;
-    min-height: 150px;
-    width: 1440px;
+    min-height: 250px;
+    width: 100vw;
     background-color: rgb(252, 245, 235);
     border: 3px double rgb(81, 49, 39);
     align-content: center;
-    justify-content: center;
-   
+    /* justify-content: center;
+    */
 }
 
 
-footer p {
-    display: flex;
-    padding: 30px;
-    align-content: center;
-}
 
-
-.lglogo {
+.contact {
     display: block;
-    align-self: stretch;
-    width: 300px;
+    margin: 0 5%;
+}
+.contact a {
+    display: block;
+    color: rgb(40, 99, 143);
+}
+
+
+.contact h3 {
+    color: rgb(81, 49, 39);
+    margin: 5px;
     text-align: center;
+}
+
+.ftr_logo {
+    display: flex;
+    align-self: stretch;
+    min-width: 250px;
+    margin: 0 auto;
     background-color: rgb(40, 99, 143);
     justify-content: center;
-}
+    align-content: center;
+}  
 
 
-.lglogo h2 {
-    color: rgb(252, 245, 235);
-}
 
 
-.lglogo img {
+.ftr_logo img {
+    display: flex;
+    align-self: center;
     height: 75%;
 }
-
