@@ -41,7 +41,7 @@ header {
     margin-bottom: 5px;
     height: 200px;
     background-color: rgb(252, 245, 235);
-    border: 3px solid rgb(40, 99, 143);
+    border: 3px double rgb(81, 49, 39);
 }
 
 
@@ -185,11 +185,11 @@ nav {
     align-self: center;
 }
 
-.bg_img img {
-    min-width: 100vw;
-    min-height: 100px;
-    max-width: 1280px;
-    background-image: url(/homepage_images/BackgroundImage.png);    
+.bgi {
+    height: 400px;
+    width: 100vw;
+    background-image: url(homepage_images/fs_backgroundimg.png); 
+    background-size: cover;
 }
 
 .about {
