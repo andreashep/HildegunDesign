@@ -36,9 +36,9 @@ header {
     max-height: 200px;
     min-width: 100vw;
     flex-flow: row wrap;
+    margin: 0 50px 0 0;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5px;
     height: 200px;
     background-color: rgb(252, 245, 235);
     border: 3px double rgb(81, 49, 39);
@@ -47,7 +47,7 @@ header {
 
 nav {
     display: flex;
-    margin: 0 5%;
+    margin: 0;
 }
 
 
@@ -55,39 +55,51 @@ nav {
 
 
 .nav-links ul li {
-    padding: 30px;
     color: rgb(40, 99, 143);
     display: inline-flex;
     list-style: none;
     justify-content: space-between;
 }
 
-.nav-links a {
+ button {
+        display: flex;
+        background-color: rgb(252, 245, 235);
+        min-width: 150px;
+        min-height: 35px;
+        border: .5px solid rgb(81, 49, 39);
+        border-radius: 25px;
+        justify-content: center;
+        text-align: center; 
+        margin: 30px;
+}
+
+ button:hover {
+    background-color: rgb(40, 99, 143);
+    color: rgb(252, 245, 235);
+}
+
+
+ a {
     text-decoration: none;
-    color: rgb(40, 99, 143);
-    font-size: 14pt;
-    padding: 15px;
+    color:  rgb(11, 38, 58);
+    font-size: 12pt;
+    padding: 12px 20px;
 }
 
-.nav-links a:hover {
-   color: rgb(81, 49, 39);
-   border: solid 1px rgb(40, 99, 143);
-   border-radius: 25px;
+ a:hover {
+    background-color: rgb(40, 99, 143);
+    color: rgb(252, 245, 235);
+    border-radius: 25px;
 }
 
-.d-flex input-group w-auto {
-    display: flex;
-    /* align-content: center;
-    justify-content: center;
-    border-radius: 25px;
-    background-color: rgb(252, 245, 235);
-    margin-top: 30px;
-    width: 150px;
-    height: 35px;
-    color: rgb(81, 49, 39);
-    border: .5px solid rgb(81, 49, 39);
-    border-radius: 25px;
-    font-size: 14px; */
+ a:active {
+    color: rgb(252, 245, 235);
+    background-color: rgb(11, 38, 58);
+}
+
+button:active {
+    background-color: rgb(11, 38, 58);
+    color: rgb(252, 245, 235);
 }
 
 
@@ -128,11 +140,15 @@ nav {
 
 
 .meet {
+    display: flex;
+    flex-direction: column;
     margin: 50px;
-    padding: 10px 100px 50px 100px;
+    padding: 30px 75px;
     border: 3px solid rgb(81, 49, 39);
-    line-height: 20px;
+    line-height: 40px;
     text-align: center;
+    justify-content: center;
+    align-items: space-around;
 }
 
 .meet h2 {
@@ -141,36 +157,11 @@ nav {
     color: rgb(81, 49, 39);
 }
 
-
-
 .meet button {
-    display: flex; 
-    background-color: rgb(252, 245, 235);
-    margin: 50px ;
-    width: 150px;
-    height: 35px;
-    border: .5px solid rgb(81, 49, 39);
-    border-radius: 25px;
-    font-size: 16px;
+    display: flex;
     justify-content: center;
-    align-content: center;
-}
-
-
-.meet button a {
-    text-decoration: none;
-    color: rgb(40, 99, 143);
-    align-self: center;
-}
-.meet button a:hover {
-    color: rgb(252, 245, 235);
-    font-size: 18px;
-    border-radius: 25px;
-}
-
-.meet button:hover {
-    color: rgb(252, 245, 235);
-    background-color: rgb(40, 99, 143);
+    align-items: flex-end;
+    margin: 20px 30px;
 }
   
 
@@ -187,14 +178,15 @@ nav {
 
 .bgi {
     height: 400px;
-    width: 100vw;
+    min-width: 100vw;
     background-image: url(homepage_images/fs_backgroundimg.png); 
     background-size: cover;
+    margin: 0;
 }
 
 .about {
     display: flex;
-    width: 100vw;
+    min-width: 100vw;
     flex-direction: row;
     background-color: #fff;
     align-content: center;
@@ -204,8 +196,8 @@ nav {
 
 .abtimg {
     display: flex;
-    width: 300px;
-    height: 200px;
+    min-width: 300px;
+    min-height: 200px;
     background-color:rgb(252, 245, 235);
     align-self: center;
     text-align: center;
@@ -220,11 +212,14 @@ nav {
     background-color: #fff;
     margin: 10px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 50px 25px 75px 25px;
     border: 3px solid rgb(81, 49, 39);
 }
 
+.about-tb h1 {
+    margin: 40px;
+}
 
 .about-tb-btn {
     display: flex;
@@ -232,6 +227,7 @@ nav {
     width: 100%;
     justify-content: center;
     align-content: space-between;
+    margin-bottom: 0px;
 }
 
 
@@ -239,30 +235,39 @@ nav {
     display: flex; 
     background-color: rgb(252, 245, 235);
     margin: 50px ;
-    width: 150px;
-    height: 35px;
+    min-width: 150px;
+    min-height: 35px;
     border: .5px solid rgb(81, 49, 39);
     border-radius: 25px;
     font-size: 14px;
+    justify-content: center;
     align-content: center;
-    color:rgb(40, 99, 143);
+    color: rgb(11, 38, 58);
     text-decoration: none;
-  
+  }
+
+.about-tb  button:hover {
+    background-color: rgb(40, 99, 143);
+    color: rgb(252, 245, 235);
 }
 
+.about-tb button:active {
+    background-color: rgb(11, 38, 58);
+    color: rgb(252, 245, 235);
+}
 
 
 .cards {
     display: flex;
     flex-flow: row wrap;
     height: 525px;
-    width: 100vw;
+    min-width: 100vw;
     background-color: rgb(40, 99, 143);
     border: 3px double rgb(81, 49, 39);
     justify-content: space-around;
     align-content: space-between;
     column-gap: 30px;
-    padding: 10px 0 30px 0;
+    padding: 10px 30px 30px 30px;
 }
 
 
@@ -271,21 +276,12 @@ nav {
     width: 100%;
     margin-top: 5px;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
     color: rgb(252, 245, 235)
 }
 
-.example {
-    display: flex; 
-    background-color: rgb(252, 245, 235);
-    margin: 50px ;
-    width: 150px;
-    height: 35px;
-    border: 3px double rgb(81, 49, 39);;
-    border-radius: 25px;
-    font-size: 14px;
-    align-content: center;
-    justify-content: center;
+.cards h3 {
+    margin-bottom: 10px;
 }
 
 
@@ -298,7 +294,7 @@ nav {
     border: 2px solid rgb(81, 49, 39);
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
     padding: 15px;
 }
 
@@ -307,21 +303,7 @@ nav {
     height: 150px;
     margin: 10px;
     align-content: center;
-}
-
-.one a {
-    color: rgb(40, 99, 143);
-    text-decoration: none;
-    align-self: center;
-}
-
-.one a:hover {
-    color: rgb(252, 245, 235);
-}
-
-.one button:hover {
-    color: rgb(252, 245, 235);
-    background-color: rgb(40, 99, 143);
+    filter:drop-shadow(3px 3px 3px black);
 }
 
 .two {
@@ -333,7 +315,7 @@ nav {
     border: 2px solid rgb(81, 49, 39);
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
     padding: 15px;
 }
 
@@ -341,21 +323,7 @@ nav {
     height: 150px;
     margin: 10px;
     align-content: center;
-}
-
-.two a {
-    color: rgb(40, 99, 143);
-    text-decoration: none;
-    align-self: center;
-}
-
-.two a:hover {
-    color: rgb(252, 245, 235)
-}
-
-.two button:hover {
-    color: rgb(252, 245, 235);
-    background-color: rgb(40, 99, 143);
+    filter:drop-shadow(3px 3px 3px black);
 }
 
 .three {
@@ -367,7 +335,7 @@ nav {
     border: 2px solid rgb(81, 49, 39);
     text-align: center;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
     padding: 15px;
 }
 
@@ -375,22 +343,7 @@ nav {
     height: 150px;
     margin: 10px;
     align-content: center;
-}
-
-
-.three a {
-    color: rgb(40, 99, 143);
-    text-decoration: none;
-    align-self: center;
-}
-
-.three a:hover {
-    color: rgb(252, 245, 235);
-}
-
-.three button:hover {
-    color: rgb(252, 245, 235);
-    background-color: rgb(40, 99, 143);
+    filter:drop-shadow(3px 3px 3px black);
 }
 
 .experience {
@@ -402,6 +355,7 @@ nav {
     background-color: #fff;
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
+    padding: 30px;
 }
 
 .experience h1 {
@@ -410,7 +364,6 @@ nav {
     height: 50px;
     justify-content: center;
     align-content: center;
-    margin: 5px 0 0 0;
     padding: 0;
     color: rgb(40, 99, 143);
 }
@@ -440,13 +393,12 @@ nav {
 .years_one {
     display: flex;
     flex-direction: column;
-    flex-basis: 1;
     width: 500px;
     height: 150px;
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
-    align-items: center;
-    padding: 15px;
+    align-content: space-between;
+    padding: 0 15px;
     margin-bottom: 35px;  
 }
 
@@ -454,8 +406,8 @@ nav {
     display: flex;
     color: rgb(40, 99, 143);
     justify-content: center;
-    align-content: center;
-    margin: 5px 0 0 0;
+    align-content: space-around;
+    margin: 0px 0 5px 0;
 }
 
 
@@ -463,14 +415,14 @@ nav {
     display: flex;
     color: rgb(81, 49, 39);
     justify-content: center;
-    align-content: center;
-    margin: 0;
+    align-content: space-around;
+    margin: 5px 0 10px 0;
 }
 
 .years_one p {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: space-around;
     padding: 5px;
 }
 
@@ -483,7 +435,7 @@ nav {
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 0 15px;
     margin-bottom: 35px;
 }
 
@@ -492,7 +444,7 @@ nav {
     color: rgb(40, 99, 143);
     justify-content: center;
     align-content: center;
-    margin: 5px 0 0 0;
+    margin: 0px 0 5px 0;
 }
 
 .years_two h3 {
@@ -500,7 +452,7 @@ nav {
     color: rgb(81, 49, 39);
     justify-content: center;
     align-content: center;
-    margin: 0;
+    margin: 5px 0 10px 0;
 }
 
 .years_two p {
@@ -526,7 +478,7 @@ nav {
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 0 15px;
     margin: 35px 0;
     
 }
@@ -536,7 +488,7 @@ nav {
     color: rgb(40, 99, 143);
     justify-content: center;
     align-content: center;
-    margin: 5px 0 0 0;
+    margin: 0px 0 5px 0;
 }
 
 
@@ -545,7 +497,7 @@ nav {
     color: rgb(81, 49, 39);
     justify-content: center;
     align-content: center;
-    margin: 0;
+    margin: 5px 0 10px 0;
 }
 
 .years_three p {
@@ -564,7 +516,7 @@ nav {
     border: 3px double rgb(81, 49, 39);
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .years_four h2 {
@@ -572,15 +524,15 @@ nav {
     color: rgb(40, 99, 143);
     justify-content: center;
     align-content: center;
-    margin: 5px 0 0 0;
+    margin: 0px 0 10px 0;
 }
 
-.years_four h3 {
+.years_four h4 {
     display: flex;
     color: rgb(81, 49, 39);
     justify-content: center;
     align-content: center;
-    margin: 0;
+    margin: 5px 0 0px 0;
 }
 
 .years_four p {
@@ -588,6 +540,7 @@ nav {
     justify-content: center;
     align-content: center;
     padding: 5px;
+    margin-top: 5px;
 }
 
 
@@ -596,12 +549,12 @@ nav {
     display: flex;
     flex-flow: row wrap;
     height: 525px;
-    width: 100vw;
+    min-width: 100vw;
     border: 3px double rgb(81, 49, 39);
     justify-content: space-around;
     align-content: space-between;
     column-gap: 30px;
-    padding: 10px 0 30px 0;
+    padding: 10px 30px 30px 030px;
 }
 
 
@@ -619,12 +572,11 @@ nav {
 footer {
     display: flex;
     min-height: 250px;
-    width: 100vw;
+    min-width: 100vw;
     background-color: rgb(252, 245, 235);
     border: 3px double rgb(81, 49, 39);
     align-content: center;
-    /* justify-content: center;
-    */
+    margin: 0;
 }
 
 
