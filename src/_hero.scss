@@ -1,0 +1,109 @@
+
+
+/* The hero image */
+/* Place text in the middle of the image */
+body {
+	display: flex;
+	height: 100%;
+	flex-direction: column; 
+}
+
+html {
+	height: 100%;
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.hero1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Quote.png");
+	height: 65%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	img {
+		display: flex;
+		width: 100%;
+		height: 50%;
+		margin: auto;
+		padding: auto;
+	}
+}
+.hero-text {
+	font-size: 20px;
+	text-align: center;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $cream;
+}
+button {
+	margin: 10px;
+	width: 100px;
+	height: 35px;
+	border-radius: 25px;
+	text-align: center;
+	&:hover {
+		background-color: $blue-main;
+		color: $cream;
+		filter: drop-shadow(2px 2px 2px black);
+	}
+}
+.hero2 {
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+	flex-basis: 25%;
+	height: 500px;
+	margin: 25px auto;
+	justify-content: space-between;
+	align-content: center;
+	img {
+		display: flex;
+		margin: 25px;
+		width: 20em;
+		height: 25em;
+	}
+}
+.fav_font {
+	display: flex;
+	flex-direction: column;
+	height: .25fr;
+	flex-basis: .5;
+	justify-content: space-around;
+	align-content: space-around;
+	font-size: 16px;
+	margin: auto;
+	padding: auto;
+	h3 {
+		text-align: center;
+		margin: 10px;
+	}
+	blockquote {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: space-around;
+		width: 15em;
+		margin: 50% auto 15px auto;
+	}
+	figcaption {
+		text-align: center;
+		padding: 15px;
+		width: 20em;
+	height: 25em;
+	}
+	img {
+		display: flex;
+		flex-basis: 1;
+		height: 25em;
+		margin: 25% auto;
+		padding: auto;
+	}
+}
+

@@ -1,0 +1,173 @@
+
+
+
+/*On hover the button colors go into their respective negatives.  Active is a darker color than hover.  These colors can be changes to customize the buttons uses */
+.btn_sizes {
+	display: inline-flex;
+	flex-direction: row;
+	
+	align-items: center;
+	border: 1px solid black;
+}
+
+ul {
+	text-decoration: none;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+}
+
+.btn {
+	display: flex;
+	background-color: $cream;
+	margin: 100px;
+	width: 150px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		
+	}
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+	}
+}
+
+.btn-small {
+	display: flex;
+	background-color: $cream;
+	margin: 50px;
+	width: 100px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
+	font-size: 12px;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	a {
+		text-decoration: none;
+		align-self: center;
+		&:hover {
+			width: 200px;
+			border-radius: 25px;
+		}
+	}
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+	}
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+	}
+}
+
+.btn-large {
+	display: flex;
+	background-color: $cream;
+	margin: 100px;
+	width: 200px;
+	height: 50px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(0 0 0.5rem black);
+	}
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+	}
+}
+.btn-icon {
+	display: flex;
+	background-color: $blue-main;
+	margin: 100px;
+	width: 75px;
+	height: 75px;
+	border: .5px solid rgb(81, 49, 39);
+	border-radius: 50%;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(0 0 0.5rem black);
+	}
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+	}
+}
+
+.btn-gradient {
+	display: flex;
+	background-color: $cream;
+	margin: 100px;
+	width: 150px;
+	height: 35px;
+	border: .5px solid $brown-text;
+	border-radius: 25px;
+	font-size: 16px;
+	justify-content: center;
+	align-content: center;
+	a {
+		text-decoration: none;
+		align-self: center;
+	}
+	&:hover {
+		color: $cream;
+		background-color: $blue-main;
+		filter: drop-shadow(0 0 0.5rem black);
+	}
+	&:active {
+		background-color: $blue-dark;
+		color: $cream;
+	}
+}
+.btn-square {
+	display: flex;
+		padding: 10px 20px;
+		border: .5px solid $brown-text;
+		border-radius: 4px;
+		background-color: $cream;
+		margin: 100px;
+		color: #333;
+		font-size: 16px;
+		cursor: pointer;
+		a {
+			text-decoration: none;
+			align-self: center;
+			list-style: none;
+		}
+		
+		&:hover {
+		  background-color: $blue-main;
+		}
+	  }
