@@ -59,11 +59,12 @@ body {
 	padding: 25px;
 	img {
 		display: flex;
-		height: 300px;
-		width: 300px;
+		height: 250px;
+		width: 250px;
 		margin: 50px;
 		background-color: $blue-dark;
-		border: 3px solid rgb(81, 49, 39);
+		padding: 25px;
+	
 		justify-content: right;
 		align-self: center;
 	}
@@ -90,10 +91,23 @@ body {
 		margin: 20px 30px;
 	}
 }
-.bgi {
-	height: 400px;
+.bgi1 {
+	height: 300px;
 	min-width: 100vw;
-	background-image: url(homepage_images/fs_backgroundimg.png);
+	background-image: url(../public/homepage_images/Asset\ 15.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 30px;
+}
+
+.bgi2 {
+	height: 300px;
+	min-width: 100vw;
+	background-image: url(../public/homepage_images/copper.teal.1440.300-100.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
 	padding: 30px;

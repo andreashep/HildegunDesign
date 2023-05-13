@@ -57,53 +57,74 @@ button {
 .hero2 {
 	display: flex;
 	flex-direction: row;
-	border: 1px solid black;
-	flex-basis: 25%;
+	
+	width: 100vw;
 	height: 500px;
 	margin: 25px auto;
 	justify-content: space-between;
 	align-content: center;
+	
+}
+
+.circles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: flex-start;
+	margin: 75px auto;
+	width: 25vw;
+	height: 300px;
+	
+	
+}
+
+.type {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-around;
+	margin: 25px auto;
+	border: 1px solid black;
+	width: 50vw;
+	height: 400px;
 	img {
 		display: flex;
 		margin: 25px;
 		width: 20em;
 		height: 25em;
 	}
-}
-.fav_font {
-	display: flex;
-	flex-direction: column;
-	height: .25fr;
-	flex-basis: .5;
-	justify-content: space-around;
-	align-content: space-around;
-	font-size: 16px;
-	margin: auto;
-	padding: auto;
-	h3 {
-		text-align: center;
-		margin: 10px;
-	}
-	blockquote {
+	.fav_font {
 		display: flex;
 		flex-direction: column;
+		height: .25fr;
+		width: 25%;
+		flex-basis: .5;
 		justify-content: space-around;
 		align-content: space-around;
-		width: 15em;
-		margin: 50% auto 15px auto;
-	}
-	figcaption {
-		text-align: center;
-		padding: 15px;
-		width: 20em;
-	height: 25em;
-	}
-	img {
-		display: flex;
-		flex-basis: 1;
-		height: 25em;
-		margin: 25% auto;
+		font-size: 16px;
+		margin: auto;
 		padding: auto;
+		h3 {
+			text-align: center;
+			margin: 10px;
+		}
+		blockquote {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-content: space-around;
+			width: 15em;
+			margin: 50% auto 15px auto;
+		}
+		figcaption {
+			text-align: center;
+			padding: 15px;
+			width: 20em;
+		height: 25em;
+		}
 	}
+	
 }
+
+
 
