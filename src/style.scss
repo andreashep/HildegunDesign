@@ -4,36 +4,75 @@
 @import 'header';
 @import 'button';
 @import 'hero';
+@import 'footer';
 
 // font
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap');
 
-$font-family-header: 'Source Sans Pro', sans-serif;
+$header: 'Shelby', cursive;
+$body: 'Montserrat', sans-serif;
+$accent: 'Montserrat', sans-serif;
+
+/* Apply font families to typography */
+h1, h2, h3 {
+    font-weight: bold;
+    /* additional styling */
+  }
+
 h1 {
-    font-family: $font-family-header;
-    font-size: 3rem;
+    font-family: $header;
+    font-size: 64px;
+	color: $brown-text;
 }
 
 h2 {
-    font-family: $font-family-header;
-    font-size: 2.5rem;
+    font-family: $body;
+    font-size: 40px;
 }
 
 h3 {
-    font-family: $font-family-header;
-    font-size: 2rem;
+    font-family: $body;
+    font-size: 21px;
 }
-$font-family-body: 'Noto Serif', serif;
-$font-family-accent: 'EB Garamond', serif;
 
-$font-size-header: 2rem;
-$font-size-body: 1rem;
-$font-size-accent: 1.5rem;
+h4 {
+    font-family: $header;
+    font-size: 24px;
+}
 
+h5 {
+    font-family: $accent;
+    font-size: 16px;
+    font-style: italic;
+}
+p {
+    font-family: $body;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+a {
+    font-family: $accent;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+blockquote {
+    font-family: $accent;
+    font-style: italic;
+    /* additional styling */
+  }
+
+/*font sizes*/
+/*$font-size-header: 2rem;*/
+
+$body: 16px;
+$accent: 16px;
 
 body {
 	width: 100vw;
-	font-family: $font-family-body;
+	font-family: $body;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -94,7 +133,7 @@ body {
 .bgi1 {
 	height: 300px;
 	min-width: 100vw;
-	background-image: url(../homepage_images/Asset15.png);
+	background-image: url(homepage_images/Asset15.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -105,7 +144,7 @@ body {
 .bgi2 {
 	height: 300px;
 	min-width: 100vw;
-	background-image: url(../homepage_images/copper.teal.1440.300-100.jpg);
+	background-image: url(homepage_images/copper.teal.1440.300-100.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -191,7 +230,7 @@ body {
 		margin-top: 5px;
 		justify-content: center;
 		align-content: space-around;
-		color: $brown-text;
+		color: $blue-dark;
 	}
 	h3 {
 		margin-bottom: 10px;
@@ -264,10 +303,8 @@ body {
 	h1 {
 		display: flex;
 		width: 100%;
-		height: 50px;
 		justify-content: center;
 		align-content: center;
-		padding: 0;
 		color: $blue-dark;
 	}
 	img {
@@ -300,7 +337,7 @@ body {
 	margin-bottom: 35px;
 	h2 {
 		display: flex;
-		color: $blue-dark;
+		color: $brown-text;
 		justify-content: center;
 		align-content: space-around;
 		margin: 0px 0 5px 0;
@@ -437,41 +474,5 @@ body {
 		justify-content: center;
 		align-content: center;
 		color: $blue-dark;
-	}
-}
-footer {
-	display: flex;
-	min-height: 250px;
-	min-width: 100vw;
-	background-color: $cream;
-	border: 3px double rgb(81, 49, 39);
-	align-content: center;
-	margin: 0;
-}
-.contact {
-	display: block;
-	margin: 0 5%;
-	a {
-		display: block;
-		color: $blue-dark;
-	}
-	h3 {
-		color: $blue-dark;
-		margin: 5px;
-		text-align: center;
-	}
-}
-.ftr_logo {
-	display: flex;
-	align-self: stretch;
-	min-width: 250px;
-	margin: 0 auto;
-	background-color: $blue-main;
-	justify-content: center;
-	align-content: center;
-	img {
-		display: flex;
-		align-self: center;
-		height: 75%;
 	}
 }

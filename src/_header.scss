@@ -8,7 +8,7 @@ header {
     background-color: $cream;
   }
   
-  .logo {
+  #header-logo {
   display: flex;
 	max-height: 200px;
 	/*min-height: 100%;*/
@@ -17,6 +17,7 @@ header {
 	margin: 0 100px;
 	border: 1px solid $brown-text;
 	justify-content: center;
+  align-items: center;
 	img {
 		display: flex;
 		min-height: 75px;
@@ -24,6 +25,9 @@ header {
 		margin: 15px;
 		color: $blue-main;
 	}
+  a:hover {
+    filter: drop-shadow(3px 3px 3px black);
+  }
   a:active {
     color: $blue-dark;
   }
@@ -95,7 +99,7 @@ header {
     }
     &:active {
       color: $cream;
-      background-color: $blue-dark;
+     
     }
   }
 
