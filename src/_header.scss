@@ -6,6 +6,16 @@ header {
     align-items: center;
     border: none;
     background-color: $cream;
+    .header-accent {
+      display: flex;
+      width: 50vw;
+      
+      height: 50px;
+     justify-content: space-between;
+      background-color: $blue-mid;
+      border-radius: 5px;
+      align-items: center;
+    }
   }
   
   #header-logo {
@@ -13,17 +23,15 @@ header {
 	max-height: 200px;
 	/*min-height: 100%;*/
 	min-width: 250px;
-	background-color: $blue-main;
+	background-color: $blue-mid;
 	margin: 0 100px;
-	border: 1px solid $brown-text;
-	justify-content: center;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 	img {
 		display: flex;
 		min-height: 75px;
 		min-width: 75px;
-		margin: 15px;
-		color: $blue-main;
+		margin: 0;
 	}
   a:hover {
     filter: drop-shadow(3px 3px 3px black);
@@ -37,21 +45,11 @@ header {
   
  #nav-links ul {
     display: flex;
+    width: 50vw;
+    margin: 0 15px;
   }
   
-  .nav-links li {
-    margin-right: 1rem;
-    color: $blue-dark;
-  }
   
-  .nav-links li:last-child {
-    margin-right: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: $blue-dark;
-  }
   /*#nav-links {
     ul {
       display: flex;
@@ -67,7 +65,7 @@ header {
       }
     }
   }*/
-  button {
+  /*button {
     display: flex;
     background-color: $cream;
     color: $blue-dark;
@@ -86,20 +84,21 @@ header {
       background-color: $blue-dark;
       color: $blue-dark;
     }
-  }
+  }*/
   a {
     text-decoration: none;
     color: $blue-dark;
     font-size: 12pt;
-    padding: 12px 20px;
+    padding: 12px 40px;
+    
     &:hover {
-      
       color: $cream;
       border-radius: 25px;
+      filter: drop-shadow(3px 3px 3px black);
     }
     &:active {
       color: $cream;
-     
+      filter: drop-shadow(3px 3px 3px black);
     }
   }
 
@@ -115,7 +114,7 @@ header {
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #fff;
+    
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
   
@@ -133,7 +132,7 @@ header {
       margin-left: auto;
       margin-right: 0;
       font-size: 2rem;
-      background-color: transparent;
+      background-color: $blue-light;
       color: $blue-dark;
       border: none;
       cursor: pointer;

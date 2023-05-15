@@ -8,15 +8,7 @@ body {
 	flex-direction: column; 
 }
 
-html {
-	height: 100%;
-}
-h1 {
-	font-size: 50px;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-}
+
 .hero1 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Quote.png");
 	height: 65%;
@@ -42,7 +34,7 @@ h1 {
 	transform: translate(-50%, -50%);
 	color: $cream;
 }
-button {
+/*button {
 	margin: 10px;
 	width: 100px;
 	height: 35px;
@@ -53,7 +45,9 @@ button {
 		color: $cream;
 		filter: drop-shadow(2px 2px 2px black);
 	}
-}
+}*/
+
+/* My Favorite Font */
 .hero2 {
 	display: flex;
 	flex-direction: row;
@@ -125,6 +119,305 @@ button {
 	}
 	
 }
+/*end of my favorite font*/
 
+/*intro/meet*/
+.intro {
+	display: flex;
+	height: 400px;
+	min-width: 100vw;
+	background-color: $white;
+	border: 3px double rgb(81, 49, 39);
+	margin: 0px;
+	align-content: center;
+	justify-content: center;
+	padding: 25px;
+	img {
+		display: flex;
+		height: 250px;
+		width: 250px;
+		margin: 50px;
+		background-color: $blue-mid;
+		padding: 25px;
+	
+		justify-content: right;
+		align-self: center;
+	}
+}
+.meet {
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	padding: 30px 75px;
+	border: 1px solid rgb(81, 49, 39);
+	line-height: 40px;
+	text-align: center;
+	justify-content: center;
+	align-items: space-around;
+	h2 {
+		font-size: 24px;
+		
+		color: $blue-dark;
+	}
+	/*button {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		margin: 20px 30px;
+	}*/
+}
 
+/*end of intro/meet*/
 
+/*cards / Projects*/
+.cards {
+	display: flex;
+	flex-flow: row wrap;
+	height: 525px;
+	min-width: 100vw;
+	background-color: $cream;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: space-around;
+	align-content: space-between;
+	column-gap: 30px;
+	padding: 10px 30px 30px 30px;
+	h1 {
+		display: flex;
+		width: 100%;
+		margin: 5px 0 10px 0;
+		justify-content: center;
+		align-content: space-around;
+		color: $blue-dark;
+	}
+	h3 {
+		margin-bottom: 10px;
+	}
+}
+.one {
+	display: flex;
+	flex-basis: 25%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+.two {
+	display: flex;
+	flex-basis: 25%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+.three {
+	display: flex;
+	flex-basis: 25%;
+	height: 425px;
+	flex-flow: row wrap;
+	background-color: $white;
+	border: 2px solid rgb(81, 49, 39);
+	text-align: center;
+	justify-content: center;
+	align-content: space-around;
+	padding: 15px;
+	img {
+		height: 150px;
+		margin: 10px;
+		align-content: center;
+		filter: drop-shadow(3px 3px 3px black);
+	}
+}
+
+/*end of cards/projects*/
+
+/*Experience*/
+.experience {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: 600px;
+	min-width: 100vw;
+	background-color: $white;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	padding: 30px;
+	margin-bottom: 75px;
+	h1 {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-content: center;
+		color: $blue-dark;
+	}
+	img {
+		display: flex;
+		height: 500px;
+		margin: 0 35px;
+	}
+}
+
+.one_two {
+	display: flex;
+	flex-direction: column;
+	margin: 50px 0 35px 0;
+	justify-content: space-around;
+	align-content: space-around;
+}
+.years_one, .years_two {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-content: space-between;
+	padding:25px;
+	margin-bottom: 35px;
+	h2 {
+		display: flex;
+		color: $brown-text;
+		justify-content: center;
+		align-content: space-around;
+		margin: 0px 0 5px 0;
+	}
+	h3 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: space-around;
+		margin: 5px 0 10px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: space-around;
+		padding: 5px;
+	}
+}
+/*.years_two {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	margin-bottom: 35px;
+	h2 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 0px 0 5px 0;
+	}
+	h3 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 5px 0 10px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 5px;
+	}
+}*/
+.three_four {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 100px 0;
+	justify-content: space-around;
+	align-content: space-around;
+}
+.years_three, .years_four {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-content: space-between;
+	padding:25px;
+	margin-bottom: 35px;
+	h2 {
+		display: flex;
+		color: $brown-text;
+		justify-content: center;
+		align-content: space-around;
+		margin: 0px 0 5px 0;
+	}
+	h3 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: space-around;
+		margin: 5px 0 10px 0;
+	}
+	h4 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 0px 0 0px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: space-around;
+		padding: 5px;
+	}
+}
+/*.years_four {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	h2 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 0px 0 10px 0;
+	}
+	h4 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 5px 0 0px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 5px;
+		margin-top: 5px;
+	}
+}*/

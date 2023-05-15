@@ -11,7 +11,7 @@
     min-height: 200px;
     background: $cream;
     color: $brown-text;
-  
+
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -23,21 +23,24 @@
         justify-content: space-around;
         width: 30vw;
     }
+
     .logo-ftr1 {
         display: flex;
         width: 20vw;
         margin: 0 auto;
         flex-direction: column;
         text-align: center;
-        background-color: $blue-main;
+        background-color: $blue-mid;
+
         img {
             height: 200px;
             width: 200px;
             margin: 0 auto;
+
             &:hover {
                 filter: drop-shadow(3px 3px 3px black);
+            }
         }
-    }
 
         p {
             color: $white;
@@ -45,9 +48,10 @@
             font-weight: 400;
             margin: 10px 0;
         }
-       
-    
+
+
     }
+
     #contact-info {
         display: flex;
         flex-direction: column;
@@ -61,12 +65,13 @@
             color: $blue-dark;
             font-size: 14pt;
             padding: 12px 20px;
+
             &:hover {
-              color: $blue-main;
-              filter: drop-shadow(3px 3px 3px black);
+                color: $blue-main;
+                filter: drop-shadow(3px 3px 3px black);
             }
 
-          }
+        }
 
         h3 {
             font-weight: 700;
@@ -85,13 +90,14 @@
             a {
                 color: $blue-dark;
                 margin: 25px;
+
                 &:hover {
                     color: $blue-main;
                     filter: drop-shadow(3px 3px 3px black);
+                }
             }
         }
     }
-}
 
     .social-icons {
         display: flex;
@@ -110,60 +116,64 @@
 
         a {
             color: $white;
-            
+
             &:hover {
                 filter: drop-shadow(3px 3px 3px black);
                 background-color: none;
-        }
-            &:active {
-                background-color: none
-                ;
             }
-    }
+
+            &:active {
+                background-color: none;
+            }
+        }
+
         p {
             width: 100%;
-            margin: 10px;
+            margin: 20px;
         }
 
-}
+    }
 
 
 
 
 
-@media (max-width: 480px) {
-    .footer1 {
-       flex-direction: column;
-        min-height: auto;
-        justify-content: center;
-        .logo-ftr1 {
+    @media (max-width: 480px) {
+        .footer1 {
+            flex-direction: column;
+            min-height: auto;
+            justify-content: center;
+
+            .logo-ftr1 {
+                width: 100vw;
+                margin: 0;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        #contact-info {
+            min-width: 100vw;
+            margin: 0 auto;
+        }
+
+        .social-icons {
             width: 100vw;
             margin: 0;
+            justify-content: center;
+            flex-direction: column;
+
             img {
-                height: 100px;
-                width: 100px;
-                margin: 0 auto;
+                height: 30px;
+                width: 30px;
+                margin: 0 0.25rem;
             }
         }
     }
-
-    #contact-info {
-        min-width: 100vw;
-        margin: 0 auto;
-    }
-     .social-icons {
-        width: 100vw;
-        margin: 0;
-        justify-content: center;
-        flex-direction: column;
-
-        img {
-            height: 30px;
-            width: 30px;
-            margin: 0 0.25rem;
-        }
-    }
-}
 }
 
 
@@ -286,14 +296,17 @@
 
 
 }
+
 @media (max-width: 480px) {
     .footer2 {
-       flex-direction: column;
+        flex-direction: column;
         min-height: auto;
         justify-content: center;
+
         .logo-ftr2 {
             width: 100vw;
             margin: 0;
+
             img {
                 height: 100px;
                 width: 100px;
@@ -306,7 +319,8 @@
         min-width: 100vw;
         margin: 0 auto;
     }
-     .social-icons {
+
+    .social-icons {
         width: 100vw;
         margin: 0;
         justify-content: center;

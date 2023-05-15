@@ -1,4 +1,6 @@
 $blue-main: rgb(40, 99, 143);
+$blue-light: rgb(214, 224, 242);
+$blue-mid: rgb(170, 193, 221);
 $blue-dark: rgb(11, 38, 58);
 $cream: rgb(252, 245, 235);
 $cream-dark: rgb(242, 235, 225);
@@ -18,24 +20,21 @@ $body: 'Montserrat', sans-serif;
 $accent: 'Montserrat', sans-serif;
 
 /* Apply font families to typography */
-h1, h2, h3 {
-    font-weight: bold;
-    /* additional styling */
-  }
 
 h1 {
     font-family: $header;
     font-size: 64px;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: $header;
+    font-family: $body;
     font-size: 40px;
 }
 
 h3 {
     font-family: $header;
-    font-size: 21px;
+    font-size: 36px;
 }
 
 h4 {
@@ -57,7 +56,6 @@ p {
 a {
     font-family: $accent;
     font-size: 16px;
-    
     font-style: italic;
 }
 

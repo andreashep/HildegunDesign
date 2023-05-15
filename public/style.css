@@ -1,6 +1,5 @@
 @import url("https://use.typekit.net/eim3vkg.css");
 @import url("https://use.typekit.net/qda2xul.css");
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,24 +52,20 @@ table {
 
 /* Define font families */
 /* Apply font families to typography */
-h1, h2, h3 {
-  font-weight: bold;
-  /* additional styling */
-}
-
 h1 {
   font-family: "Shelby", cursive;
   font-size: 64px;
+  font-weight: bold;
 }
 
 h2 {
-  font-family: "Shelby", cursive;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
 }
 
 h3 {
   font-family: "Shelby", cursive;
-  font-size: 21px;
+  font-size: 36px;
 }
 
 h4 {
@@ -113,24 +108,31 @@ header {
   border: none;
   background-color: rgb(252, 245, 235);
 }
+header .header-accent {
+  display: flex;
+  width: 50vw;
+  height: 50px;
+  justify-content: space-between;
+  background-color: rgb(170, 193, 221);
+  border-radius: 5px;
+  align-items: center;
+}
 
 #header-logo {
   display: flex;
   max-height: 200px;
   /*min-height: 100%;*/
   min-width: 250px;
-  background-color: rgb(40, 99, 143);
+  background-color: rgb(170, 193, 221);
   margin: 0 100px;
-  border: 1px solid rgb(81, 49, 39);
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 #header-logo img {
   display: flex;
   min-height: 75px;
   min-width: 75px;
-  margin: 15px;
-  color: rgb(40, 99, 143);
+  margin: 0;
 }
 #header-logo a:hover {
   filter: drop-shadow(3px 3px 3px black);
@@ -141,20 +143,8 @@ header {
 
 #nav-links ul {
   display: flex;
-}
-
-.nav-links li {
-  margin-right: 1rem;
-  color: rgb(11, 38, 58);
-}
-
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: rgb(11, 38, 58);
+  width: 50vw;
+  margin: 0 15px;
 }
 
 /*#nav-links {
@@ -172,39 +162,40 @@ header {
     }
   }
 }*/
-button {
+/*button {
   display: flex;
-  background-color: rgb(252, 245, 235);
-  color: rgb(11, 38, 58);
+  background-color: $cream;
+  color: $blue-dark;
   min-width: 150px;
   min-height: 35px;
-  border: 0.5px solid rgb(81, 49, 39);
+  border: .5px solid rgb(81, 49, 39);
   border-radius: 25px;
   justify-content: center;
   text-align: center;
   margin: 30px;
-}
-button:hover {
-  background-color: rgb(40, 99, 143);
-  color: rgb(40, 99, 143);
-}
-button:active {
-  background-color: rgb(11, 38, 58);
-  color: rgb(11, 38, 58);
-}
-
+  &:hover {
+    background-color: $blue-main;
+    color: $blue-main;
+  }
+  &:active {
+    background-color: $blue-dark;
+    color: $blue-dark;
+  }
+}*/
 a {
   text-decoration: none;
   color: rgb(11, 38, 58);
   font-size: 12pt;
-  padding: 12px 20px;
+  padding: 12px 40px;
 }
 a:hover {
   color: rgb(252, 245, 235);
   border-radius: 25px;
+  filter: drop-shadow(3px 3px 3px black);
 }
 a:active {
   color: rgb(252, 245, 235);
+  filter: drop-shadow(3px 3px 3px black);
 }
 
 .hamburger-menu {
@@ -219,7 +210,6 @@ a:active {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
   #nav-links ul {
@@ -234,7 +224,7 @@ a:active {
     margin-left: auto;
     margin-right: 0;
     font-size: 2rem;
-    background-color: transparent;
+    background-color: rgb(214, 224, 242);
     color: rgb(11, 38, 58);
     border: none;
     cursor: pointer;
@@ -268,18 +258,20 @@ ul {
 .btn {
   display: flex;
   background-color: rgb(252, 245, 235);
-  margin: 100px;
-  width: 150px;
-  height: 35px;
+  margin: 50px;
+  min-width: 150px;
+  min-height: 35px;
   border: 0.5px solid rgb(81, 49, 39);
   border-radius: 25px;
   font-size: 16px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 .btn a {
   text-decoration: none;
   align-self: center;
+  margin: 0 auto;
 }
 .btn:hover {
   color: rgb(252, 245, 235);
@@ -426,17 +418,6 @@ body {
   flex-direction: column;
 }
 
-html {
-  height: 100%;
-}
-
-h1 {
-  font-size: 50px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
 .hero1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Quote.png");
   height: 65%;
@@ -464,19 +445,19 @@ h1 {
   color: rgb(252, 245, 235);
 }
 
-button {
-  margin: 10px;
-  width: 100px;
-  height: 35px;
-  border-radius: 25px;
-  text-align: center;
-}
-button:hover {
-  background-color: rgb(40, 99, 143);
-  color: rgb(252, 245, 235);
-  filter: drop-shadow(2px 2px 2px black);
-}
-
+/*button {
+	margin: 10px;
+	width: 100px;
+	height: 35px;
+	border-radius: 25px;
+	text-align: center;
+	&:hover {
+		background-color: $blue-main;
+		color: $cream;
+		filter: drop-shadow(2px 2px 2px black);
+	}
+}*/
+/* My Favorite Font */
 .hero2 {
   display: flex;
   flex-direction: row;
@@ -544,6 +525,311 @@ button:hover {
   height: 25em;
 }
 
+/*end of my favorite font*/
+/*intro/meet*/
+.intro {
+  display: flex;
+  height: 400px;
+  min-width: 100vw;
+  background-color: rgb(255, 255, 255);
+  border: 3px double rgb(81, 49, 39);
+  margin: 0px;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+}
+.intro img {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  margin: 50px;
+  background-color: rgb(170, 193, 221);
+  padding: 25px;
+  justify-content: right;
+  align-self: center;
+}
+
+.meet {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  padding: 30px 75px;
+  border: 1px solid rgb(81, 49, 39);
+  line-height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: space-around;
+  /*button {
+  	display: flex;
+  	justify-content: center;
+  	align-items: flex-end;
+  	margin: 20px 30px;
+  }*/
+}
+.meet h2 {
+  font-size: 24px;
+  color: rgb(11, 38, 58);
+}
+
+/*end of intro/meet*/
+/*cards / Projects*/
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  height: 525px;
+  min-width: 100vw;
+  background-color: rgb(252, 245, 235);
+  border: 3px double rgb(81, 49, 39);
+  justify-content: space-around;
+  align-content: space-between;
+  column-gap: 30px;
+  padding: 10px 30px 30px 30px;
+}
+.cards h1 {
+  display: flex;
+  width: 100%;
+  margin: 5px 0 10px 0;
+  justify-content: center;
+  align-content: space-around;
+  color: rgb(11, 38, 58);
+}
+.cards h3 {
+  margin-bottom: 10px;
+}
+
+.one {
+  display: flex;
+  flex-basis: 25%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.one img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.two {
+  display: flex;
+  flex-basis: 25%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.two img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+.three {
+  display: flex;
+  flex-basis: 25%;
+  height: 425px;
+  flex-flow: row wrap;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(81, 49, 39);
+  text-align: center;
+  justify-content: center;
+  align-content: space-around;
+  padding: 15px;
+}
+.three img {
+  height: 150px;
+  margin: 10px;
+  align-content: center;
+  filter: drop-shadow(3px 3px 3px black);
+}
+
+/*end of cards/projects*/
+/*Experience*/
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  min-width: 100vw;
+  background-color: rgb(255, 255, 255);
+  border: 3px double rgb(81, 49, 39);
+  justify-content: center;
+  padding: 30px;
+  margin-bottom: 75px;
+}
+.experience h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  color: rgb(11, 38, 58);
+}
+.experience img {
+  display: flex;
+  height: 500px;
+  margin: 0 35px;
+}
+
+.one_two {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 35px 0;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.years_one, .years_two {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  border: 3px double rgb(81, 49, 39);
+  justify-content: center;
+  align-content: space-between;
+  padding: 25px;
+  margin-bottom: 35px;
+}
+.years_one h2, .years_two h2 {
+  display: flex;
+  color: rgb(81, 49, 39);
+  justify-content: center;
+  align-content: space-around;
+  margin: 0px 0 5px 0;
+}
+.years_one h3, .years_two h3 {
+  display: flex;
+  color: rgb(11, 38, 58);
+  justify-content: center;
+  align-content: space-around;
+  margin: 5px 0 10px 0;
+}
+.years_one p, .years_two p {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  padding: 5px;
+}
+
+/*.years_two {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	margin-bottom: 35px;
+	h2 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 0px 0 5px 0;
+	}
+	h3 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 5px 0 10px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 5px;
+	}
+}*/
+.three_four {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 100px 0;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.years_three, .years_four {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  border: 3px double rgb(81, 49, 39);
+  justify-content: center;
+  align-content: space-between;
+  padding: 25px;
+  margin-bottom: 35px;
+}
+.years_three h2, .years_four h2 {
+  display: flex;
+  color: rgb(81, 49, 39);
+  justify-content: center;
+  align-content: space-around;
+  margin: 0px 0 5px 0;
+}
+.years_three h3, .years_four h3 {
+  display: flex;
+  color: rgb(11, 38, 58);
+  justify-content: center;
+  align-content: space-around;
+  margin: 5px 0 10px 0;
+}
+.years_three h4, .years_four h4 {
+  display: flex;
+  color: rgb(11, 38, 58);
+  justify-content: center;
+  align-content: center;
+  margin: 0px 0 0px 0;
+}
+.years_three p, .years_four p {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  padding: 5px;
+}
+
+/*.years_four {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 150px;
+	border: 3px double rgb(81, 49, 39);
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	h2 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 0px 0 10px 0;
+	}
+	h4 {
+		display: flex;
+		color: $blue-dark;
+		justify-content: center;
+		align-content: center;
+		margin: 5px 0 0px 0;
+	}
+	p {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		padding: 5px;
+		margin-top: 5px;
+	}
+}*/
 .ftr-container {
   display: flex;
   flex-direction: column;
@@ -574,7 +860,7 @@ button:hover {
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(40, 99, 143);
+  background-color: rgb(170, 193, 221);
 }
 .footer1 .logo-ftr1 img {
   height: 200px;
@@ -653,7 +939,7 @@ button:hover {
 }
 .footer1 .social-icons p {
   width: 100%;
-  margin: 10px;
+  margin: 20px;
 }
 @media (max-width: 480px) {
   .footer1 .footer1 {
@@ -846,60 +1132,6 @@ button:hover {
     margin: 20px;
   }
 }
-/* Apply font families to typography */
-h1, h2, h3 {
-  font-weight: bold;
-  /* additional styling */
-}
-
-h1 {
-  font-family: "Shelby", cursive;
-  font-size: 64px;
-  color: rgb(81, 49, 39);
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-}
-
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 21px;
-}
-
-h4 {
-  font-family: "Shelby", cursive;
-  font-size: 24px;
-}
-
-h5 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-style: italic;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-}
-
-a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: italic;
-}
-
-blockquote {
-  font-family: "Montserrat", sans-serif;
-  font-style: italic;
-  /* additional styling */
-}
-
-/*font sizes*/
-/*$font-size-header: 2rem;*/
 body {
   width: 100vw;
   font-family: 16px;
@@ -915,51 +1147,6 @@ body {
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.intro {
-  display: flex;
-  height: 400px;
-  min-width: 100vw;
-  background-color: rgb(255, 255, 255);
-  border: 3px double rgb(81, 49, 39);
-  margin: 0px;
-  align-content: center;
-  justify-content: center;
-  padding: 25px;
-}
-.intro img {
-  display: flex;
-  height: 250px;
-  width: 250px;
-  margin: 50px;
-  background-color: rgb(11, 38, 58);
-  padding: 25px;
-  justify-content: right;
-  align-self: center;
-}
-
-.meet {
-  display: flex;
-  flex-direction: column;
-  margin: 50px;
-  padding: 30px 75px;
-  border: 3px solid rgb(81, 49, 39);
-  line-height: 40px;
-  text-align: center;
-  justify-content: center;
-  align-items: space-around;
-}
-.meet h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: rgb(11, 38, 58);
-}
-.meet button {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: 20px 30px;
 }
 
 .bgi1 {
@@ -1048,261 +1235,6 @@ body {
   justify-content: center;
   align-content: space-between;
   margin-bottom: 0px;
-}
-
-.cards {
-  display: flex;
-  flex-flow: row wrap;
-  height: 525px;
-  min-width: 100vw;
-  background-color: rgb(252, 245, 235);
-  border: 3px double rgb(81, 49, 39);
-  justify-content: space-around;
-  align-content: space-between;
-  column-gap: 30px;
-  padding: 10px 30px 30px 30px;
-}
-.cards h1 {
-  display: flex;
-  width: 100%;
-  margin-top: 5px;
-  justify-content: center;
-  align-content: space-around;
-  color: rgb(11, 38, 58);
-}
-.cards h3 {
-  margin-bottom: 10px;
-}
-
-.one {
-  display: flex;
-  flex-basis: 25%;
-  height: 425px;
-  flex-flow: row wrap;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(81, 49, 39);
-  text-align: center;
-  justify-content: center;
-  align-content: space-around;
-  padding: 15px;
-}
-.one img {
-  height: 150px;
-  margin: 10px;
-  align-content: center;
-  filter: drop-shadow(3px 3px 3px black);
-}
-
-.two {
-  display: flex;
-  flex-basis: 25%;
-  height: 425px;
-  flex-flow: row wrap;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(81, 49, 39);
-  text-align: center;
-  justify-content: center;
-  align-content: space-around;
-  padding: 15px;
-}
-.two img {
-  height: 150px;
-  margin: 10px;
-  align-content: center;
-  filter: drop-shadow(3px 3px 3px black);
-}
-
-.three {
-  display: flex;
-  flex-basis: 25%;
-  height: 425px;
-  flex-flow: row wrap;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(81, 49, 39);
-  text-align: center;
-  justify-content: center;
-  align-content: space-around;
-  padding: 15px;
-}
-.three img {
-  height: 150px;
-  margin: 10px;
-  align-content: center;
-  filter: drop-shadow(3px 3px 3px black);
-}
-
-.experience {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 600px;
-  min-width: 100vw;
-  background-color: rgb(255, 255, 255);
-  border: 3px double rgb(81, 49, 39);
-  justify-content: center;
-  padding: 30px;
-}
-.experience h1 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-  color: rgb(11, 38, 58);
-}
-.experience img {
-  display: flex;
-  height: 500px;
-  margin: 0 35px;
-}
-
-.econtent {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 75px;
-}
-
-.one_two {
-  display: flex;
-  flex-direction: column;
-  margin: 50px 0 35px 0;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-.years_one {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 150px;
-  border: 3px double rgb(81, 49, 39);
-  justify-content: center;
-  align-content: space-between;
-  padding: 0 15px;
-  margin-bottom: 35px;
-}
-.years_one h2 {
-  display: flex;
-  color: rgb(81, 49, 39);
-  justify-content: center;
-  align-content: space-around;
-  margin: 0px 0 5px 0;
-}
-.years_one h3 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: space-around;
-  margin: 5px 0 10px 0;
-}
-.years_one p {
-  display: flex;
-  justify-content: center;
-  align-content: space-around;
-  padding: 5px;
-}
-
-.years_two {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 150px;
-  border: 3px double rgb(81, 49, 39);
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-  margin-bottom: 35px;
-}
-.years_two h2 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 0px 0 5px 0;
-}
-.years_two h3 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 5px 0 10px 0;
-}
-.years_two p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 5px;
-}
-
-.three_four {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 100px 0;
-  justify-content: space-around;
-  align-content: space-around;
-}
-
-.years_three {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 150px;
-  border: 3px double rgb(81, 49, 39);
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-  margin: 35px 0;
-}
-.years_three h2 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 0px 0 5px 0;
-}
-.years_three h3 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 5px 0 10px 0;
-}
-.years_three p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 5px;
-}
-
-.years_four {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: 150px;
-  border: 3px double rgb(81, 49, 39);
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-}
-.years_four h2 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 0px 0 10px 0;
-}
-.years_four h4 {
-  display: flex;
-  color: rgb(11, 38, 58);
-  justify-content: center;
-  align-content: center;
-  margin: 5px 0 0px 0;
-}
-.years_four p {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 5px;
-  margin-top: 5px;
 }
 
 .pod {

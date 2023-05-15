@@ -11,7 +11,7 @@
 }
 
 ul {
-	text-decoration: none;
+		text-decoration: none;
 		list-style: none;
 		display: flex;
 		align-items: center;
@@ -22,17 +22,19 @@ ul {
 .btn {
 	display: flex;
 	background-color: $cream;
-	margin: 100px;
-	width: 150px;
-	height: 35px;
+	margin: 50px;
+	min-width: 150px;
+	min-height: 35px;
 	border: .5px solid $brown-text;
 	border-radius: 25px;
 	font-size: 16px;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+	text-align: center;
 	a {
 		text-decoration: none;
 		align-self: center;
+		margin: 0 auto;
 	}
 	&:hover {
 		color: $cream;
