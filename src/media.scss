@@ -1,0 +1,209 @@
+/*769-1279laptops/lgtablets*/
+/*481-768-tablet/lgsmtphones*/
+/*320-480-smphones*/
+
+/*mobiles in portrait mode
+@media (max-width: 320px) */
+
+
+/*mobiles in landscape mode
+@media (min-width: 321px) and (max-width: 480px) */
+
+
+/*tablets in portrait mode
+@media (min-width: 481px) and (max-width: 768px) */
+
+
+
+/*tablets in landscape mode
+@media (min-width: 769px) and (max-width: 1024px) */
+
+
+/*desktops and laptops
+@media (min-width: 1025px) and (max-width: 1280px)*/
+
+/*header*/
+/* Tablet styles */
+@media (min-width: 799px) and (max-width: 1024px) {
+    #nav-links ul {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+/* Mobile styles */
+@media (min-width: 481px) and (max-width: 800px) {
+    #header-logo {
+        display: flex;
+        height: 200px;
+        width: 250px;
+        background-color: $blue-mid;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: flex;
+            min-height: 50px;
+            min-width: 50px;
+            margin: 0 auto;
+        }
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        margin: 0 auto;
+        font-size: 2rem;
+        background-color: $blue-light;
+        color: $blue-dark;
+        border: none;
+        cursor: pointer;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header-accent {
+        width: 100vw;
+        background-color: none;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger-menu {
+        display: block;
+        margin: 0 auto;
+        font-size: 2rem;
+        background-color: $blue-light;
+        color: $blue-dark;
+        border: none;
+        cursor: pointer;
+    }
+
+    #header-logo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+
+        #header-logo {
+            display: flex;
+            max-height: 125px;
+            max-width: 150px;
+            background-color: $blue-mid;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: flex;
+                height: 75px;
+                width: 75px;
+                margin: 0 auto;
+            }
+        }
+
+        .header-accent {
+            width: 100vw;
+        }
+
+        #nav-links {
+            display: none;
+        }
+
+        #hamburger-menu {
+            display: block;
+            margin: 0 auto;
+            font-size: 2rem;
+            background-color: $blue-light;
+            color: $blue-dark;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+/*intro/meet*/
+/*mobiles in portrait mode*/
+@media (max-width: 320px) {
+}
+
+/*mobiles in landscape mode*/
+@media (min-width: 321px) and (max-width: 480px) {
+}
+
+/*tablets in portrait mode*/
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/*tablets in landscape mode*/
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*desktops and laptops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/*bgimg*/
+
+/*hero2*/
+
+/*cards/projects*/
+
+/*experience(hero)*/
+
+/*pod-from style to cards*/
+
+/*bgi2*/
+
+@media (max-width: 480px) {
+    .footer1 {
+        flex-direction: column;
+        min-height: auto;
+        justify-content: center;
+
+        .logo-ftr1 {
+            width: 100vw;
+            margin: 0;
+
+            img {
+                height: 100px;
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    #contact-info {
+        min-width: 100vw;
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        width: 100vw;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+            height: 30px;
+            width: 30px;
+            margin: 0 0.25rem;
+        }
+    }
+}

@@ -54,9 +54,23 @@ p {
 }
 
 a {
+    display: flex;
+    flex-flow: row wrap;
     font-family: $accent;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: italic;
+    text-decoration: none;
+    color: $blue-dark;
+    padding: 16px 24px;
+    &:hover {
+        color: $cream;
+        border-radius: 25px;
+        filter: drop-shadow(3px 3px 3px black);
+      }
+      &:active {
+        color: $cream;
+        filter: drop-shadow(3px 3px 3px black);
+      }
 }
 
 blockquote {
