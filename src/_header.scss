@@ -4,8 +4,9 @@
 }
 header {
     display: flex;
-    max-height: 200px;
-	  min-width: 100vw;
+    height: 200px;
+	  width: 100vw;
+    margin: 0;
     justify-content: space-between;
     align-items: center;
     border: none;
@@ -52,11 +53,13 @@ header {
 	margin: 0 100px;
   justify-content: center;
   align-items: center;
+  padding: 30px auto;
 	img {
 		display: flex;
-		min-height: 75px;
-		min-width: 75px;
-		margin: 0;
+		height: 175px;
+		width: 175px;
+		margin-top: 20px;
+    margin-bottom: 20px;
 	}
   a:hover {
     filter: drop-shadow(3px 3px 3px black);

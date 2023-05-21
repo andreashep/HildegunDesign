@@ -128,8 +128,7 @@ body {
 	min-width: 100vw;
 	background-color: $white;
 	border: 3px double rgb(81, 49, 39);
-	margin: 0px;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 	padding: 25px;
 	img {
@@ -139,7 +138,6 @@ body {
 		margin: 50px;
 		background-color: $blue-mid;
 		padding: 25px;
-	
 		justify-content: right;
 		align-self: center;
 	}

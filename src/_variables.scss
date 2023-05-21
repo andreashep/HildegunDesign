@@ -1,6 +1,7 @@
-$blue-main: rgb(40, 99, 143);
+$blue-main: rgb(41, 99, 143);
 $blue-light: rgb(214, 224, 242);
 $blue-mid: rgb(170, 193, 221);
+$blue-mid-dark: rgb(94, 145, 204);
 $blue-dark: rgb(11, 38, 58);
 $cream: rgb(252, 245, 235);
 $cream-dark: rgb(242, 235, 225);
@@ -35,6 +36,7 @@ h2 {
 h3 {
     font-family: $header;
     font-size: 36px;
+    color: $blue-dark;
 }
 
 h4 {
@@ -51,6 +53,12 @@ p {
     font-family: $body;
     font-size: 14px;
     font-weight: normal;
+}
+
+caption {
+    font-family: $body;
+    font-size: 12px;
+    font-weight: light italic;
 }
 
 a {
@@ -73,6 +81,88 @@ a {
       }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14px;
+    }
+    caption {
+        font-size: 12px;
+    }
+    a {
+        font-size: 16px;
+    }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+    caption {
+        font-size: 10px;
+    }
+    a {
+        font-size: 12px;
+    }
+    li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    h5 {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+    }
+    caption {
+        font-size: 10px;
+    }
+    a {
+        font-size: 12px;
+    }
+}
 blockquote {
     font-family: $accent;
     font-style: italic;
