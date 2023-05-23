@@ -195,7 +195,7 @@ body {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
-	flex-flow: row wrap;
+	flex-direction: column;
 	background-color: $white;
 	border: 2px solid rgb(81, 49, 39);
 	text-align: center;
@@ -213,7 +213,7 @@ body {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
-	flex-flow: row wrap;
+	flex-direction: column;
 	background-color: $white;
 	border: 2px solid rgb(81, 49, 39);
 	text-align: center;
@@ -231,7 +231,7 @@ body {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
-	flex-flow: row wrap;
+	flex-direction: column;
 	background-color: $white;
 	border: 2px solid rgb(81, 49, 39);
 	text-align: center;

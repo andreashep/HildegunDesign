@@ -645,7 +645,7 @@ body {
   display: flex;
   flex-basis: 25%;
   height: 425px;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 49, 39);
   text-align: center;
@@ -664,7 +664,7 @@ body {
   display: flex;
   flex-basis: 25%;
   height: 425px;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 49, 39);
   text-align: center;
@@ -683,7 +683,7 @@ body {
   display: flex;
   flex-basis: 25%;
   height: 425px;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 49, 39);
   text-align: center;
@@ -1491,6 +1491,42 @@ body {
 }
 /*hero2*/
 /*cards/projects*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .one, .two, .three {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*tablets in landscape mode*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*mobiles in landscape mode
+@media (min-width: 321px) and (max-width: 480px) */
+/*mobiles in portrait mode
+@media (max-width: 320px) */
 /*experience(hero)*/
 /*pod-from style to cards*/
 /*bgi2*/
