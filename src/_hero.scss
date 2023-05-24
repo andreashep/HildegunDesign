@@ -54,7 +54,7 @@ body {
 	
 	width: 100vw;
 	height: 500px;
-	margin: 25px auto;
+	margin: 10px auto;
 	justify-content: space-between;
 	align-content: center;
 	
@@ -191,7 +191,7 @@ body {
 		margin-bottom: 10px;
 	}
 }
-.one {
+.one, .two, .three {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;
@@ -203,13 +203,23 @@ body {
 	align-content: space-around;
 	padding: 15px;
 	img {
+		display: flex;
 		height: 150px;
-		margin: 10px;
-		align-content: center;
+		width: 150px;
+		margin: 10px auto;
+		align-items: center;
 		filter: drop-shadow(3px 3px 3px black);
 	}
+	.cards_txt {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: space-around;
+		margin: 10px;
+		padding: 10px;
+	}
 }
-.two {
+/*.two {
 	display: flex;
 	flex-basis: 25%;
 	height: 425px;

@@ -31,8 +31,18 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0;
-	padding: 30px;
+	border:rgb(81, 49, 39) 1px solid;
+}
+@media (max-width: 768px){
+    .bgi1 {
+        height: 150px;
+        min-width: 100vw;
+        background-image: url(homepage_images/bgi_180px.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
 }
 
 .bgi2 {
@@ -43,7 +53,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-	padding: 30px;
+	
 }
 .about {
 	display: flex;

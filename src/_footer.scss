@@ -16,13 +16,6 @@
     justify-content: space-around;
     align-items: center;
 
-    .ftr1-center {
-        display: flex;
-        width: 20vw;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30vw;
-    }
 
     .logo-ftr1 {
         display: flex;
@@ -31,6 +24,7 @@
         flex-direction: column;
         text-align: center;
         background-color: $blue-mid;
+        padding: 10px;
 
         img {
             height: 200px;
@@ -134,7 +128,7 @@
 
     }
 
-
+}
 
 
 
@@ -145,7 +139,7 @@
 
 /*footer 2*/
 
-.footer2 {
+/*.footer2 {
     display: flex;
     width: 100vw;
     height: 200px;
@@ -259,7 +253,7 @@
     }
 
 
-}
+}*/
 
 @media (max-width: 480px) {
     .footer2 {
@@ -325,7 +319,4 @@
         .social-icons {
             width: 100%;
             margin: 20px;
-        }
-    }
-}
-}
+        }}}
