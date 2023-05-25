@@ -1,132 +1,47 @@
-
-@import 'reset';
-@import 'variables';
-@import 'header';
-@import 'button';
-@import 'hero';
-@import 'footer';
-@import 'media';
+@import "reset";
+@import "variables";
+@import "header";
+@import "button";
+@import "hero";
+@import 'card';
+@import "footer";
+@import "media";
 
 body {
-	width: 100vw;
-	font-family: $body;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+  width: 100vw;
+  font-family: $body;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.fixed-container {
+/*.fixed-container {
 	max-width: 1280px;
 	display: flex;
 	margin: 0 auto;
 	flex-direction: row;
 	justify-content: space-between;
-}
-
+}*/
 
 .bgi1 {
-	height: 300px;
-	min-width: 100vw;
-	background-image: url(homepage_images/bgi_banner.svg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border:rgb(81, 49, 39) 1px solid;
+  height: 300px;
+  min-width: 100vw;
+  background-image: url(homepage_images/bgi_banner.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: rgb(81, 49, 39) 1px solid;
 }
-@media (max-width: 768px){
-    .bgi1 {
-        height: 150px;
-        min-width: 100vw;
-        background-image: url(homepage_images/bgi_180px.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      
-    }
-}
-
-
-.about {
-	display: flex;
-	min-width: 100vw;
-	flex-direction: row;
-	background-color: $cream;
-	align-content: center;
-	height: 400px;
-	justify-content: space-around;
-}
-.abtimg {
-	display: flex;
-	min-width: 300px;
-	min-height: 200px;
-	background-color: $cream;
-	align-self: center;
-	text-align: center;
-}
-.about-tb {
-	display: flex;
-	flex-flow: column;
-	width: 50%;
-	height: 250px;
-	background-color: $blue-main;
-	margin: 10px 0;
-	align-items: center;
-	justify-content: space-around;
-	padding: 50px 25px 75px 25px;
-	border: 3px solid rgb(81, 49, 39);
-	h1 {
-		margin: 40px;
-	}
-	button {
-		display: flex;
-		background-color: $cream;
-		margin: 50px;
-		min-width: 150px;
-		min-height: 35px;
-		border: .5px solid rgb(81, 49, 39);
-		border-radius: 25px;
-		font-size: 14px;
-		justify-content: center;
-		align-content: center;
-		color: $blue-dark;
-		text-decoration: none;
-		&:hover {
-			background-color: $blue-main;
-			color: $cream;
-		}
-		&:active {
-			background-color: $blue-dark;
-			color: $cream;
-		}
-	}
-}
-.about-tb-btn {
-	display: flex;
-	flex-flow: row;
-	width: 100%;
-	justify-content: center;
-	align-content: space-between;
-	margin-bottom: 0px;
+@media (max-width: 768px) {
+  .bgi1 {
+    height: 150px;
+    min-width: 100vw;
+    background-image: url(homepage_images/bgi_180px.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 
-.pod {
-	background-color: $white;
-	display: flex;
-	flex-flow: row wrap;
-	height: 525px;
-	min-width: 100vw;
-	border: 3px double rgb(81, 49, 39);
-	justify-content: space-around;
-	align-content: space-between;
-	column-gap: 30px;
-	padding: 10px 30px 30px 030px;
-	h1 {
-		display: flex;
-		width: 100%;
-		margin-top: 5px;
-		justify-content: center;
-		align-content: center;
-		color: $blue-dark;
-	}
-}
+

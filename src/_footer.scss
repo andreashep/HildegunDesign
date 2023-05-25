@@ -25,6 +25,8 @@
         text-align: center;
         background-color: $blue-mid;
         padding: 10px;
+        justify-content: center;
+        align-items: center;
 
         img {
             height: 200px;
@@ -41,6 +43,9 @@
             font-size: .75rem;
             font-weight: 400;
             margin: 10px 0;
+        }
+        a {
+            width: 100%;
         }
 
 
