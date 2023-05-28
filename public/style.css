@@ -481,7 +481,7 @@ body {
 .hero1 img {
   display: flex;
   width: 100%;
-  height: 50%;
+  min-height: 500px;
   margin: auto;
   padding: auto;
 }
@@ -489,13 +489,17 @@ body {
 .hero1-text {
   display: flex;
   flex-direction: column;
+  width: 25%;
   justify-content: center;
-  align-content: center;
-  color: rgb(252, 245, 235);
-  padding: 0 45%;
+  text-align: center;
+  color: rgb(11, 38, 58);
+  margin: 0 auto;
 }
 .hero1-text h1 {
-  margin-bottom: 24px;
+  display: flex;
+  margin: 0 auto 24px auto;
+  justify-content: center;
+  align-items: center;
 }
 
 /*.hero-text {
@@ -996,7 +1000,7 @@ body {
   margin-top: 25px;
   justify-content: center;
   align-content: space-around;
-  color: rgb(255, 255, 255);
+  color: rgb(11, 38, 58);
 }
 
 /*card.1*/
@@ -1027,6 +1031,18 @@ body {
   margin: 15px;
 }
 
+.one .lang_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.one .lang_imgs img {
+  height: 100px;
+  width: auto;
+  margin: 8px;
+}
+
 /*pod*/
 .pod {
   background-image: url(../public/homepage_images/bgi_banner.svg);
@@ -1048,7 +1064,15 @@ body {
   margin-top: 5px;
   justify-content: center;
   align-content: center;
-  color: rgb(252, 245, 235);
+  color: rgb(11, 38, 58);
+}
+.pod h3 {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: center;
+  align-content: center;
+  color: rgb(11, 38, 58);
 }
 
 .pone, .ptwo, .pthree {
@@ -1101,7 +1125,7 @@ body {
   display: flex;
   width: 25vw;
   height: 425px;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 49, 39);
   text-align: center;
