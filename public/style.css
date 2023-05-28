@@ -811,20 +811,29 @@ body {
 .flex-container1 {
   display: flex;
   width: 100vw;
-  min-height: 500px;
-  justify-content: space-between;
+  min-height: 400px;
+  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
   border: 1px solid rgb(81, 49, 39);
   padding: 20px;
 }
 .flex-container1 h1 {
   display: flex;
   width: 100vw;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   color: rgb(11, 38, 58);
   margin: 0 0 16px 0;
+}
+
+.exp_container {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .flex-item1, .flex-item2, .flex-item3, .flex-item4, .flex-item5, .flex-item6 {
@@ -982,7 +991,7 @@ body {
 /**********************************/
 /**************************************web_hero********************************************/
 /*********************************hd cards div**********************************************/
-.pod, #web_cards {
+#web_cards {
   display: flex;
   flex-flow: row wrap;
   min-height: 525px;
@@ -994,7 +1003,7 @@ body {
   column-gap: 20px;
   padding: 0px 30px 30px 30px;
 }
-.pod h1, #web_cards h1 {
+#web_cards h1 {
   display: flex;
   width: 100%;
   margin-top: 25px;
@@ -1045,13 +1054,13 @@ body {
 
 /*pod*/
 .pod {
-  background-image: url(../public/homepage_images/bgi_banner.svg);
+  background-image: url(../public/homepage_images/b.a_1440x1000.jpg);
   background-size: cover;
   background-repeat: none;
   background-position: bottom;
   display: flex;
   flex-flow: row wrap;
-  min-height: 525px;
+  min-height: 1000px;
   width: 100vw;
   justify-content: space-around;
   align-content: space-between;
@@ -1075,6 +1084,75 @@ body {
   color: rgb(11, 38, 58);
 }
 
+.pattern {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  column-gap: 30px;
+  padding: 10px 30px;
+}
+
+.flex-container11, .flex-container2 {
+  display: flex;
+  width: 100vw;
+  min-height: 200px;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.flex-container11 h1, .flex-container2 h1 {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-content: center;
+  color: rgb(11, 38, 58);
+  margin: 0 auto;
+}
+
+.flex-item1, .flex-item2, .flex-item3, .flex-item4, .flex-item5, .flex-item6, .flex-item11, .flex-item12, .flex-item13, .flex-item14, .flex-item15, .flex-item16 {
+  height: 25%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 24px 0;
+}
+
+.box111, .box112, .box113, .box114, .box115, .box6, .box11, .box12, .box13, .box14, .box15, .box16 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.box111 img, .box112 img, .box113 img, .box114 img, .box115 img, .box6 img, .box11 img, .box12 img, .box13 img, .box14 img, .box15 img, .box16 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 200px;
+  height: auto;
+  margin: 8px 0;
+  transition: transform 0.4s;
+}
+
+.box111:hover img, .box112:hover img, .box113:hover img, .box114:hover img, .box115:hover img, .box6:hover img, .box11:hover img, .box12:hover img, .box13:hover img, .box14:hover img, .box15:hover img, .box16:hover img {
+  transform: scale(1.2);
+}
+
+/*.box6, .box7, .box8, .box9, .box10 {
+	width: 100%;
+	padding-bottom: 100%;
+	background-color: $blue-mid;
+	border: 1px solid $black;
+	margin-bottom: 10px;
+	}
+*/
 .pone, .ptwo, .pthree {
   display: flex;
   width: 25vw;

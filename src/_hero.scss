@@ -362,23 +362,30 @@ body {
 .flex-container1 {
     display: flex;
     width: 100vw;
-    min-height: 500px;
-    justify-content: space-between;
+    min-height: 400px;
+    justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-direction: column;
     border: 1px solid $brown-text;
     padding: 20px;
 	h1 {
 		display: flex;
 		width: 100vw;
-		justify-content: center;
+		justify-content: space-around;
 		align-content: center;
 		color: $blue-dark;
 		margin: 0 0 16px 0;
 	}
   }
   
-	
+.exp_container {
+	display: flex;
+	flex-direction: row;
+	width: 75vw;
+	height: auto;
+	justify-content: space-around;
+	align-items: center;
+}	
   
   .flex-item1,  .flex-item2,  .flex-item3, .flex-item4, .flex-item5, .flex-item6 {
 	height: 25%;

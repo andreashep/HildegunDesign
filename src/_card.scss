@@ -128,7 +128,7 @@
 /**********************************/
 /**************************************web_hero********************************************/
 /*********************************hd cards div**********************************************/
-.pod,  #web_cards {
+#web_cards {
 	display: flex;
 	flex-flow: row wrap;
 	min-height: 525px;
@@ -196,13 +196,13 @@
 
 /*pod*/
 .pod {
-	background-image: url(../public/homepage_images/bgi_banner.svg);
+	background-image: url(../public/homepage_images/b.a_1440x1000.jpg);
 	background-size: cover;
 	background-repeat: none;
 	background-position: bottom;
 	display: flex;
 	flex-flow: row wrap;
-	min-height: 525px;
+	min-height: 1000px;
 	width: 100vw;
 	justify-content: space-around;
 	align-content: space-between;
@@ -226,6 +226,83 @@
 		color: $blue-dark;
 	}
 }
+
+.pattern {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	column-gap: 30px;
+	padding: 10px 30px;
+}
+.flex-container11, .flex-container2 {
+    display: flex;
+    width: 100vw;
+    min-height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+   	h1 {
+		display: flex;
+		width: 100vw;
+		justify-content: center;
+		align-content: center;
+		color: $blue-dark;
+		margin: 0 auto;
+	}
+  }
+  
+	
+  
+  .flex-item1,  .flex-item2,  .flex-item3, .flex-item4, .flex-item5, .flex-item6, .flex-item11,  .flex-item12,  .flex-item13, .flex-item14, .flex-item15, .flex-item16 {
+	height: 25%;
+    width: 20%;
+    display: flex;
+	flex-direction: column;
+   
+    align-items: center;
+	justify-content: center;
+    margin: 10px 0 24px 0;
+  }
+  
+  .box111, .box112, .box113, .box114, .box115, .box6, .box11, .box12, .box13, .box14, .box15, .box16 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    min-width: 200px;
+	min-height: 200px;
+	padding: 8px;
+  	margin-bottom: 12px;
+	img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $black;
+		width: 200px;
+		height: auto;
+		margin: 8px 0;
+		transition: transform 0.4s;
+  }
+}
+  
+  .box111:hover, .box112:hover, .box113:hover, .box114:hover, .box115:hover, .box6:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover {
+	img{
+		transform: scale(1.2);
+	}
+  }
+  
+
+  
+  /*.box6, .box7, .box8, .box9, .box10 {
+	width: 100%;
+	padding-bottom: 100%;
+	background-color: $blue-mid;
+	border: 1px solid $black;
+	margin-bottom: 10px;
+	}
+*/
+
 .pone, .ptwo, .pthree {
 	display: flex;
 	width: 25vw;
