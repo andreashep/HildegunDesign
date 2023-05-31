@@ -2274,6 +2274,122 @@ body {
     margin: 0 auto;
   }
 }
+/*desktops and laptops
+*/
+/*tablets in landscape mode
+@media
+  */
+/*tablets in portrait mode
+@media (min-width: 481px) and (max-width: 768px) */
+/*mobiles in landscape mode
+@media (min-width: 321px) and (max-width: 480px) */
+/*mobiles in portrait mode
+@media (max-width: 320px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .pod {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 1000px;
+    width: 100vw;
+    justify-content: space-around;
+    align-content: space-between;
+    column-gap: 20px;
+    padding: 10px 30px 30px 30px;
+  }
+  .pod .pattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+    padding: 10px 30px;
+  }
+  .pod .flex-container11, .pod .flex-container2 {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .pod .flex-item1, .pod .flex-item2, .pod .flex-item3, .pod .flex-item4, .pod .flex-item5, .pod .flex-item6, .pod .flex-item11, .pod .flex-item12, .pod .flex-item13, .pod .flex-item14, .pod .flex-item15, .pod .flex-item16 {
+    height: 25%;
+    width: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 24px 0;
+  }
+  .pod .box111, .pod .box112, .pod .box113, .pod .box114, .pod .box115, .pod .box6, .pod .box11, .pod .box12, .pod .box13, .pod .box14, .pod .box15, .pod .box16 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  .pod .box111 img, .pod .box112 img, .pod .box113 img, .pod .box114 img, .pod .box115 img, .pod .box6 img, .pod .box11 img, .pod .box12 img, .pod .box13 img, .pod .box14 img, .pod .box15 img, .pod .box16 img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: auto;
+    margin: 8px 0;
+    transition: transform 0.4s;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pod .pattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+    padding: 10px 30px;
+    height: auto;
+  }
+  .pod .flex-container11, .pod .flex-container2 {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .pod .flex-item1, .pod .flex-item2, .pod .flex-item3, .pod .flex-item4, .pod .flex-item5, .pod .flex-item6, .pod .flex-item11, .pod .flex-item12, .pod .flex-item13, .pod .flex-item14, .pod .flex-item15, .pod .flex-item16 {
+    height: 25%;
+    width: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 24px auto;
+  }
+  .pod .box111, .pod .box112, .pod .box113, .pod .box114, .pod .box115, .pod .box6, .pod .box11, .pod .box12, .pod .box13, .pod .box14, .pod .box15, .pod .box16 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 175px;
+    min-height: 175px;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  .pod .box111 img, .pod .box112 img, .pod .box113 img, .pod .box114 img, .pod .box115 img, .pod .box6 img, .pod .box11 img, .pod .box12 img, .pod .box13 img, .pod .box14 img, .pod .box15 img, .pod .box16 img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: auto;
+    margin: 8px auto;
+    transition: transform 0.4s;
+  }
+}
 body {
   width: 100vw;
   font-family: 16px;
