@@ -201,14 +201,22 @@
 	background-repeat: none;
 	background-position: bottom;
 	display: flex;
-	flex-flow: row wrap;
-	min-height: 1000px;
+	flex-direction: column;
+	min-height: 3000px;
 	width: 100vw;
 	justify-content: space-around;
-	align-content: space-between;
+	align-items: center;
 	column-gap: 30px;
 	padding: 10px 30px 30px 30px;
-	
+	.pod_title {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin: 24px;
+		justify-content: center;
+		align-content: center;
+		color: $cream;
+	}
 	h1 {
 		display: flex;
 		width: 100%;
@@ -217,13 +225,14 @@
 		align-content: center;
 		color: $blue-dark;
 	}
-	h3 {
+	h4 {
 		display: flex;
+		font-family: $body;
 		width: 100%;
 		margin-top: 5px;
 		justify-content: center;
 		align-content: center;
-		color: $blue-dark;
+		color: $cream;
 	}
 }
 
@@ -235,7 +244,7 @@
 	column-gap: 30px;
 	padding: 10px 30px;
 }
-.flex-container11, .flex-container2 {
+.flex-container11, .flex-container2, .flex-container3 {
     display: flex;
     width: 100vw;
     min-height: 200px;
@@ -324,6 +333,78 @@
 		filter: drop-shadow(3px 3px 3px black);
 	}
 }
+
+/********************************pod_sales**********************************/
+
+.pod_sales {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+	border: 2px solid $blue-dark;
+	width: 90vw;
+	height: 500px;
+}
+
+.pod_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20vw;
+	color: $cream;
+	h3 {
+		font-size: 54px;
+		margin: 16px;
+		color: $cream;
+	}
+}
+
+.pod_flex_container1, .pod_flex_container2, .pod_flex_container3 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content:space-around;
+	width: 60vw;
+	
+	padding: 24px;
+}
+
+.rb_flex1, .rb_flex2, .rb_flex3, .rb_flex4, .rb_flex5, .rb_flex6, .sf_flex1, .sf_flex2, .sf_flex3, .sf_flex4, .sf_flex5, .sf_flex6, .s6_flex1, .s6_flex2, .s6_flex3, .s6_flex4, .s6_flex5, .s6_flex6 {
+	display: flex;
+	height: 50%;
+    width: 25%;
+	flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    margin: 16px;
+	
+	.rb1, .rb2, .rb3, .rb4, .rb5, .rb6, .sf1, .sf2, .sf3, .sf4, .sf5, .sf6, .s61, .s62, .s63, .s64, .s65, .s66 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    min-width: 168px;
+	min-height: 168px;
+	padding: 8px;
+  	margin-bottom: 12px;
+	img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $black;
+		width: 168px;
+		height: auto;
+		margin: 16px;
+		transition: transform 0.4s;
+}
+}
+}
+.rb1:hover, .rb2:hover, .rb3:hover, .rb4:hover, .rb5:hover, .rb6:hover, .sf1:hover, .sf2:hover, .sf3:hover, .sf4:hover, .sf5:hover, .sf6:hover, .s61:hover, .s62:hover, .s63:hover, .s64:hover, .s65:hover, .s66:hover {
+	transition: transform 0.4s;
+	transform: scale(1.5);
+}
 /***************************************cards / Services**********************************/
 #services {
 	display: flex;
@@ -371,7 +452,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-content: space-around;
+		align-items: center;
 		margin: 10px;
 		padding: 10px;
 	}
