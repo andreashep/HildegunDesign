@@ -9,23 +9,28 @@ $brown-accent: rgb(124, 77, 58);
 $brown-text: rgb(81, 49, 39);
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
-
+$brown: rgb(189, 131, 91);
+$copper: rgb(250, 172, 113);
+$verdigris: rgb(111, 170, 167);
+$dk_verdigris: rgb(105, 138, 133);
+$copper-gradient: -webkit-gradient(linear, right, $brown,$copper,$verdigris,$dk_verdigris,$brown);
 
 // font
 
 @import url("https://use.typekit.net/eim3vkg.css");
-@import url("https://use.typekit.net/qda2xul.css");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 /* Define font families */
-$header: 'Shelby', cursive;
-$body: 'Montserrat', sans-serif;
-$accent: 'Montserrat', sans-serif;
+$header: 'Great Vibes', cursive;
+$body: 'Aesthet-Nova', serif;
+$accent: 'Aesthet-Nova', serif;
 
 /* Apply font families to typography */
 
 h1 {
     font-family: $header;
     font-size: 64px;
-    font-weight: bold;
+
 }
 
 h2 {
@@ -53,7 +58,7 @@ h5 {
 p {
     font-family: $body;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: regular;
 }
 
 caption {
@@ -62,23 +67,41 @@ caption {
     font-weight: light italic;
 }
 
-a {
+nav a {
     display: flex;
     flex-flow: row wrap;
     font-family: $accent;
     font-size: 1rem;
-    font-style: italic;
     text-decoration: none;
-    color: $blue-dark;
+    color: $dk_verdigris;
     padding: 16px 24px;
     &:hover {
-        color: $cream;
+        color: $brown-text;
         border-radius: 25px;
-        filter: drop-shadow(3px 3px 3px black);
+        filter: drop-shadow(3px 3px 3px $brown-text);
       }
       &:active {
-        color: $cream;
-        filter: drop-shadow(3px 3px 3px black);
+        color: $brown-text;
+        filter: drop-shadow(3px 3px 3px $brown-text);
+      }
+}
+
+.btn a {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: $accent;
+    font-size: 1rem;
+    text-decoration: none;
+    color: $cream;
+    padding: 16px 24px;
+    &:hover {
+        color: $brown-text;
+        border-radius: 25px;
+        filter: drop-shadow(3px 3px 3px $brown-text);
+      }
+      &:active {
+        color: $brown-text;
+        filter: drop-shadow(3px 3px 3px $brown-text);
       }
 }
 

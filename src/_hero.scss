@@ -129,7 +129,7 @@ body {
 /********************************intro/meet**********************************/
 .intro {
 	display: flex;
-	height: 400px;
+	height: 500px;
 	min-width: 100vw;
 	background-color: $white;
 	border: 3px double rgb(81, 49, 39);
@@ -138,10 +138,10 @@ body {
 	padding: 25px;
 	img {
 		display: flex;
-		height: 250px;
-		width: 250px;
+		height: 300px;
+		width: 300px;
 		margin: 50px;
-		background-color: $blue-mid;
+		background-color: $dk_verdigris;
 		padding: 25px;
 		justify-content: right;
 		align-self: center;
@@ -151,9 +151,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 50px;
-	padding: 30px 75px;
+	padding: 45px 75px;
 	border: 1px solid rgb(81, 49, 39);
-	line-height: 40px;
+	line-height: 60px;
 	text-align: center;
 	justify-content: center;
 	align-items: space-around;

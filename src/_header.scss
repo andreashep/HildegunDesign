@@ -10,32 +10,33 @@ header {
     justify-content: space-between;
     align-items: center;
     border: none;
-    background-color: $cream;
+    background-image: -webkit-gradient(linear, right top, left bottom, from($brown), to($dk_verdigris));
+    //background-image: url(homepage_images/copper_bg_img.png);
     .header-accent {
       display: flex;
       width: 75vw;
       height: 50px;
       justify-content: space-between;
-      background-color: $blue-mid;
+      background-color: $cream;
       border-radius: 5px;
       align-items: center;
       #nav-links ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        color: $blue-dark;
+        color: $cream;
         
         width: 50vw;
         margin: 0 15px;
         #nav-links a {
           font-size: 12px;
           &:hover {
-            color: $cream;
+            color: $brown-text;
             border-radius: 25px;
             filter: drop-shadow(3px 3px 3px black);
           }
           &:active {
-            color: $cream;
+            color: $brown-text;
             filter: drop-shadow(3px 3px 3px black);
           }
         }
@@ -49,7 +50,7 @@ header {
   display: flex;
 	height: 200px;
 	width: 250px;
-	background-color: $blue-mid;
+	background-color: $cream;
 	margin: 0 100px;
   justify-content: center;
   align-items: center;
@@ -62,10 +63,10 @@ header {
     margin-bottom: 20px;
 	}
   a:hover {
-    filter: drop-shadow(3px 3px 3px black);
+    filter: drop-shadow(3px 3px 3px $brown-text);
   }
   a:active {
-    color: $blue-dark;
+    color: $brown-text;
   }
   }
   

@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/eim3vkg.css");
-@import url("https://use.typekit.net/qda2xul.css");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,63 +53,80 @@ table {
 /* Define font families */
 /* Apply font families to typography */
 h1 {
-  font-family: "Shelby", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 64px;
-  font-weight: bold;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 40px;
 }
 
 h3 {
-  font-family: "Shelby", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 36px;
   color: rgb(11, 38, 58);
 }
 
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 24px;
 }
 
 h5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 16px;
   font-style: italic;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: regular;
 }
 
 caption {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 12px;
   font-weight: light italic;
 }
 
-a {
+nav a {
   display: flex;
   flex-flow: row wrap;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-size: 1rem;
-  font-style: italic;
   text-decoration: none;
-  color: rgb(11, 38, 58);
+  color: rgb(105, 138, 133);
   padding: 16px 24px;
 }
-a:hover {
-  color: rgb(252, 245, 235);
+nav a:hover {
+  color: rgb(81, 49, 39);
   border-radius: 25px;
-  filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px rgb(81, 49, 39));
 }
-a:active {
+nav a:active {
+  color: rgb(81, 49, 39);
+  filter: drop-shadow(3px 3px 3px rgb(81, 49, 39));
+}
+
+.btn a {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Aesthet-Nova", serif;
+  font-size: 1rem;
+  text-decoration: none;
   color: rgb(252, 245, 235);
-  filter: drop-shadow(3px 3px 3px black);
+  padding: 16px 24px;
+}
+.btn a:hover {
+  color: rgb(81, 49, 39);
+  border-radius: 25px;
+  filter: drop-shadow(3px 3px 3px rgb(81, 49, 39));
+}
+.btn a:active {
+  color: rgb(81, 49, 39);
+  filter: drop-shadow(3px 3px 3px rgb(81, 49, 39));
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -194,7 +211,7 @@ a:active {
   }
 }
 blockquote {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Aesthet-Nova", serif;
   font-style: italic;
   /* additional styling */
 }
@@ -214,14 +231,14 @@ header {
   justify-content: space-between;
   align-items: center;
   border: none;
-  background-color: rgb(252, 245, 235);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgb(189, 131, 91)), to(rgb(105, 138, 133)));
 }
 header .header-accent {
   display: flex;
   width: 75vw;
   height: 50px;
   justify-content: space-between;
-  background-color: rgb(170, 193, 221);
+  background-color: rgb(252, 245, 235);
   border-radius: 5px;
   align-items: center;
 }
@@ -229,7 +246,7 @@ header .header-accent #nav-links ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: rgb(11, 38, 58);
+  color: rgb(252, 245, 235);
   width: 50vw;
   margin: 0 15px;
 }
@@ -237,12 +254,12 @@ header .header-accent #nav-links ul #nav-links a {
   font-size: 12px;
 }
 header .header-accent #nav-links ul #nav-links a:hover {
-  color: rgb(252, 245, 235);
+  color: rgb(81, 49, 39);
   border-radius: 25px;
   filter: drop-shadow(3px 3px 3px black);
 }
 header .header-accent #nav-links ul #nav-links a:active {
-  color: rgb(252, 245, 235);
+  color: rgb(81, 49, 39);
   filter: drop-shadow(3px 3px 3px black);
 }
 
@@ -250,7 +267,7 @@ header .header-accent #nav-links ul #nav-links a:active {
   display: flex;
   height: 200px;
   width: 250px;
-  background-color: rgb(170, 193, 221);
+  background-color: rgb(252, 245, 235);
   margin: 0 100px;
   justify-content: center;
   align-items: center;
@@ -264,10 +281,10 @@ header .header-accent #nav-links ul #nav-links a:active {
   margin-bottom: 20px;
 }
 #header-logo a:hover {
-  filter: drop-shadow(3px 3px 3px black);
+  filter: drop-shadow(3px 3px 3px rgb(81, 49, 39));
 }
 #header-logo a:active {
-  color: rgb(11, 38, 58);
+  color: rgb(81, 49, 39);
 }
 
 /*a {
@@ -305,7 +322,7 @@ header .header-accent #nav-links ul #nav-links a:active {
 }*/
 .btn {
   display: flex;
-  background-color: rgb(252, 245, 235);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(189, 131, 91)), to(rgb(105, 138, 133)));
   margin: 50px;
   min-width: 150px;
   height: 35px;
@@ -584,7 +601,7 @@ body {
 /********************************intro/meet**********************************/
 .intro {
   display: flex;
-  height: 400px;
+  height: 500px;
   min-width: 100vw;
   background-color: rgb(255, 255, 255);
   border: 3px double rgb(81, 49, 39);
@@ -594,10 +611,10 @@ body {
 }
 .intro img {
   display: flex;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   margin: 50px;
-  background-color: rgb(170, 193, 221);
+  background-color: rgb(105, 138, 133);
   padding: 25px;
   justify-content: right;
   align-self: center;
@@ -607,9 +624,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 50px;
-  padding: 30px 75px;
+  padding: 45px 75px;
   border: 1px solid rgb(81, 49, 39);
-  line-height: 40px;
+  line-height: 60px;
   text-align: center;
   justify-content: center;
   align-items: space-around;
@@ -1451,7 +1468,7 @@ body {
 }
 .footer1 .social-icons img {
   height: 40px;
-  width: 40px;
+  width: auto;
   margin: 0 0.5rem;
 }
 .footer1 .social-icons a {
