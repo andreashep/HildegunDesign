@@ -23,23 +23,9 @@ header {
       #nav-links ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        color: $cream;
-        
+        justify-content: space-around;        
         width: 50vw;
         margin: 0 15px;
-        #nav-links a {
-          font-size: 12px;
-          &:hover {
-            color: $brown-text;
-            border-radius: 25px;
-            filter: drop-shadow(3px 3px 3px black);
-          }
-          &:active {
-            color: $brown-text;
-            filter: drop-shadow(3px 3px 3px black);
-          }
-        }
       }
     }
     
@@ -64,9 +50,6 @@ header {
 	}
   a:hover {
     filter: drop-shadow(3px 3px 3px $brown-text);
-  }
-  a:active {
-    color: $brown-text;
   }
   }
   

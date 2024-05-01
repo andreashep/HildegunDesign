@@ -132,7 +132,6 @@ body {
 	height: 500px;
 	min-width: 100vw;
 	background-color: $white;
-	border: 3px double rgb(81, 49, 39);
 	align-items: center;
 	justify-content: center;
 	padding: 25px;
@@ -152,7 +151,7 @@ body {
 	flex-direction: column;
 	margin: 50px;
 	padding: 45px 75px;
-	border: 1px solid rgb(81, 49, 39);
+	border: 1px solid $brown-text;
 	line-height: 60px;
 	text-align: center;
 	justify-content: center;
@@ -366,7 +365,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid $brown-text;
     padding: 20px;
 	h1 {
 		display: flex;

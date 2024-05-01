@@ -30,12 +30,14 @@ $accent: 'Aesthet-Nova', serif;
 h1 {
     font-family: $header;
     font-size: 64px;
+    color: $brown-text;
 
 }
 
 h2 {
     font-family: $body;
     font-size: 40px;
+    color: $brown-text;
 }
 
 h3 {
@@ -47,24 +49,28 @@ h3 {
 h4 {
     font-family: $body;
     font-size: 24px;
+    color: $brown-text;
 }
 
 h5 {
     font-family: $accent;
     font-size: 16px;
     font-style: italic;
+    color: $brown-text;
 }
 
 p {
     font-family: $body;
     font-size: 14px;
     font-weight: regular;
+    color: $brown-text;
 }
 
 caption {
     font-family: $body;
     font-size: 12px;
     font-weight: light italic;
+    color: $brown-text;
 }
 
 nav a {
@@ -73,16 +79,16 @@ nav a {
     font-family: $accent;
     font-size: 1rem;
     text-decoration: none;
-    color: $dk_verdigris;
+    color: $brown-text;
     padding: 16px 24px;
     &:hover {
-        color: $brown-text;
+        color: $dk_verdigris;
         border-radius: 25px;
-        filter: drop-shadow(3px 3px 3px $brown-text);
+
       }
       &:active {
-        color: $brown-text;
-        filter: drop-shadow(3px 3px 3px $brown-text);
+        color: $dk_verdigris;
+       
       }
 }
 
@@ -94,14 +100,14 @@ nav a {
     text-decoration: none;
     color: $cream;
     padding: 16px 24px;
+    border-radius: 25px;
     &:hover {
-        color: $brown-text;
-        border-radius: 25px;
-        filter: drop-shadow(3px 3px 3px $brown-text);
+        color: $verdigris;
+      
       }
       &:active {
-        color: $brown-text;
-        filter: drop-shadow(3px 3px 3px $brown-text);
+        color: $dk_verdigris;
+     
       }
 }
 

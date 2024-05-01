@@ -23,7 +23,7 @@
         margin: 0 auto;
         flex-direction: column;
         text-align: center;
-        background-color: $blue-mid;
+        background-color:  -webkit-gradient(linear, right top, left bottom, from($brown), to($dk_verdigris));
         padding: 10px;
         justify-content: center;
         align-items: center;
