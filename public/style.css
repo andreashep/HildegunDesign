@@ -1056,10 +1056,6 @@ body {
 
 /*pod*/
 .pod {
-  background-image: url(homepage_images/b.a_1440x1000.jpg);
-  background-size: cover;
-  background-repeat: none;
-  background-position: bottom;
   display: flex;
   flex-direction: column;
   min-height: 3000px;
@@ -1076,7 +1072,7 @@ body {
   margin: 24px;
   justify-content: center;
   align-content: center;
-  color: rgb(252, 245, 235);
+  color: rgb(81, 49, 39);
 }
 .pod h1 {
   display: flex;
@@ -1084,7 +1080,6 @@ body {
   margin-top: 5px;
   justify-content: center;
   align-content: center;
-  color: rgb(11, 38, 58);
 }
 .pod h4 {
   display: flex;
@@ -1093,7 +1088,7 @@ body {
   margin-top: 5px;
   justify-content: center;
   align-content: center;
-  color: rgb(252, 245, 235);
+  color: rgb(105, 138, 133);
 }
 
 .pattern {
@@ -1118,7 +1113,6 @@ body {
   width: 100vw;
   justify-content: center;
   align-content: center;
-  color: rgb(11, 38, 58);
   margin: 0 auto;
 }
 
@@ -1192,7 +1186,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-content: space-between;
-  border: 2px solid rgb(11, 38, 58);
+  flex-wrap: wrap;
   width: 90vw;
   height: 500px;
 }
@@ -1203,12 +1197,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 20vw;
-  color: rgb(252, 245, 235);
 }
 .pod_info h3 {
   font-size: 54px;
   margin: 16px;
-  color: rgb(252, 245, 235);
 }
 
 .pod_flex_container1, .pod_flex_container2, .pod_flex_container3 {

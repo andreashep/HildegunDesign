@@ -196,10 +196,6 @@
 
 /*pod*/
 .pod {
-	background-image: url(homepage_images/b.a_1440x1000.jpg);
-	background-size: cover;
-	background-repeat: none;
-	background-position: bottom;
 	display: flex;
 	flex-direction: column;
 	min-height: 3000px;
@@ -215,7 +211,7 @@
 		margin: 24px;
 		justify-content: center;
 		align-content: center;
-		color: $cream;
+		color: $brown-text;
 	}
 	h1 {
 		display: flex;
@@ -223,7 +219,6 @@
 		margin-top: 5px;
 		justify-content: center;
 		align-content: center;
-		color: $blue-dark;
 	}
 	h4 {
 		display: flex;
@@ -232,7 +227,7 @@
 		margin-top: 5px;
 		justify-content: center;
 		align-content: center;
-		color: $cream;
+		color: $dk_verdigris;
 	}
 }
 
@@ -256,7 +251,6 @@
 		width: 100vw;
 		justify-content: center;
 		align-content: center;
-		color: $blue-dark;
 		margin: 0 auto;
 	}
   }
@@ -341,7 +335,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-content: space-between;
-	border: 2px solid $blue-dark;
+	flex-wrap: wrap;
 	width: 90vw;
 	height: 500px;
 }
@@ -352,11 +346,11 @@
 	justify-content: center;
 	align-items: center;
 	width: 20vw;
-	color: $cream;
+	
 	h3 {
 		font-size: 54px;
 		margin: 16px;
-		color: $cream;
+		
 	}
 }
 
