@@ -5,7 +5,7 @@
 header {
     display: flex;
     height: 200px;
-	  width: 100vw;
+	  width: 100%;
     margin: 0;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@ header {
       height: 50px;
       justify-content: space-between;
       background-color: $cream;
-      border-radius: 5px;
+      border-radius: 5px 0px 0px 5px;
       align-items: center;
       #nav-links ul {
         display: flex;

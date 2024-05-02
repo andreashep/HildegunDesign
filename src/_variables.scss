@@ -35,15 +35,16 @@ h1 {
 }
 
 h2 {
-    font-family: $body;
-    font-size: 40px;
+    font-family: $header;
+    font-size: 48px;
     color: $brown-text;
+    padding: 24px;
 }
 
 h3 {
-    font-family: $header;
+    font-family: $body;
     font-size: 36px;
-    color: $blue-dark;
+    color: $brown-text;
 }
 
 h4 {
@@ -54,14 +55,14 @@ h4 {
 
 h5 {
     font-family: $accent;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     color: $brown-text;
 }
 
 p {
     font-family: $body;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: regular;
     color: $brown-text;
 }

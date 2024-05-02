@@ -59,15 +59,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Aesthet-Nova", serif;
-  font-size: 40px;
+  font-family: "Great Vibes", cursive;
+  font-size: 48px;
   color: rgb(81, 49, 39);
+  padding: 24px;
 }
 
 h3 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Aesthet-Nova", serif;
   font-size: 36px;
-  color: rgb(11, 38, 58);
+  color: rgb(81, 49, 39);
 }
 
 h4 {
@@ -78,14 +79,14 @@ h4 {
 
 h5 {
   font-family: "Aesthet-Nova", serif;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   color: rgb(81, 49, 39);
 }
 
 p {
   font-family: "Aesthet-Nova", serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: regular;
   color: rgb(81, 49, 39);
 }
@@ -228,7 +229,7 @@ blockquote {
 header {
   display: flex;
   height: 200px;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   justify-content: space-between;
   align-items: center;
@@ -241,7 +242,7 @@ header .header-accent {
   height: 50px;
   justify-content: space-between;
   background-color: rgb(252, 245, 235);
-  border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
   align-items: center;
 }
 header .header-accent #nav-links ul {
@@ -615,11 +616,6 @@ body {
   text-align: center;
   justify-content: center;
   align-items: space-around;
-}
-.meet h2 {
-  font-size: 24px;
-  margin: 12px;
-  color: rgb(11, 38, 58);
 }
 
 /*******************************end of intro/meet***************************/
@@ -1015,7 +1011,13 @@ body {
 }
 
 /*card.1*/
-.one, .two, .three, .four, .sone, .stwo, .sthree {
+.one,
+.two,
+.three,
+.four,
+.sone,
+.stwo,
+.sthree {
   display: flex;
   flex-basis: 20%;
   height: 80%;
@@ -1028,17 +1030,35 @@ body {
   align-content: space-around;
   padding: 15px;
 }
-.one a:hover, .two a:hover, .three a:hover, .four a:hover, .sone a:hover, .stwo a:hover, .sthree a:hover {
+.one a:hover,
+.two a:hover,
+.three a:hover,
+.four a:hover,
+.sone a:hover,
+.stwo a:hover,
+.sthree a:hover {
   filter: drop-shadow(3px 3px 3px black);
 }
-.one img, .two img, .three img, .four img, .sone img, .stwo img, .sthree img {
+.one img,
+.two img,
+.three img,
+.four img,
+.sone img,
+.stwo img,
+.sthree img {
   height: 150px;
   margin: 15px;
   justify-content: center;
   align-content: center;
   filter: drop-shadow(3px 3px 3px black);
 }
-.one h3, .two h3, .three h3, .four h3, .sone h3, .stwo h3, .sthree h3 {
+.one h3,
+.two h3,
+.three h3,
+.four h3,
+.sone h3,
+.stwo h3,
+.sthree h3 {
   margin: 15px;
 }
 
@@ -1100,7 +1120,9 @@ body {
   padding: 10px 30px;
 }
 
-.flex-container11, .flex-container2, .flex-container3 {
+.flex-container11,
+.flex-container2,
+.flex-container3 {
   display: flex;
   width: 100vw;
   min-height: 200px;
@@ -1108,7 +1130,9 @@ body {
   align-items: center;
   flex-flow: row wrap;
 }
-.flex-container11 h1, .flex-container2 h1, .flex-container3 h1 {
+.flex-container11 h1,
+.flex-container2 h1,
+.flex-container3 h1 {
   display: flex;
   width: 100vw;
   justify-content: center;
@@ -1116,7 +1140,18 @@ body {
   margin: 0 auto;
 }
 
-.flex-item1, .flex-item2, .flex-item3, .flex-item4, .flex-item5, .flex-item6, .flex-item11, .flex-item12, .flex-item13, .flex-item14, .flex-item15, .flex-item16 {
+.flex-item1,
+.flex-item2,
+.flex-item3,
+.flex-item4,
+.flex-item5,
+.flex-item6,
+.flex-item11,
+.flex-item12,
+.flex-item13,
+.flex-item14,
+.flex-item15,
+.flex-item16 {
   height: 25%;
   width: 20%;
   display: flex;
@@ -1126,7 +1161,18 @@ body {
   margin: 10px 0 24px 0;
 }
 
-.box111, .box112, .box113, .box114, .box115, .box6, .box11, .box12, .box13, .box14, .box15, .box16 {
+.box111,
+.box112,
+.box113,
+.box114,
+.box115,
+.box6,
+.box11,
+.box12,
+.box13,
+.box14,
+.box15,
+.box16 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1136,7 +1182,18 @@ body {
   padding: 8px;
   margin-bottom: 12px;
 }
-.box111 img, .box112 img, .box113 img, .box114 img, .box115 img, .box6 img, .box11 img, .box12 img, .box13 img, .box14 img, .box15 img, .box16 img {
+.box111 img,
+.box112 img,
+.box113 img,
+.box114 img,
+.box115 img,
+.box6 img,
+.box11 img,
+.box12 img,
+.box13 img,
+.box14 img,
+.box15 img,
+.box16 img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1147,7 +1204,18 @@ body {
   transition: transform 0.4s;
 }
 
-.box111:hover img, .box112:hover img, .box113:hover img, .box114:hover img, .box115:hover img, .box6:hover img, .box11:hover img, .box12:hover img, .box13:hover img, .box14:hover img, .box15:hover img, .box16:hover img {
+.box111:hover img,
+.box112:hover img,
+.box113:hover img,
+.box114:hover img,
+.box115:hover img,
+.box6:hover img,
+.box11:hover img,
+.box12:hover img,
+.box13:hover img,
+.box14:hover img,
+.box15:hover img,
+.box16:hover img {
   transform: scale(1.5);
 }
 
@@ -1159,7 +1227,9 @@ body {
 	margin-bottom: 10px;
 	}
 */
-.pone, .ptwo, .pthree {
+.pone,
+.ptwo,
+.pthree {
   display: flex;
   width: 25vw;
   height: 425px;
@@ -1170,10 +1240,14 @@ body {
   align-content: space-around;
   padding: 15px;
 }
-.pone h2, .ptwo h2, .pthree h2 {
+.pone h2,
+.ptwo h2,
+.pthree h2 {
   margin: 25px;
 }
-.pone img, .ptwo img, .pthree img {
+.pone img,
+.ptwo img,
+.pthree img {
   height: 150px;
   margin: 10px;
   align-content: center;
@@ -1203,7 +1277,9 @@ body {
   margin: 16px;
 }
 
-.pod_flex_container1, .pod_flex_container2, .pod_flex_container3 {
+.pod_flex_container1,
+.pod_flex_container2,
+.pod_flex_container3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1213,7 +1289,24 @@ body {
   padding: 24px;
 }
 
-.rb_flex1, .rb_flex2, .rb_flex3, .rb_flex4, .rb_flex5, .rb_flex6, .sf_flex1, .sf_flex2, .sf_flex3, .sf_flex4, .sf_flex5, .sf_flex6, .s6_flex1, .s6_flex2, .s6_flex3, .s6_flex4, .s6_flex5, .s6_flex6 {
+.rb_flex1,
+.rb_flex2,
+.rb_flex3,
+.rb_flex4,
+.rb_flex5,
+.rb_flex6,
+.sf_flex1,
+.sf_flex2,
+.sf_flex3,
+.sf_flex4,
+.sf_flex5,
+.sf_flex6,
+.s6_flex1,
+.s6_flex2,
+.s6_flex3,
+.s6_flex4,
+.s6_flex5,
+.s6_flex6 {
   display: flex;
   height: 50%;
   width: 25%;
@@ -1222,7 +1315,330 @@ body {
   justify-content: center;
   margin: 16px;
 }
-.rb_flex1 .rb1, .rb_flex1 .rb2, .rb_flex1 .rb3, .rb_flex1 .rb4, .rb_flex1 .rb5, .rb_flex1 .rb6, .rb_flex1 .sf1, .rb_flex1 .sf2, .rb_flex1 .sf3, .rb_flex1 .sf4, .rb_flex1 .sf5, .rb_flex1 .sf6, .rb_flex1 .s61, .rb_flex1 .s62, .rb_flex1 .s63, .rb_flex1 .s64, .rb_flex1 .s65, .rb_flex1 .s66, .rb_flex2 .rb1, .rb_flex2 .rb2, .rb_flex2 .rb3, .rb_flex2 .rb4, .rb_flex2 .rb5, .rb_flex2 .rb6, .rb_flex2 .sf1, .rb_flex2 .sf2, .rb_flex2 .sf3, .rb_flex2 .sf4, .rb_flex2 .sf5, .rb_flex2 .sf6, .rb_flex2 .s61, .rb_flex2 .s62, .rb_flex2 .s63, .rb_flex2 .s64, .rb_flex2 .s65, .rb_flex2 .s66, .rb_flex3 .rb1, .rb_flex3 .rb2, .rb_flex3 .rb3, .rb_flex3 .rb4, .rb_flex3 .rb5, .rb_flex3 .rb6, .rb_flex3 .sf1, .rb_flex3 .sf2, .rb_flex3 .sf3, .rb_flex3 .sf4, .rb_flex3 .sf5, .rb_flex3 .sf6, .rb_flex3 .s61, .rb_flex3 .s62, .rb_flex3 .s63, .rb_flex3 .s64, .rb_flex3 .s65, .rb_flex3 .s66, .rb_flex4 .rb1, .rb_flex4 .rb2, .rb_flex4 .rb3, .rb_flex4 .rb4, .rb_flex4 .rb5, .rb_flex4 .rb6, .rb_flex4 .sf1, .rb_flex4 .sf2, .rb_flex4 .sf3, .rb_flex4 .sf4, .rb_flex4 .sf5, .rb_flex4 .sf6, .rb_flex4 .s61, .rb_flex4 .s62, .rb_flex4 .s63, .rb_flex4 .s64, .rb_flex4 .s65, .rb_flex4 .s66, .rb_flex5 .rb1, .rb_flex5 .rb2, .rb_flex5 .rb3, .rb_flex5 .rb4, .rb_flex5 .rb5, .rb_flex5 .rb6, .rb_flex5 .sf1, .rb_flex5 .sf2, .rb_flex5 .sf3, .rb_flex5 .sf4, .rb_flex5 .sf5, .rb_flex5 .sf6, .rb_flex5 .s61, .rb_flex5 .s62, .rb_flex5 .s63, .rb_flex5 .s64, .rb_flex5 .s65, .rb_flex5 .s66, .rb_flex6 .rb1, .rb_flex6 .rb2, .rb_flex6 .rb3, .rb_flex6 .rb4, .rb_flex6 .rb5, .rb_flex6 .rb6, .rb_flex6 .sf1, .rb_flex6 .sf2, .rb_flex6 .sf3, .rb_flex6 .sf4, .rb_flex6 .sf5, .rb_flex6 .sf6, .rb_flex6 .s61, .rb_flex6 .s62, .rb_flex6 .s63, .rb_flex6 .s64, .rb_flex6 .s65, .rb_flex6 .s66, .sf_flex1 .rb1, .sf_flex1 .rb2, .sf_flex1 .rb3, .sf_flex1 .rb4, .sf_flex1 .rb5, .sf_flex1 .rb6, .sf_flex1 .sf1, .sf_flex1 .sf2, .sf_flex1 .sf3, .sf_flex1 .sf4, .sf_flex1 .sf5, .sf_flex1 .sf6, .sf_flex1 .s61, .sf_flex1 .s62, .sf_flex1 .s63, .sf_flex1 .s64, .sf_flex1 .s65, .sf_flex1 .s66, .sf_flex2 .rb1, .sf_flex2 .rb2, .sf_flex2 .rb3, .sf_flex2 .rb4, .sf_flex2 .rb5, .sf_flex2 .rb6, .sf_flex2 .sf1, .sf_flex2 .sf2, .sf_flex2 .sf3, .sf_flex2 .sf4, .sf_flex2 .sf5, .sf_flex2 .sf6, .sf_flex2 .s61, .sf_flex2 .s62, .sf_flex2 .s63, .sf_flex2 .s64, .sf_flex2 .s65, .sf_flex2 .s66, .sf_flex3 .rb1, .sf_flex3 .rb2, .sf_flex3 .rb3, .sf_flex3 .rb4, .sf_flex3 .rb5, .sf_flex3 .rb6, .sf_flex3 .sf1, .sf_flex3 .sf2, .sf_flex3 .sf3, .sf_flex3 .sf4, .sf_flex3 .sf5, .sf_flex3 .sf6, .sf_flex3 .s61, .sf_flex3 .s62, .sf_flex3 .s63, .sf_flex3 .s64, .sf_flex3 .s65, .sf_flex3 .s66, .sf_flex4 .rb1, .sf_flex4 .rb2, .sf_flex4 .rb3, .sf_flex4 .rb4, .sf_flex4 .rb5, .sf_flex4 .rb6, .sf_flex4 .sf1, .sf_flex4 .sf2, .sf_flex4 .sf3, .sf_flex4 .sf4, .sf_flex4 .sf5, .sf_flex4 .sf6, .sf_flex4 .s61, .sf_flex4 .s62, .sf_flex4 .s63, .sf_flex4 .s64, .sf_flex4 .s65, .sf_flex4 .s66, .sf_flex5 .rb1, .sf_flex5 .rb2, .sf_flex5 .rb3, .sf_flex5 .rb4, .sf_flex5 .rb5, .sf_flex5 .rb6, .sf_flex5 .sf1, .sf_flex5 .sf2, .sf_flex5 .sf3, .sf_flex5 .sf4, .sf_flex5 .sf5, .sf_flex5 .sf6, .sf_flex5 .s61, .sf_flex5 .s62, .sf_flex5 .s63, .sf_flex5 .s64, .sf_flex5 .s65, .sf_flex5 .s66, .sf_flex6 .rb1, .sf_flex6 .rb2, .sf_flex6 .rb3, .sf_flex6 .rb4, .sf_flex6 .rb5, .sf_flex6 .rb6, .sf_flex6 .sf1, .sf_flex6 .sf2, .sf_flex6 .sf3, .sf_flex6 .sf4, .sf_flex6 .sf5, .sf_flex6 .sf6, .sf_flex6 .s61, .sf_flex6 .s62, .sf_flex6 .s63, .sf_flex6 .s64, .sf_flex6 .s65, .sf_flex6 .s66, .s6_flex1 .rb1, .s6_flex1 .rb2, .s6_flex1 .rb3, .s6_flex1 .rb4, .s6_flex1 .rb5, .s6_flex1 .rb6, .s6_flex1 .sf1, .s6_flex1 .sf2, .s6_flex1 .sf3, .s6_flex1 .sf4, .s6_flex1 .sf5, .s6_flex1 .sf6, .s6_flex1 .s61, .s6_flex1 .s62, .s6_flex1 .s63, .s6_flex1 .s64, .s6_flex1 .s65, .s6_flex1 .s66, .s6_flex2 .rb1, .s6_flex2 .rb2, .s6_flex2 .rb3, .s6_flex2 .rb4, .s6_flex2 .rb5, .s6_flex2 .rb6, .s6_flex2 .sf1, .s6_flex2 .sf2, .s6_flex2 .sf3, .s6_flex2 .sf4, .s6_flex2 .sf5, .s6_flex2 .sf6, .s6_flex2 .s61, .s6_flex2 .s62, .s6_flex2 .s63, .s6_flex2 .s64, .s6_flex2 .s65, .s6_flex2 .s66, .s6_flex3 .rb1, .s6_flex3 .rb2, .s6_flex3 .rb3, .s6_flex3 .rb4, .s6_flex3 .rb5, .s6_flex3 .rb6, .s6_flex3 .sf1, .s6_flex3 .sf2, .s6_flex3 .sf3, .s6_flex3 .sf4, .s6_flex3 .sf5, .s6_flex3 .sf6, .s6_flex3 .s61, .s6_flex3 .s62, .s6_flex3 .s63, .s6_flex3 .s64, .s6_flex3 .s65, .s6_flex3 .s66, .s6_flex4 .rb1, .s6_flex4 .rb2, .s6_flex4 .rb3, .s6_flex4 .rb4, .s6_flex4 .rb5, .s6_flex4 .rb6, .s6_flex4 .sf1, .s6_flex4 .sf2, .s6_flex4 .sf3, .s6_flex4 .sf4, .s6_flex4 .sf5, .s6_flex4 .sf6, .s6_flex4 .s61, .s6_flex4 .s62, .s6_flex4 .s63, .s6_flex4 .s64, .s6_flex4 .s65, .s6_flex4 .s66, .s6_flex5 .rb1, .s6_flex5 .rb2, .s6_flex5 .rb3, .s6_flex5 .rb4, .s6_flex5 .rb5, .s6_flex5 .rb6, .s6_flex5 .sf1, .s6_flex5 .sf2, .s6_flex5 .sf3, .s6_flex5 .sf4, .s6_flex5 .sf5, .s6_flex5 .sf6, .s6_flex5 .s61, .s6_flex5 .s62, .s6_flex5 .s63, .s6_flex5 .s64, .s6_flex5 .s65, .s6_flex5 .s66, .s6_flex6 .rb1, .s6_flex6 .rb2, .s6_flex6 .rb3, .s6_flex6 .rb4, .s6_flex6 .rb5, .s6_flex6 .rb6, .s6_flex6 .sf1, .s6_flex6 .sf2, .s6_flex6 .sf3, .s6_flex6 .sf4, .s6_flex6 .sf5, .s6_flex6 .sf6, .s6_flex6 .s61, .s6_flex6 .s62, .s6_flex6 .s63, .s6_flex6 .s64, .s6_flex6 .s65, .s6_flex6 .s66 {
+.rb_flex1 .rb1,
+.rb_flex1 .rb2,
+.rb_flex1 .rb3,
+.rb_flex1 .rb4,
+.rb_flex1 .rb5,
+.rb_flex1 .rb6,
+.rb_flex1 .sf1,
+.rb_flex1 .sf2,
+.rb_flex1 .sf3,
+.rb_flex1 .sf4,
+.rb_flex1 .sf5,
+.rb_flex1 .sf6,
+.rb_flex1 .s61,
+.rb_flex1 .s62,
+.rb_flex1 .s63,
+.rb_flex1 .s64,
+.rb_flex1 .s65,
+.rb_flex1 .s66,
+.rb_flex2 .rb1,
+.rb_flex2 .rb2,
+.rb_flex2 .rb3,
+.rb_flex2 .rb4,
+.rb_flex2 .rb5,
+.rb_flex2 .rb6,
+.rb_flex2 .sf1,
+.rb_flex2 .sf2,
+.rb_flex2 .sf3,
+.rb_flex2 .sf4,
+.rb_flex2 .sf5,
+.rb_flex2 .sf6,
+.rb_flex2 .s61,
+.rb_flex2 .s62,
+.rb_flex2 .s63,
+.rb_flex2 .s64,
+.rb_flex2 .s65,
+.rb_flex2 .s66,
+.rb_flex3 .rb1,
+.rb_flex3 .rb2,
+.rb_flex3 .rb3,
+.rb_flex3 .rb4,
+.rb_flex3 .rb5,
+.rb_flex3 .rb6,
+.rb_flex3 .sf1,
+.rb_flex3 .sf2,
+.rb_flex3 .sf3,
+.rb_flex3 .sf4,
+.rb_flex3 .sf5,
+.rb_flex3 .sf6,
+.rb_flex3 .s61,
+.rb_flex3 .s62,
+.rb_flex3 .s63,
+.rb_flex3 .s64,
+.rb_flex3 .s65,
+.rb_flex3 .s66,
+.rb_flex4 .rb1,
+.rb_flex4 .rb2,
+.rb_flex4 .rb3,
+.rb_flex4 .rb4,
+.rb_flex4 .rb5,
+.rb_flex4 .rb6,
+.rb_flex4 .sf1,
+.rb_flex4 .sf2,
+.rb_flex4 .sf3,
+.rb_flex4 .sf4,
+.rb_flex4 .sf5,
+.rb_flex4 .sf6,
+.rb_flex4 .s61,
+.rb_flex4 .s62,
+.rb_flex4 .s63,
+.rb_flex4 .s64,
+.rb_flex4 .s65,
+.rb_flex4 .s66,
+.rb_flex5 .rb1,
+.rb_flex5 .rb2,
+.rb_flex5 .rb3,
+.rb_flex5 .rb4,
+.rb_flex5 .rb5,
+.rb_flex5 .rb6,
+.rb_flex5 .sf1,
+.rb_flex5 .sf2,
+.rb_flex5 .sf3,
+.rb_flex5 .sf4,
+.rb_flex5 .sf5,
+.rb_flex5 .sf6,
+.rb_flex5 .s61,
+.rb_flex5 .s62,
+.rb_flex5 .s63,
+.rb_flex5 .s64,
+.rb_flex5 .s65,
+.rb_flex5 .s66,
+.rb_flex6 .rb1,
+.rb_flex6 .rb2,
+.rb_flex6 .rb3,
+.rb_flex6 .rb4,
+.rb_flex6 .rb5,
+.rb_flex6 .rb6,
+.rb_flex6 .sf1,
+.rb_flex6 .sf2,
+.rb_flex6 .sf3,
+.rb_flex6 .sf4,
+.rb_flex6 .sf5,
+.rb_flex6 .sf6,
+.rb_flex6 .s61,
+.rb_flex6 .s62,
+.rb_flex6 .s63,
+.rb_flex6 .s64,
+.rb_flex6 .s65,
+.rb_flex6 .s66,
+.sf_flex1 .rb1,
+.sf_flex1 .rb2,
+.sf_flex1 .rb3,
+.sf_flex1 .rb4,
+.sf_flex1 .rb5,
+.sf_flex1 .rb6,
+.sf_flex1 .sf1,
+.sf_flex1 .sf2,
+.sf_flex1 .sf3,
+.sf_flex1 .sf4,
+.sf_flex1 .sf5,
+.sf_flex1 .sf6,
+.sf_flex1 .s61,
+.sf_flex1 .s62,
+.sf_flex1 .s63,
+.sf_flex1 .s64,
+.sf_flex1 .s65,
+.sf_flex1 .s66,
+.sf_flex2 .rb1,
+.sf_flex2 .rb2,
+.sf_flex2 .rb3,
+.sf_flex2 .rb4,
+.sf_flex2 .rb5,
+.sf_flex2 .rb6,
+.sf_flex2 .sf1,
+.sf_flex2 .sf2,
+.sf_flex2 .sf3,
+.sf_flex2 .sf4,
+.sf_flex2 .sf5,
+.sf_flex2 .sf6,
+.sf_flex2 .s61,
+.sf_flex2 .s62,
+.sf_flex2 .s63,
+.sf_flex2 .s64,
+.sf_flex2 .s65,
+.sf_flex2 .s66,
+.sf_flex3 .rb1,
+.sf_flex3 .rb2,
+.sf_flex3 .rb3,
+.sf_flex3 .rb4,
+.sf_flex3 .rb5,
+.sf_flex3 .rb6,
+.sf_flex3 .sf1,
+.sf_flex3 .sf2,
+.sf_flex3 .sf3,
+.sf_flex3 .sf4,
+.sf_flex3 .sf5,
+.sf_flex3 .sf6,
+.sf_flex3 .s61,
+.sf_flex3 .s62,
+.sf_flex3 .s63,
+.sf_flex3 .s64,
+.sf_flex3 .s65,
+.sf_flex3 .s66,
+.sf_flex4 .rb1,
+.sf_flex4 .rb2,
+.sf_flex4 .rb3,
+.sf_flex4 .rb4,
+.sf_flex4 .rb5,
+.sf_flex4 .rb6,
+.sf_flex4 .sf1,
+.sf_flex4 .sf2,
+.sf_flex4 .sf3,
+.sf_flex4 .sf4,
+.sf_flex4 .sf5,
+.sf_flex4 .sf6,
+.sf_flex4 .s61,
+.sf_flex4 .s62,
+.sf_flex4 .s63,
+.sf_flex4 .s64,
+.sf_flex4 .s65,
+.sf_flex4 .s66,
+.sf_flex5 .rb1,
+.sf_flex5 .rb2,
+.sf_flex5 .rb3,
+.sf_flex5 .rb4,
+.sf_flex5 .rb5,
+.sf_flex5 .rb6,
+.sf_flex5 .sf1,
+.sf_flex5 .sf2,
+.sf_flex5 .sf3,
+.sf_flex5 .sf4,
+.sf_flex5 .sf5,
+.sf_flex5 .sf6,
+.sf_flex5 .s61,
+.sf_flex5 .s62,
+.sf_flex5 .s63,
+.sf_flex5 .s64,
+.sf_flex5 .s65,
+.sf_flex5 .s66,
+.sf_flex6 .rb1,
+.sf_flex6 .rb2,
+.sf_flex6 .rb3,
+.sf_flex6 .rb4,
+.sf_flex6 .rb5,
+.sf_flex6 .rb6,
+.sf_flex6 .sf1,
+.sf_flex6 .sf2,
+.sf_flex6 .sf3,
+.sf_flex6 .sf4,
+.sf_flex6 .sf5,
+.sf_flex6 .sf6,
+.sf_flex6 .s61,
+.sf_flex6 .s62,
+.sf_flex6 .s63,
+.sf_flex6 .s64,
+.sf_flex6 .s65,
+.sf_flex6 .s66,
+.s6_flex1 .rb1,
+.s6_flex1 .rb2,
+.s6_flex1 .rb3,
+.s6_flex1 .rb4,
+.s6_flex1 .rb5,
+.s6_flex1 .rb6,
+.s6_flex1 .sf1,
+.s6_flex1 .sf2,
+.s6_flex1 .sf3,
+.s6_flex1 .sf4,
+.s6_flex1 .sf5,
+.s6_flex1 .sf6,
+.s6_flex1 .s61,
+.s6_flex1 .s62,
+.s6_flex1 .s63,
+.s6_flex1 .s64,
+.s6_flex1 .s65,
+.s6_flex1 .s66,
+.s6_flex2 .rb1,
+.s6_flex2 .rb2,
+.s6_flex2 .rb3,
+.s6_flex2 .rb4,
+.s6_flex2 .rb5,
+.s6_flex2 .rb6,
+.s6_flex2 .sf1,
+.s6_flex2 .sf2,
+.s6_flex2 .sf3,
+.s6_flex2 .sf4,
+.s6_flex2 .sf5,
+.s6_flex2 .sf6,
+.s6_flex2 .s61,
+.s6_flex2 .s62,
+.s6_flex2 .s63,
+.s6_flex2 .s64,
+.s6_flex2 .s65,
+.s6_flex2 .s66,
+.s6_flex3 .rb1,
+.s6_flex3 .rb2,
+.s6_flex3 .rb3,
+.s6_flex3 .rb4,
+.s6_flex3 .rb5,
+.s6_flex3 .rb6,
+.s6_flex3 .sf1,
+.s6_flex3 .sf2,
+.s6_flex3 .sf3,
+.s6_flex3 .sf4,
+.s6_flex3 .sf5,
+.s6_flex3 .sf6,
+.s6_flex3 .s61,
+.s6_flex3 .s62,
+.s6_flex3 .s63,
+.s6_flex3 .s64,
+.s6_flex3 .s65,
+.s6_flex3 .s66,
+.s6_flex4 .rb1,
+.s6_flex4 .rb2,
+.s6_flex4 .rb3,
+.s6_flex4 .rb4,
+.s6_flex4 .rb5,
+.s6_flex4 .rb6,
+.s6_flex4 .sf1,
+.s6_flex4 .sf2,
+.s6_flex4 .sf3,
+.s6_flex4 .sf4,
+.s6_flex4 .sf5,
+.s6_flex4 .sf6,
+.s6_flex4 .s61,
+.s6_flex4 .s62,
+.s6_flex4 .s63,
+.s6_flex4 .s64,
+.s6_flex4 .s65,
+.s6_flex4 .s66,
+.s6_flex5 .rb1,
+.s6_flex5 .rb2,
+.s6_flex5 .rb3,
+.s6_flex5 .rb4,
+.s6_flex5 .rb5,
+.s6_flex5 .rb6,
+.s6_flex5 .sf1,
+.s6_flex5 .sf2,
+.s6_flex5 .sf3,
+.s6_flex5 .sf4,
+.s6_flex5 .sf5,
+.s6_flex5 .sf6,
+.s6_flex5 .s61,
+.s6_flex5 .s62,
+.s6_flex5 .s63,
+.s6_flex5 .s64,
+.s6_flex5 .s65,
+.s6_flex5 .s66,
+.s6_flex6 .rb1,
+.s6_flex6 .rb2,
+.s6_flex6 .rb3,
+.s6_flex6 .rb4,
+.s6_flex6 .rb5,
+.s6_flex6 .rb6,
+.s6_flex6 .sf1,
+.s6_flex6 .sf2,
+.s6_flex6 .sf3,
+.s6_flex6 .sf4,
+.s6_flex6 .sf5,
+.s6_flex6 .sf6,
+.s6_flex6 .s61,
+.s6_flex6 .s62,
+.s6_flex6 .s63,
+.s6_flex6 .s64,
+.s6_flex6 .s65,
+.s6_flex6 .s66 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1232,7 +1648,330 @@ body {
   padding: 8px;
   margin-bottom: 12px;
 }
-.rb_flex1 .rb1 img, .rb_flex1 .rb2 img, .rb_flex1 .rb3 img, .rb_flex1 .rb4 img, .rb_flex1 .rb5 img, .rb_flex1 .rb6 img, .rb_flex1 .sf1 img, .rb_flex1 .sf2 img, .rb_flex1 .sf3 img, .rb_flex1 .sf4 img, .rb_flex1 .sf5 img, .rb_flex1 .sf6 img, .rb_flex1 .s61 img, .rb_flex1 .s62 img, .rb_flex1 .s63 img, .rb_flex1 .s64 img, .rb_flex1 .s65 img, .rb_flex1 .s66 img, .rb_flex2 .rb1 img, .rb_flex2 .rb2 img, .rb_flex2 .rb3 img, .rb_flex2 .rb4 img, .rb_flex2 .rb5 img, .rb_flex2 .rb6 img, .rb_flex2 .sf1 img, .rb_flex2 .sf2 img, .rb_flex2 .sf3 img, .rb_flex2 .sf4 img, .rb_flex2 .sf5 img, .rb_flex2 .sf6 img, .rb_flex2 .s61 img, .rb_flex2 .s62 img, .rb_flex2 .s63 img, .rb_flex2 .s64 img, .rb_flex2 .s65 img, .rb_flex2 .s66 img, .rb_flex3 .rb1 img, .rb_flex3 .rb2 img, .rb_flex3 .rb3 img, .rb_flex3 .rb4 img, .rb_flex3 .rb5 img, .rb_flex3 .rb6 img, .rb_flex3 .sf1 img, .rb_flex3 .sf2 img, .rb_flex3 .sf3 img, .rb_flex3 .sf4 img, .rb_flex3 .sf5 img, .rb_flex3 .sf6 img, .rb_flex3 .s61 img, .rb_flex3 .s62 img, .rb_flex3 .s63 img, .rb_flex3 .s64 img, .rb_flex3 .s65 img, .rb_flex3 .s66 img, .rb_flex4 .rb1 img, .rb_flex4 .rb2 img, .rb_flex4 .rb3 img, .rb_flex4 .rb4 img, .rb_flex4 .rb5 img, .rb_flex4 .rb6 img, .rb_flex4 .sf1 img, .rb_flex4 .sf2 img, .rb_flex4 .sf3 img, .rb_flex4 .sf4 img, .rb_flex4 .sf5 img, .rb_flex4 .sf6 img, .rb_flex4 .s61 img, .rb_flex4 .s62 img, .rb_flex4 .s63 img, .rb_flex4 .s64 img, .rb_flex4 .s65 img, .rb_flex4 .s66 img, .rb_flex5 .rb1 img, .rb_flex5 .rb2 img, .rb_flex5 .rb3 img, .rb_flex5 .rb4 img, .rb_flex5 .rb5 img, .rb_flex5 .rb6 img, .rb_flex5 .sf1 img, .rb_flex5 .sf2 img, .rb_flex5 .sf3 img, .rb_flex5 .sf4 img, .rb_flex5 .sf5 img, .rb_flex5 .sf6 img, .rb_flex5 .s61 img, .rb_flex5 .s62 img, .rb_flex5 .s63 img, .rb_flex5 .s64 img, .rb_flex5 .s65 img, .rb_flex5 .s66 img, .rb_flex6 .rb1 img, .rb_flex6 .rb2 img, .rb_flex6 .rb3 img, .rb_flex6 .rb4 img, .rb_flex6 .rb5 img, .rb_flex6 .rb6 img, .rb_flex6 .sf1 img, .rb_flex6 .sf2 img, .rb_flex6 .sf3 img, .rb_flex6 .sf4 img, .rb_flex6 .sf5 img, .rb_flex6 .sf6 img, .rb_flex6 .s61 img, .rb_flex6 .s62 img, .rb_flex6 .s63 img, .rb_flex6 .s64 img, .rb_flex6 .s65 img, .rb_flex6 .s66 img, .sf_flex1 .rb1 img, .sf_flex1 .rb2 img, .sf_flex1 .rb3 img, .sf_flex1 .rb4 img, .sf_flex1 .rb5 img, .sf_flex1 .rb6 img, .sf_flex1 .sf1 img, .sf_flex1 .sf2 img, .sf_flex1 .sf3 img, .sf_flex1 .sf4 img, .sf_flex1 .sf5 img, .sf_flex1 .sf6 img, .sf_flex1 .s61 img, .sf_flex1 .s62 img, .sf_flex1 .s63 img, .sf_flex1 .s64 img, .sf_flex1 .s65 img, .sf_flex1 .s66 img, .sf_flex2 .rb1 img, .sf_flex2 .rb2 img, .sf_flex2 .rb3 img, .sf_flex2 .rb4 img, .sf_flex2 .rb5 img, .sf_flex2 .rb6 img, .sf_flex2 .sf1 img, .sf_flex2 .sf2 img, .sf_flex2 .sf3 img, .sf_flex2 .sf4 img, .sf_flex2 .sf5 img, .sf_flex2 .sf6 img, .sf_flex2 .s61 img, .sf_flex2 .s62 img, .sf_flex2 .s63 img, .sf_flex2 .s64 img, .sf_flex2 .s65 img, .sf_flex2 .s66 img, .sf_flex3 .rb1 img, .sf_flex3 .rb2 img, .sf_flex3 .rb3 img, .sf_flex3 .rb4 img, .sf_flex3 .rb5 img, .sf_flex3 .rb6 img, .sf_flex3 .sf1 img, .sf_flex3 .sf2 img, .sf_flex3 .sf3 img, .sf_flex3 .sf4 img, .sf_flex3 .sf5 img, .sf_flex3 .sf6 img, .sf_flex3 .s61 img, .sf_flex3 .s62 img, .sf_flex3 .s63 img, .sf_flex3 .s64 img, .sf_flex3 .s65 img, .sf_flex3 .s66 img, .sf_flex4 .rb1 img, .sf_flex4 .rb2 img, .sf_flex4 .rb3 img, .sf_flex4 .rb4 img, .sf_flex4 .rb5 img, .sf_flex4 .rb6 img, .sf_flex4 .sf1 img, .sf_flex4 .sf2 img, .sf_flex4 .sf3 img, .sf_flex4 .sf4 img, .sf_flex4 .sf5 img, .sf_flex4 .sf6 img, .sf_flex4 .s61 img, .sf_flex4 .s62 img, .sf_flex4 .s63 img, .sf_flex4 .s64 img, .sf_flex4 .s65 img, .sf_flex4 .s66 img, .sf_flex5 .rb1 img, .sf_flex5 .rb2 img, .sf_flex5 .rb3 img, .sf_flex5 .rb4 img, .sf_flex5 .rb5 img, .sf_flex5 .rb6 img, .sf_flex5 .sf1 img, .sf_flex5 .sf2 img, .sf_flex5 .sf3 img, .sf_flex5 .sf4 img, .sf_flex5 .sf5 img, .sf_flex5 .sf6 img, .sf_flex5 .s61 img, .sf_flex5 .s62 img, .sf_flex5 .s63 img, .sf_flex5 .s64 img, .sf_flex5 .s65 img, .sf_flex5 .s66 img, .sf_flex6 .rb1 img, .sf_flex6 .rb2 img, .sf_flex6 .rb3 img, .sf_flex6 .rb4 img, .sf_flex6 .rb5 img, .sf_flex6 .rb6 img, .sf_flex6 .sf1 img, .sf_flex6 .sf2 img, .sf_flex6 .sf3 img, .sf_flex6 .sf4 img, .sf_flex6 .sf5 img, .sf_flex6 .sf6 img, .sf_flex6 .s61 img, .sf_flex6 .s62 img, .sf_flex6 .s63 img, .sf_flex6 .s64 img, .sf_flex6 .s65 img, .sf_flex6 .s66 img, .s6_flex1 .rb1 img, .s6_flex1 .rb2 img, .s6_flex1 .rb3 img, .s6_flex1 .rb4 img, .s6_flex1 .rb5 img, .s6_flex1 .rb6 img, .s6_flex1 .sf1 img, .s6_flex1 .sf2 img, .s6_flex1 .sf3 img, .s6_flex1 .sf4 img, .s6_flex1 .sf5 img, .s6_flex1 .sf6 img, .s6_flex1 .s61 img, .s6_flex1 .s62 img, .s6_flex1 .s63 img, .s6_flex1 .s64 img, .s6_flex1 .s65 img, .s6_flex1 .s66 img, .s6_flex2 .rb1 img, .s6_flex2 .rb2 img, .s6_flex2 .rb3 img, .s6_flex2 .rb4 img, .s6_flex2 .rb5 img, .s6_flex2 .rb6 img, .s6_flex2 .sf1 img, .s6_flex2 .sf2 img, .s6_flex2 .sf3 img, .s6_flex2 .sf4 img, .s6_flex2 .sf5 img, .s6_flex2 .sf6 img, .s6_flex2 .s61 img, .s6_flex2 .s62 img, .s6_flex2 .s63 img, .s6_flex2 .s64 img, .s6_flex2 .s65 img, .s6_flex2 .s66 img, .s6_flex3 .rb1 img, .s6_flex3 .rb2 img, .s6_flex3 .rb3 img, .s6_flex3 .rb4 img, .s6_flex3 .rb5 img, .s6_flex3 .rb6 img, .s6_flex3 .sf1 img, .s6_flex3 .sf2 img, .s6_flex3 .sf3 img, .s6_flex3 .sf4 img, .s6_flex3 .sf5 img, .s6_flex3 .sf6 img, .s6_flex3 .s61 img, .s6_flex3 .s62 img, .s6_flex3 .s63 img, .s6_flex3 .s64 img, .s6_flex3 .s65 img, .s6_flex3 .s66 img, .s6_flex4 .rb1 img, .s6_flex4 .rb2 img, .s6_flex4 .rb3 img, .s6_flex4 .rb4 img, .s6_flex4 .rb5 img, .s6_flex4 .rb6 img, .s6_flex4 .sf1 img, .s6_flex4 .sf2 img, .s6_flex4 .sf3 img, .s6_flex4 .sf4 img, .s6_flex4 .sf5 img, .s6_flex4 .sf6 img, .s6_flex4 .s61 img, .s6_flex4 .s62 img, .s6_flex4 .s63 img, .s6_flex4 .s64 img, .s6_flex4 .s65 img, .s6_flex4 .s66 img, .s6_flex5 .rb1 img, .s6_flex5 .rb2 img, .s6_flex5 .rb3 img, .s6_flex5 .rb4 img, .s6_flex5 .rb5 img, .s6_flex5 .rb6 img, .s6_flex5 .sf1 img, .s6_flex5 .sf2 img, .s6_flex5 .sf3 img, .s6_flex5 .sf4 img, .s6_flex5 .sf5 img, .s6_flex5 .sf6 img, .s6_flex5 .s61 img, .s6_flex5 .s62 img, .s6_flex5 .s63 img, .s6_flex5 .s64 img, .s6_flex5 .s65 img, .s6_flex5 .s66 img, .s6_flex6 .rb1 img, .s6_flex6 .rb2 img, .s6_flex6 .rb3 img, .s6_flex6 .rb4 img, .s6_flex6 .rb5 img, .s6_flex6 .rb6 img, .s6_flex6 .sf1 img, .s6_flex6 .sf2 img, .s6_flex6 .sf3 img, .s6_flex6 .sf4 img, .s6_flex6 .sf5 img, .s6_flex6 .sf6 img, .s6_flex6 .s61 img, .s6_flex6 .s62 img, .s6_flex6 .s63 img, .s6_flex6 .s64 img, .s6_flex6 .s65 img, .s6_flex6 .s66 img {
+.rb_flex1 .rb1 img,
+.rb_flex1 .rb2 img,
+.rb_flex1 .rb3 img,
+.rb_flex1 .rb4 img,
+.rb_flex1 .rb5 img,
+.rb_flex1 .rb6 img,
+.rb_flex1 .sf1 img,
+.rb_flex1 .sf2 img,
+.rb_flex1 .sf3 img,
+.rb_flex1 .sf4 img,
+.rb_flex1 .sf5 img,
+.rb_flex1 .sf6 img,
+.rb_flex1 .s61 img,
+.rb_flex1 .s62 img,
+.rb_flex1 .s63 img,
+.rb_flex1 .s64 img,
+.rb_flex1 .s65 img,
+.rb_flex1 .s66 img,
+.rb_flex2 .rb1 img,
+.rb_flex2 .rb2 img,
+.rb_flex2 .rb3 img,
+.rb_flex2 .rb4 img,
+.rb_flex2 .rb5 img,
+.rb_flex2 .rb6 img,
+.rb_flex2 .sf1 img,
+.rb_flex2 .sf2 img,
+.rb_flex2 .sf3 img,
+.rb_flex2 .sf4 img,
+.rb_flex2 .sf5 img,
+.rb_flex2 .sf6 img,
+.rb_flex2 .s61 img,
+.rb_flex2 .s62 img,
+.rb_flex2 .s63 img,
+.rb_flex2 .s64 img,
+.rb_flex2 .s65 img,
+.rb_flex2 .s66 img,
+.rb_flex3 .rb1 img,
+.rb_flex3 .rb2 img,
+.rb_flex3 .rb3 img,
+.rb_flex3 .rb4 img,
+.rb_flex3 .rb5 img,
+.rb_flex3 .rb6 img,
+.rb_flex3 .sf1 img,
+.rb_flex3 .sf2 img,
+.rb_flex3 .sf3 img,
+.rb_flex3 .sf4 img,
+.rb_flex3 .sf5 img,
+.rb_flex3 .sf6 img,
+.rb_flex3 .s61 img,
+.rb_flex3 .s62 img,
+.rb_flex3 .s63 img,
+.rb_flex3 .s64 img,
+.rb_flex3 .s65 img,
+.rb_flex3 .s66 img,
+.rb_flex4 .rb1 img,
+.rb_flex4 .rb2 img,
+.rb_flex4 .rb3 img,
+.rb_flex4 .rb4 img,
+.rb_flex4 .rb5 img,
+.rb_flex4 .rb6 img,
+.rb_flex4 .sf1 img,
+.rb_flex4 .sf2 img,
+.rb_flex4 .sf3 img,
+.rb_flex4 .sf4 img,
+.rb_flex4 .sf5 img,
+.rb_flex4 .sf6 img,
+.rb_flex4 .s61 img,
+.rb_flex4 .s62 img,
+.rb_flex4 .s63 img,
+.rb_flex4 .s64 img,
+.rb_flex4 .s65 img,
+.rb_flex4 .s66 img,
+.rb_flex5 .rb1 img,
+.rb_flex5 .rb2 img,
+.rb_flex5 .rb3 img,
+.rb_flex5 .rb4 img,
+.rb_flex5 .rb5 img,
+.rb_flex5 .rb6 img,
+.rb_flex5 .sf1 img,
+.rb_flex5 .sf2 img,
+.rb_flex5 .sf3 img,
+.rb_flex5 .sf4 img,
+.rb_flex5 .sf5 img,
+.rb_flex5 .sf6 img,
+.rb_flex5 .s61 img,
+.rb_flex5 .s62 img,
+.rb_flex5 .s63 img,
+.rb_flex5 .s64 img,
+.rb_flex5 .s65 img,
+.rb_flex5 .s66 img,
+.rb_flex6 .rb1 img,
+.rb_flex6 .rb2 img,
+.rb_flex6 .rb3 img,
+.rb_flex6 .rb4 img,
+.rb_flex6 .rb5 img,
+.rb_flex6 .rb6 img,
+.rb_flex6 .sf1 img,
+.rb_flex6 .sf2 img,
+.rb_flex6 .sf3 img,
+.rb_flex6 .sf4 img,
+.rb_flex6 .sf5 img,
+.rb_flex6 .sf6 img,
+.rb_flex6 .s61 img,
+.rb_flex6 .s62 img,
+.rb_flex6 .s63 img,
+.rb_flex6 .s64 img,
+.rb_flex6 .s65 img,
+.rb_flex6 .s66 img,
+.sf_flex1 .rb1 img,
+.sf_flex1 .rb2 img,
+.sf_flex1 .rb3 img,
+.sf_flex1 .rb4 img,
+.sf_flex1 .rb5 img,
+.sf_flex1 .rb6 img,
+.sf_flex1 .sf1 img,
+.sf_flex1 .sf2 img,
+.sf_flex1 .sf3 img,
+.sf_flex1 .sf4 img,
+.sf_flex1 .sf5 img,
+.sf_flex1 .sf6 img,
+.sf_flex1 .s61 img,
+.sf_flex1 .s62 img,
+.sf_flex1 .s63 img,
+.sf_flex1 .s64 img,
+.sf_flex1 .s65 img,
+.sf_flex1 .s66 img,
+.sf_flex2 .rb1 img,
+.sf_flex2 .rb2 img,
+.sf_flex2 .rb3 img,
+.sf_flex2 .rb4 img,
+.sf_flex2 .rb5 img,
+.sf_flex2 .rb6 img,
+.sf_flex2 .sf1 img,
+.sf_flex2 .sf2 img,
+.sf_flex2 .sf3 img,
+.sf_flex2 .sf4 img,
+.sf_flex2 .sf5 img,
+.sf_flex2 .sf6 img,
+.sf_flex2 .s61 img,
+.sf_flex2 .s62 img,
+.sf_flex2 .s63 img,
+.sf_flex2 .s64 img,
+.sf_flex2 .s65 img,
+.sf_flex2 .s66 img,
+.sf_flex3 .rb1 img,
+.sf_flex3 .rb2 img,
+.sf_flex3 .rb3 img,
+.sf_flex3 .rb4 img,
+.sf_flex3 .rb5 img,
+.sf_flex3 .rb6 img,
+.sf_flex3 .sf1 img,
+.sf_flex3 .sf2 img,
+.sf_flex3 .sf3 img,
+.sf_flex3 .sf4 img,
+.sf_flex3 .sf5 img,
+.sf_flex3 .sf6 img,
+.sf_flex3 .s61 img,
+.sf_flex3 .s62 img,
+.sf_flex3 .s63 img,
+.sf_flex3 .s64 img,
+.sf_flex3 .s65 img,
+.sf_flex3 .s66 img,
+.sf_flex4 .rb1 img,
+.sf_flex4 .rb2 img,
+.sf_flex4 .rb3 img,
+.sf_flex4 .rb4 img,
+.sf_flex4 .rb5 img,
+.sf_flex4 .rb6 img,
+.sf_flex4 .sf1 img,
+.sf_flex4 .sf2 img,
+.sf_flex4 .sf3 img,
+.sf_flex4 .sf4 img,
+.sf_flex4 .sf5 img,
+.sf_flex4 .sf6 img,
+.sf_flex4 .s61 img,
+.sf_flex4 .s62 img,
+.sf_flex4 .s63 img,
+.sf_flex4 .s64 img,
+.sf_flex4 .s65 img,
+.sf_flex4 .s66 img,
+.sf_flex5 .rb1 img,
+.sf_flex5 .rb2 img,
+.sf_flex5 .rb3 img,
+.sf_flex5 .rb4 img,
+.sf_flex5 .rb5 img,
+.sf_flex5 .rb6 img,
+.sf_flex5 .sf1 img,
+.sf_flex5 .sf2 img,
+.sf_flex5 .sf3 img,
+.sf_flex5 .sf4 img,
+.sf_flex5 .sf5 img,
+.sf_flex5 .sf6 img,
+.sf_flex5 .s61 img,
+.sf_flex5 .s62 img,
+.sf_flex5 .s63 img,
+.sf_flex5 .s64 img,
+.sf_flex5 .s65 img,
+.sf_flex5 .s66 img,
+.sf_flex6 .rb1 img,
+.sf_flex6 .rb2 img,
+.sf_flex6 .rb3 img,
+.sf_flex6 .rb4 img,
+.sf_flex6 .rb5 img,
+.sf_flex6 .rb6 img,
+.sf_flex6 .sf1 img,
+.sf_flex6 .sf2 img,
+.sf_flex6 .sf3 img,
+.sf_flex6 .sf4 img,
+.sf_flex6 .sf5 img,
+.sf_flex6 .sf6 img,
+.sf_flex6 .s61 img,
+.sf_flex6 .s62 img,
+.sf_flex6 .s63 img,
+.sf_flex6 .s64 img,
+.sf_flex6 .s65 img,
+.sf_flex6 .s66 img,
+.s6_flex1 .rb1 img,
+.s6_flex1 .rb2 img,
+.s6_flex1 .rb3 img,
+.s6_flex1 .rb4 img,
+.s6_flex1 .rb5 img,
+.s6_flex1 .rb6 img,
+.s6_flex1 .sf1 img,
+.s6_flex1 .sf2 img,
+.s6_flex1 .sf3 img,
+.s6_flex1 .sf4 img,
+.s6_flex1 .sf5 img,
+.s6_flex1 .sf6 img,
+.s6_flex1 .s61 img,
+.s6_flex1 .s62 img,
+.s6_flex1 .s63 img,
+.s6_flex1 .s64 img,
+.s6_flex1 .s65 img,
+.s6_flex1 .s66 img,
+.s6_flex2 .rb1 img,
+.s6_flex2 .rb2 img,
+.s6_flex2 .rb3 img,
+.s6_flex2 .rb4 img,
+.s6_flex2 .rb5 img,
+.s6_flex2 .rb6 img,
+.s6_flex2 .sf1 img,
+.s6_flex2 .sf2 img,
+.s6_flex2 .sf3 img,
+.s6_flex2 .sf4 img,
+.s6_flex2 .sf5 img,
+.s6_flex2 .sf6 img,
+.s6_flex2 .s61 img,
+.s6_flex2 .s62 img,
+.s6_flex2 .s63 img,
+.s6_flex2 .s64 img,
+.s6_flex2 .s65 img,
+.s6_flex2 .s66 img,
+.s6_flex3 .rb1 img,
+.s6_flex3 .rb2 img,
+.s6_flex3 .rb3 img,
+.s6_flex3 .rb4 img,
+.s6_flex3 .rb5 img,
+.s6_flex3 .rb6 img,
+.s6_flex3 .sf1 img,
+.s6_flex3 .sf2 img,
+.s6_flex3 .sf3 img,
+.s6_flex3 .sf4 img,
+.s6_flex3 .sf5 img,
+.s6_flex3 .sf6 img,
+.s6_flex3 .s61 img,
+.s6_flex3 .s62 img,
+.s6_flex3 .s63 img,
+.s6_flex3 .s64 img,
+.s6_flex3 .s65 img,
+.s6_flex3 .s66 img,
+.s6_flex4 .rb1 img,
+.s6_flex4 .rb2 img,
+.s6_flex4 .rb3 img,
+.s6_flex4 .rb4 img,
+.s6_flex4 .rb5 img,
+.s6_flex4 .rb6 img,
+.s6_flex4 .sf1 img,
+.s6_flex4 .sf2 img,
+.s6_flex4 .sf3 img,
+.s6_flex4 .sf4 img,
+.s6_flex4 .sf5 img,
+.s6_flex4 .sf6 img,
+.s6_flex4 .s61 img,
+.s6_flex4 .s62 img,
+.s6_flex4 .s63 img,
+.s6_flex4 .s64 img,
+.s6_flex4 .s65 img,
+.s6_flex4 .s66 img,
+.s6_flex5 .rb1 img,
+.s6_flex5 .rb2 img,
+.s6_flex5 .rb3 img,
+.s6_flex5 .rb4 img,
+.s6_flex5 .rb5 img,
+.s6_flex5 .rb6 img,
+.s6_flex5 .sf1 img,
+.s6_flex5 .sf2 img,
+.s6_flex5 .sf3 img,
+.s6_flex5 .sf4 img,
+.s6_flex5 .sf5 img,
+.s6_flex5 .sf6 img,
+.s6_flex5 .s61 img,
+.s6_flex5 .s62 img,
+.s6_flex5 .s63 img,
+.s6_flex5 .s64 img,
+.s6_flex5 .s65 img,
+.s6_flex5 .s66 img,
+.s6_flex6 .rb1 img,
+.s6_flex6 .rb2 img,
+.s6_flex6 .rb3 img,
+.s6_flex6 .rb4 img,
+.s6_flex6 .rb5 img,
+.s6_flex6 .rb6 img,
+.s6_flex6 .sf1 img,
+.s6_flex6 .sf2 img,
+.s6_flex6 .sf3 img,
+.s6_flex6 .sf4 img,
+.s6_flex6 .sf5 img,
+.s6_flex6 .sf6 img,
+.s6_flex6 .s61 img,
+.s6_flex6 .s62 img,
+.s6_flex6 .s63 img,
+.s6_flex6 .s64 img,
+.s6_flex6 .s65 img,
+.s6_flex6 .s66 img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1243,7 +1982,24 @@ body {
   transition: transform 0.4s;
 }
 
-.rb1:hover, .rb2:hover, .rb3:hover, .rb4:hover, .rb5:hover, .rb6:hover, .sf1:hover, .sf2:hover, .sf3:hover, .sf4:hover, .sf5:hover, .sf6:hover, .s61:hover, .s62:hover, .s63:hover, .s64:hover, .s65:hover, .s66:hover {
+.rb1:hover,
+.rb2:hover,
+.rb3:hover,
+.rb4:hover,
+.rb5:hover,
+.rb6:hover,
+.sf1:hover,
+.sf2:hover,
+.sf3:hover,
+.sf4:hover,
+.sf5:hover,
+.sf6:hover,
+.s61:hover,
+.s62:hover,
+.s63:hover,
+.s64:hover,
+.s65:hover,
+.s66:hover {
   transition: transform 0.4s;
   transform: scale(1.5);
 }
@@ -1251,14 +2007,14 @@ body {
 /***************************************cards / Services**********************************/
 #services {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   min-height: 525px;
-  min-width: 100vw;
   background-color: rgb(252, 245, 235);
   justify-content: space-around;
   align-content: space-between;
   column-gap: 30px;
   padding: 10px 30px 30px 30px;
+  margin: 0 auto;
 }
 #services h1 {
   display: flex;
@@ -1272,11 +2028,13 @@ body {
   margin-bottom: 10px;
 }
 
-.sone, .stwo, .sthree {
+.sone,
+.stwo,
+.sthree {
   display: flex;
-  width: 25vw;
+  width: 75vw;
   height: 425px;
-  flex-direction: column;
+  flex-direction: row;
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(81, 49, 39);
   text-align: center;
@@ -1284,20 +2042,24 @@ body {
   align-content: space-around;
   padding: 15px;
 }
-.sone img, .stwo img, .sthree img {
+.sone img,
+.stwo img,
+.sthree img {
   display: flex;
-  height: 150px;
-  width: 150px;
+  height: 300px;
+  width: auto;
   margin: 10px auto;
-  align-items: center;
+  align-items: flex-start;
   filter: drop-shadow(3px 3px 3px black);
 }
-.sone .cards_txt, .stwo .cards_txt, .sthree .cards_txt {
+.sone .cards_txt,
+.stwo .cards_txt,
+.sthree .cards_txt {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -1359,7 +2121,7 @@ body {
 .footer1 {
   display: flex;
   flex-flow: row wrap;
-  width: 100vw;
+  width: 100%;
   min-height: 200px;
   background: rgb(252, 245, 235);
   color: rgb(81, 49, 39);
@@ -1657,6 +2419,9 @@ body {
     min-height: 25px;
     font-size: 16px;
   }
+  .body-container {
+    max-width: 1080px;
+  }
 }
 /*tablets in landscape mode*/
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1727,15 +2492,9 @@ body {
     margin: 0 auto;
     padding: 10px;
     height: auto;
-    background-color: rgb(170, 193, 221);
-    color: rgb(11, 38, 58);
     text-decoration: none;
     font-size: 14px;
     transition: all 0.3s ease;
-  }
-  header .header-accent #nav-links ul a:hover {
-    background-color: rgb(11, 38, 58);
-    color: rgb(252, 245, 235);
   }
 }
 /* Mobile styles */
@@ -1749,9 +2508,11 @@ body {
     display: flex;
     height: auto;
     width: 35vw;
-    margin: auto;
+    margin: 0 auto;
+    padding: 1%;
     justify-content: center;
     align-content: center;
+    background-color: transparent;
   }
   header #header-logo img {
     display: flex;
@@ -1762,7 +2523,7 @@ body {
   header .header-accent {
     width: 75vw;
     height: auto;
-    background-color: rgb(252, 245, 235);
+    background-color: transparent;
   }
   header .header-accent #nav-links ul {
     display: flex;
@@ -1776,15 +2537,13 @@ body {
     margin: 0 auto;
     padding: 10px;
     height: auto;
-    background-color: rgb(214, 224, 242);
-    color: rgb(11, 38, 58);
+    color: rgb(252, 245, 235);
     text-decoration: none;
     font-size: 14px;
-    border-bottom: 1px solid rgb(11, 38, 58);
     transition: all 0.3s ease;
   }
   header .header-accent #nav-links ul a:hover {
-    background-color: rgb(11, 38, 58);
+    background-color: rgb(105, 138, 133);
     color: rgb(252, 245, 235);
   }
 }
@@ -1799,7 +2558,7 @@ body {
     display: flex;
     height: auto;
     max-width: 150px;
-    background-color: rgb(170, 193, 221);
+    background-color: transparent;
     margin: 0 auto 15px;
     justify-content: center;
     align-content: center;
@@ -1813,7 +2572,7 @@ body {
   header .header-accent {
     width: 75vw;
     height: auto;
-    background-color: rgb(252, 245, 235);
+    background-color: transparent;
   }
   header .header-accent #nav-links ul {
     display: flex;
@@ -1826,11 +2585,8 @@ body {
     margin: 0 auto;
     padding: 10px;
     height: auto;
-    background-color: rgb(214, 224, 242);
-    color: rgb(11, 38, 58);
     text-decoration: none;
     font-size: 12px;
-    border-bottom: 1px solid rgb(11, 38, 58);
     transition: all 0.3s ease;
   }
   header .header-accent #nav-links ul a:hover {
@@ -2137,7 +2893,10 @@ body {
 @media (max-width: 320px) */
 /*cards/projects*/
 @media (min-width: 769px) and (max-width: 1024px) {
-  #cards, #services, #web_cards, .pod {
+  #cards,
+  #services,
+  #web_cards,
+  .pod {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2146,7 +2905,12 @@ body {
     justify-content: center;
     align-content: center;
   }
-  .one, .two, .three, .sone, .stwo, .sthree {
+  .one,
+  .two,
+  .three,
+  .sone,
+  .stwo,
+  .sthree {
     display: flex;
     flex-flow: row wrap;
     height: auto;
@@ -2160,7 +2924,10 @@ body {
 }
 /*tablets in landscape mode*/
 @media (min-width: 481px) and (max-width: 768px) {
-  #cards, #services, #web_cards, .pod {
+  #cards,
+  #services,
+  #web_cards,
+  .pod {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2170,27 +2937,40 @@ body {
     align-content: center;
   }
 }
-.one, .two, .three, .sone, .stwo, .sthree {
+.one,
+.two,
+.three,
+.sone,
+.stwo,
+.sthree {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: row;
   height: auto;
-  width: 35vw;
+  width: 75vw;
   margin: 20px auto;
   padding: 15px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
 }
-.one img, .two img, .three img, .sone img, .stwo img, .sthree img {
+.one img,
+.two img,
+.three img,
+.sone img,
+.stwo img,
+.sthree img {
   display: flex;
-  justify-content: center;
-  height: 150px;
-  width: 150px;
+  justify-content: flex-start;
+  height: 300px;
+  width: auto;
 }
 
 /*mobiles in landscape mode*/
 @media (min-width: 321px) and (max-width: 480px) {
-  #cards, #services, #web_cards, .pod {
+  #cards,
+  #services,
+  #web_cards,
+  .pod {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2199,7 +2979,12 @@ body {
     justify-content: center;
     align-content: center;
   }
-  .one, .two, .three, .sone, .stwo, .sthree {
+  .one,
+  .two,
+  .three,
+  .sone,
+  .stwo,
+  .sthree {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2222,7 +3007,12 @@ body {
     justify-content: center;
     align-content: center;
   }
-  .one, .two, .three, .sone, .stwo, .sthree {
+  .one,
+  .two,
+  .three,
+  .sone,
+  .stwo,
+  .sthree {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2377,7 +3167,8 @@ body {
     column-gap: 30px;
     padding: 10px 30px;
   }
-  .pod .flex-container11, .pod .flex-container2 {
+  .pod .flex-container11,
+  .pod .flex-container2 {
     display: flex;
     width: 100vw;
     height: auto;
@@ -2385,7 +3176,18 @@ body {
     align-items: center;
     flex-flow: row wrap;
   }
-  .pod .flex-item1, .pod .flex-item2, .pod .flex-item3, .pod .flex-item4, .pod .flex-item5, .pod .flex-item6, .pod .flex-item11, .pod .flex-item12, .pod .flex-item13, .pod .flex-item14, .pod .flex-item15, .pod .flex-item16 {
+  .pod .flex-item1,
+  .pod .flex-item2,
+  .pod .flex-item3,
+  .pod .flex-item4,
+  .pod .flex-item5,
+  .pod .flex-item6,
+  .pod .flex-item11,
+  .pod .flex-item12,
+  .pod .flex-item13,
+  .pod .flex-item14,
+  .pod .flex-item15,
+  .pod .flex-item16 {
     height: 25%;
     width: 20%;
     display: flex;
@@ -2394,7 +3196,18 @@ body {
     justify-content: center;
     margin: 10px 0 24px 0;
   }
-  .pod .box111, .pod .box112, .pod .box113, .pod .box114, .pod .box115, .pod .box6, .pod .box11, .pod .box12, .pod .box13, .pod .box14, .pod .box15, .pod .box16 {
+  .pod .box111,
+  .pod .box112,
+  .pod .box113,
+  .pod .box114,
+  .pod .box115,
+  .pod .box6,
+  .pod .box11,
+  .pod .box12,
+  .pod .box13,
+  .pod .box14,
+  .pod .box15,
+  .pod .box16 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -2404,7 +3217,18 @@ body {
     padding: 8px;
     margin-bottom: 12px;
   }
-  .pod .box111 img, .pod .box112 img, .pod .box113 img, .pod .box114 img, .pod .box115 img, .pod .box6 img, .pod .box11 img, .pod .box12 img, .pod .box13 img, .pod .box14 img, .pod .box15 img, .pod .box16 img {
+  .pod .box111 img,
+  .pod .box112 img,
+  .pod .box113 img,
+  .pod .box114 img,
+  .pod .box115 img,
+  .pod .box6 img,
+  .pod .box11 img,
+  .pod .box12 img,
+  .pod .box13 img,
+  .pod .box14 img,
+  .pod .box15 img,
+  .pod .box16 img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -2425,7 +3249,8 @@ body {
     padding: 10px 30px;
     height: auto;
   }
-  .pod .flex-container11, .pod .flex-container2 {
+  .pod .flex-container11,
+  .pod .flex-container2 {
     display: flex;
     width: 100vw;
     height: auto;
@@ -2433,7 +3258,18 @@ body {
     align-items: center;
     flex-flow: row wrap;
   }
-  .pod .flex-item1, .pod .flex-item2, .pod .flex-item3, .pod .flex-item4, .pod .flex-item5, .pod .flex-item6, .pod .flex-item11, .pod .flex-item12, .pod .flex-item13, .pod .flex-item14, .pod .flex-item15, .pod .flex-item16 {
+  .pod .flex-item1,
+  .pod .flex-item2,
+  .pod .flex-item3,
+  .pod .flex-item4,
+  .pod .flex-item5,
+  .pod .flex-item6,
+  .pod .flex-item11,
+  .pod .flex-item12,
+  .pod .flex-item13,
+  .pod .flex-item14,
+  .pod .flex-item15,
+  .pod .flex-item16 {
     height: 25%;
     width: 20%;
     display: flex;
@@ -2442,7 +3278,18 @@ body {
     justify-content: center;
     margin: 10px auto 24px auto;
   }
-  .pod .box111, .pod .box112, .pod .box113, .pod .box114, .pod .box115, .pod .box6, .pod .box11, .pod .box12, .pod .box13, .pod .box14, .pod .box15, .pod .box16 {
+  .pod .box111,
+  .pod .box112,
+  .pod .box113,
+  .pod .box114,
+  .pod .box115,
+  .pod .box6,
+  .pod .box11,
+  .pod .box12,
+  .pod .box13,
+  .pod .box14,
+  .pod .box15,
+  .pod .box16 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -2452,7 +3299,18 @@ body {
     padding: 8px;
     margin-bottom: 12px;
   }
-  .pod .box111 img, .pod .box112 img, .pod .box113 img, .pod .box114 img, .pod .box115 img, .pod .box6 img, .pod .box11 img, .pod .box12 img, .pod .box13 img, .pod .box14 img, .pod .box15 img, .pod .box16 img {
+  .pod .box111 img,
+  .pod .box112 img,
+  .pod .box113 img,
+  .pod .box114 img,
+  .pod .box115 img,
+  .pod .box6 img,
+  .pod .box11 img,
+  .pod .box12 img,
+  .pod .box13 img,
+  .pod .box14 img,
+  .pod .box15 img,
+  .pod .box16 img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -2465,11 +3323,19 @@ body {
 }
 body {
   width: 100vw;
-  font-family: 16px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*.fixed-container {
@@ -2481,8 +3347,17 @@ body {
 }*/
 .bgi1 {
   height: 300px;
-  min-width: 100vw;
-  background-image: url(homepage_images/bgi_banner.svg);
+  width: 100vw;
+  background-image: url(homepage_images/copperBGI1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgi2 {
+  height: 300px;
+  width: 100vw;
+  background-image: url(homepage_images/copperBGI2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2491,8 +3366,8 @@ body {
 @media (max-width: 768px) {
   .bgi1 {
     height: 150px;
-    min-width: 100vw;
-    background-image: url(homepage_images/bgi_180px.svg);
+    width: 100vw;
+    background-image: url(public/homepage_images/blue.aqua.300.1440.horizintal-100.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
