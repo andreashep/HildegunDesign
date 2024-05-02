@@ -81,11 +81,12 @@ nav a {
     font-size: 1rem;
     text-decoration: none;
     color: $brown-text;
-    padding: 16px 24px;
+    padding: 16px 32px;
     &:hover {
         color: $dk_verdigris;
         border-radius: 25px;
-
+        filter: drop-shadow(2px 2px 2px black);
+      
       }
       &:active {
         color: $dk_verdigris;
@@ -104,6 +105,7 @@ nav a {
     border-radius: 25px;
     &:hover {
         color: $verdigris;
+        filter: drop-shadow(2px 2px 2px black);
       
       }
       &:active {

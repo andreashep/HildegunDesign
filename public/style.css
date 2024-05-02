@@ -105,11 +105,12 @@ nav a {
   font-size: 1rem;
   text-decoration: none;
   color: rgb(81, 49, 39);
-  padding: 16px 24px;
+  padding: 16px 32px;
 }
 nav a:hover {
   color: rgb(105, 138, 133);
   border-radius: 25px;
+  filter: drop-shadow(2px 2px 2px black);
 }
 nav a:active {
   color: rgb(105, 138, 133);
@@ -127,6 +128,7 @@ nav a:active {
 }
 .btn a:hover {
   color: rgb(111, 170, 167);
+  filter: drop-shadow(2px 2px 2px black);
 }
 .btn a:active {
   color: rgb(105, 138, 133);
@@ -327,10 +329,8 @@ header .header-accent #nav-links ul {
 }
 .btn:hover {
   color: rgb(252, 245, 235);
-  background-color: rgb(41, 99, 143);
 }
 .btn:active {
-  background-color: rgb(11, 38, 58);
   color: rgb(252, 245, 235);
 }
 
@@ -384,7 +384,6 @@ header .header-accent #nav-links ul {
 .btn-large:hover {
   color: rgb(252, 245, 235);
   background-color: rgb(41, 99, 143);
-  filter: drop-shadow(0 0 0.5rem black);
 }
 .btn-large:active {
   background-color: rgb(11, 38, 58);
@@ -1078,18 +1077,18 @@ body {
 .pod {
   display: flex;
   flex-direction: column;
-  min-height: 3000px;
-  width: 100vw;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   column-gap: 30px;
   padding: 10px 30px 30px 30px;
+  background-color: rgb(252, 245, 235);
 }
 .pod .pod_title {
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin: 24px;
+  margin: 36px;
   justify-content: center;
   align-content: center;
   color: rgb(81, 49, 39);
@@ -1116,15 +1115,23 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  column-gap: 30px;
-  padding: 10px 30px;
+  padding: 30px;
+}
+.pattern h4 {
+  display: flex;
+  font-family: 16px;
+  width: 100%;
+  margin: 24px;
+  justify-content: center;
+  align-content: center;
+  color: rgb(105, 138, 133);
 }
 
 .flex-container11,
 .flex-container2,
 .flex-container3 {
   display: flex;
-  width: 100vw;
+  width: 100%;
   min-height: 200px;
   justify-content: space-between;
   align-items: center;
@@ -1261,8 +1268,8 @@ body {
   justify-content: space-around;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 90vw;
-  height: 500px;
+  width: 100%;
+  padding: 24px;
 }
 
 .pod_info {
@@ -1270,22 +1277,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20vw;
+  width: 25%;
 }
 .pod_info h3 {
   font-size: 54px;
-  margin: 16px;
+  margin: 24px;
 }
 
 .pod_flex_container1,
 .pod_flex_container2,
 .pod_flex_container3 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
-  width: 60vw;
+  width: 60%;
   padding: 24px;
 }
 
@@ -1300,13 +1306,7 @@ body {
 .sf_flex3,
 .sf_flex4,
 .sf_flex5,
-.sf_flex6,
-.s6_flex1,
-.s6_flex2,
-.s6_flex3,
-.s6_flex4,
-.s6_flex5,
-.s6_flex6 {
+.sf_flex6 {
   display: flex;
   height: 50%;
   width: 25%;
@@ -1327,12 +1327,6 @@ body {
 .rb_flex1 .sf4,
 .rb_flex1 .sf5,
 .rb_flex1 .sf6,
-.rb_flex1 .s61,
-.rb_flex1 .s62,
-.rb_flex1 .s63,
-.rb_flex1 .s64,
-.rb_flex1 .s65,
-.rb_flex1 .s66,
 .rb_flex2 .rb1,
 .rb_flex2 .rb2,
 .rb_flex2 .rb3,
@@ -1345,12 +1339,6 @@ body {
 .rb_flex2 .sf4,
 .rb_flex2 .sf5,
 .rb_flex2 .sf6,
-.rb_flex2 .s61,
-.rb_flex2 .s62,
-.rb_flex2 .s63,
-.rb_flex2 .s64,
-.rb_flex2 .s65,
-.rb_flex2 .s66,
 .rb_flex3 .rb1,
 .rb_flex3 .rb2,
 .rb_flex3 .rb3,
@@ -1363,12 +1351,6 @@ body {
 .rb_flex3 .sf4,
 .rb_flex3 .sf5,
 .rb_flex3 .sf6,
-.rb_flex3 .s61,
-.rb_flex3 .s62,
-.rb_flex3 .s63,
-.rb_flex3 .s64,
-.rb_flex3 .s65,
-.rb_flex3 .s66,
 .rb_flex4 .rb1,
 .rb_flex4 .rb2,
 .rb_flex4 .rb3,
@@ -1381,12 +1363,6 @@ body {
 .rb_flex4 .sf4,
 .rb_flex4 .sf5,
 .rb_flex4 .sf6,
-.rb_flex4 .s61,
-.rb_flex4 .s62,
-.rb_flex4 .s63,
-.rb_flex4 .s64,
-.rb_flex4 .s65,
-.rb_flex4 .s66,
 .rb_flex5 .rb1,
 .rb_flex5 .rb2,
 .rb_flex5 .rb3,
@@ -1399,12 +1375,6 @@ body {
 .rb_flex5 .sf4,
 .rb_flex5 .sf5,
 .rb_flex5 .sf6,
-.rb_flex5 .s61,
-.rb_flex5 .s62,
-.rb_flex5 .s63,
-.rb_flex5 .s64,
-.rb_flex5 .s65,
-.rb_flex5 .s66,
 .rb_flex6 .rb1,
 .rb_flex6 .rb2,
 .rb_flex6 .rb3,
@@ -1417,12 +1387,6 @@ body {
 .rb_flex6 .sf4,
 .rb_flex6 .sf5,
 .rb_flex6 .sf6,
-.rb_flex6 .s61,
-.rb_flex6 .s62,
-.rb_flex6 .s63,
-.rb_flex6 .s64,
-.rb_flex6 .s65,
-.rb_flex6 .s66,
 .sf_flex1 .rb1,
 .sf_flex1 .rb2,
 .sf_flex1 .rb3,
@@ -1435,12 +1399,6 @@ body {
 .sf_flex1 .sf4,
 .sf_flex1 .sf5,
 .sf_flex1 .sf6,
-.sf_flex1 .s61,
-.sf_flex1 .s62,
-.sf_flex1 .s63,
-.sf_flex1 .s64,
-.sf_flex1 .s65,
-.sf_flex1 .s66,
 .sf_flex2 .rb1,
 .sf_flex2 .rb2,
 .sf_flex2 .rb3,
@@ -1453,12 +1411,6 @@ body {
 .sf_flex2 .sf4,
 .sf_flex2 .sf5,
 .sf_flex2 .sf6,
-.sf_flex2 .s61,
-.sf_flex2 .s62,
-.sf_flex2 .s63,
-.sf_flex2 .s64,
-.sf_flex2 .s65,
-.sf_flex2 .s66,
 .sf_flex3 .rb1,
 .sf_flex3 .rb2,
 .sf_flex3 .rb3,
@@ -1471,12 +1423,6 @@ body {
 .sf_flex3 .sf4,
 .sf_flex3 .sf5,
 .sf_flex3 .sf6,
-.sf_flex3 .s61,
-.sf_flex3 .s62,
-.sf_flex3 .s63,
-.sf_flex3 .s64,
-.sf_flex3 .s65,
-.sf_flex3 .s66,
 .sf_flex4 .rb1,
 .sf_flex4 .rb2,
 .sf_flex4 .rb3,
@@ -1489,12 +1435,6 @@ body {
 .sf_flex4 .sf4,
 .sf_flex4 .sf5,
 .sf_flex4 .sf6,
-.sf_flex4 .s61,
-.sf_flex4 .s62,
-.sf_flex4 .s63,
-.sf_flex4 .s64,
-.sf_flex4 .s65,
-.sf_flex4 .s66,
 .sf_flex5 .rb1,
 .sf_flex5 .rb2,
 .sf_flex5 .rb3,
@@ -1507,12 +1447,6 @@ body {
 .sf_flex5 .sf4,
 .sf_flex5 .sf5,
 .sf_flex5 .sf6,
-.sf_flex5 .s61,
-.sf_flex5 .s62,
-.sf_flex5 .s63,
-.sf_flex5 .s64,
-.sf_flex5 .s65,
-.sf_flex5 .s66,
 .sf_flex6 .rb1,
 .sf_flex6 .rb2,
 .sf_flex6 .rb3,
@@ -1524,127 +1458,13 @@ body {
 .sf_flex6 .sf3,
 .sf_flex6 .sf4,
 .sf_flex6 .sf5,
-.sf_flex6 .sf6,
-.sf_flex6 .s61,
-.sf_flex6 .s62,
-.sf_flex6 .s63,
-.sf_flex6 .s64,
-.sf_flex6 .s65,
-.sf_flex6 .s66,
-.s6_flex1 .rb1,
-.s6_flex1 .rb2,
-.s6_flex1 .rb3,
-.s6_flex1 .rb4,
-.s6_flex1 .rb5,
-.s6_flex1 .rb6,
-.s6_flex1 .sf1,
-.s6_flex1 .sf2,
-.s6_flex1 .sf3,
-.s6_flex1 .sf4,
-.s6_flex1 .sf5,
-.s6_flex1 .sf6,
-.s6_flex1 .s61,
-.s6_flex1 .s62,
-.s6_flex1 .s63,
-.s6_flex1 .s64,
-.s6_flex1 .s65,
-.s6_flex1 .s66,
-.s6_flex2 .rb1,
-.s6_flex2 .rb2,
-.s6_flex2 .rb3,
-.s6_flex2 .rb4,
-.s6_flex2 .rb5,
-.s6_flex2 .rb6,
-.s6_flex2 .sf1,
-.s6_flex2 .sf2,
-.s6_flex2 .sf3,
-.s6_flex2 .sf4,
-.s6_flex2 .sf5,
-.s6_flex2 .sf6,
-.s6_flex2 .s61,
-.s6_flex2 .s62,
-.s6_flex2 .s63,
-.s6_flex2 .s64,
-.s6_flex2 .s65,
-.s6_flex2 .s66,
-.s6_flex3 .rb1,
-.s6_flex3 .rb2,
-.s6_flex3 .rb3,
-.s6_flex3 .rb4,
-.s6_flex3 .rb5,
-.s6_flex3 .rb6,
-.s6_flex3 .sf1,
-.s6_flex3 .sf2,
-.s6_flex3 .sf3,
-.s6_flex3 .sf4,
-.s6_flex3 .sf5,
-.s6_flex3 .sf6,
-.s6_flex3 .s61,
-.s6_flex3 .s62,
-.s6_flex3 .s63,
-.s6_flex3 .s64,
-.s6_flex3 .s65,
-.s6_flex3 .s66,
-.s6_flex4 .rb1,
-.s6_flex4 .rb2,
-.s6_flex4 .rb3,
-.s6_flex4 .rb4,
-.s6_flex4 .rb5,
-.s6_flex4 .rb6,
-.s6_flex4 .sf1,
-.s6_flex4 .sf2,
-.s6_flex4 .sf3,
-.s6_flex4 .sf4,
-.s6_flex4 .sf5,
-.s6_flex4 .sf6,
-.s6_flex4 .s61,
-.s6_flex4 .s62,
-.s6_flex4 .s63,
-.s6_flex4 .s64,
-.s6_flex4 .s65,
-.s6_flex4 .s66,
-.s6_flex5 .rb1,
-.s6_flex5 .rb2,
-.s6_flex5 .rb3,
-.s6_flex5 .rb4,
-.s6_flex5 .rb5,
-.s6_flex5 .rb6,
-.s6_flex5 .sf1,
-.s6_flex5 .sf2,
-.s6_flex5 .sf3,
-.s6_flex5 .sf4,
-.s6_flex5 .sf5,
-.s6_flex5 .sf6,
-.s6_flex5 .s61,
-.s6_flex5 .s62,
-.s6_flex5 .s63,
-.s6_flex5 .s64,
-.s6_flex5 .s65,
-.s6_flex5 .s66,
-.s6_flex6 .rb1,
-.s6_flex6 .rb2,
-.s6_flex6 .rb3,
-.s6_flex6 .rb4,
-.s6_flex6 .rb5,
-.s6_flex6 .rb6,
-.s6_flex6 .sf1,
-.s6_flex6 .sf2,
-.s6_flex6 .sf3,
-.s6_flex6 .sf4,
-.s6_flex6 .sf5,
-.s6_flex6 .sf6,
-.s6_flex6 .s61,
-.s6_flex6 .s62,
-.s6_flex6 .s63,
-.s6_flex6 .s64,
-.s6_flex6 .s65,
-.s6_flex6 .s66 {
+.sf_flex6 .sf6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 168px;
-  min-height: 168px;
+  width: 100%;
+  height: 100%;
   padding: 8px;
   margin-bottom: 12px;
 }
@@ -1660,12 +1480,6 @@ body {
 .rb_flex1 .sf4 img,
 .rb_flex1 .sf5 img,
 .rb_flex1 .sf6 img,
-.rb_flex1 .s61 img,
-.rb_flex1 .s62 img,
-.rb_flex1 .s63 img,
-.rb_flex1 .s64 img,
-.rb_flex1 .s65 img,
-.rb_flex1 .s66 img,
 .rb_flex2 .rb1 img,
 .rb_flex2 .rb2 img,
 .rb_flex2 .rb3 img,
@@ -1678,12 +1492,6 @@ body {
 .rb_flex2 .sf4 img,
 .rb_flex2 .sf5 img,
 .rb_flex2 .sf6 img,
-.rb_flex2 .s61 img,
-.rb_flex2 .s62 img,
-.rb_flex2 .s63 img,
-.rb_flex2 .s64 img,
-.rb_flex2 .s65 img,
-.rb_flex2 .s66 img,
 .rb_flex3 .rb1 img,
 .rb_flex3 .rb2 img,
 .rb_flex3 .rb3 img,
@@ -1696,12 +1504,6 @@ body {
 .rb_flex3 .sf4 img,
 .rb_flex3 .sf5 img,
 .rb_flex3 .sf6 img,
-.rb_flex3 .s61 img,
-.rb_flex3 .s62 img,
-.rb_flex3 .s63 img,
-.rb_flex3 .s64 img,
-.rb_flex3 .s65 img,
-.rb_flex3 .s66 img,
 .rb_flex4 .rb1 img,
 .rb_flex4 .rb2 img,
 .rb_flex4 .rb3 img,
@@ -1714,12 +1516,6 @@ body {
 .rb_flex4 .sf4 img,
 .rb_flex4 .sf5 img,
 .rb_flex4 .sf6 img,
-.rb_flex4 .s61 img,
-.rb_flex4 .s62 img,
-.rb_flex4 .s63 img,
-.rb_flex4 .s64 img,
-.rb_flex4 .s65 img,
-.rb_flex4 .s66 img,
 .rb_flex5 .rb1 img,
 .rb_flex5 .rb2 img,
 .rb_flex5 .rb3 img,
@@ -1732,12 +1528,6 @@ body {
 .rb_flex5 .sf4 img,
 .rb_flex5 .sf5 img,
 .rb_flex5 .sf6 img,
-.rb_flex5 .s61 img,
-.rb_flex5 .s62 img,
-.rb_flex5 .s63 img,
-.rb_flex5 .s64 img,
-.rb_flex5 .s65 img,
-.rb_flex5 .s66 img,
 .rb_flex6 .rb1 img,
 .rb_flex6 .rb2 img,
 .rb_flex6 .rb3 img,
@@ -1750,12 +1540,6 @@ body {
 .rb_flex6 .sf4 img,
 .rb_flex6 .sf5 img,
 .rb_flex6 .sf6 img,
-.rb_flex6 .s61 img,
-.rb_flex6 .s62 img,
-.rb_flex6 .s63 img,
-.rb_flex6 .s64 img,
-.rb_flex6 .s65 img,
-.rb_flex6 .s66 img,
 .sf_flex1 .rb1 img,
 .sf_flex1 .rb2 img,
 .sf_flex1 .rb3 img,
@@ -1768,12 +1552,6 @@ body {
 .sf_flex1 .sf4 img,
 .sf_flex1 .sf5 img,
 .sf_flex1 .sf6 img,
-.sf_flex1 .s61 img,
-.sf_flex1 .s62 img,
-.sf_flex1 .s63 img,
-.sf_flex1 .s64 img,
-.sf_flex1 .s65 img,
-.sf_flex1 .s66 img,
 .sf_flex2 .rb1 img,
 .sf_flex2 .rb2 img,
 .sf_flex2 .rb3 img,
@@ -1786,12 +1564,6 @@ body {
 .sf_flex2 .sf4 img,
 .sf_flex2 .sf5 img,
 .sf_flex2 .sf6 img,
-.sf_flex2 .s61 img,
-.sf_flex2 .s62 img,
-.sf_flex2 .s63 img,
-.sf_flex2 .s64 img,
-.sf_flex2 .s65 img,
-.sf_flex2 .s66 img,
 .sf_flex3 .rb1 img,
 .sf_flex3 .rb2 img,
 .sf_flex3 .rb3 img,
@@ -1804,12 +1576,6 @@ body {
 .sf_flex3 .sf4 img,
 .sf_flex3 .sf5 img,
 .sf_flex3 .sf6 img,
-.sf_flex3 .s61 img,
-.sf_flex3 .s62 img,
-.sf_flex3 .s63 img,
-.sf_flex3 .s64 img,
-.sf_flex3 .s65 img,
-.sf_flex3 .s66 img,
 .sf_flex4 .rb1 img,
 .sf_flex4 .rb2 img,
 .sf_flex4 .rb3 img,
@@ -1822,12 +1588,6 @@ body {
 .sf_flex4 .sf4 img,
 .sf_flex4 .sf5 img,
 .sf_flex4 .sf6 img,
-.sf_flex4 .s61 img,
-.sf_flex4 .s62 img,
-.sf_flex4 .s63 img,
-.sf_flex4 .s64 img,
-.sf_flex4 .s65 img,
-.sf_flex4 .s66 img,
 .sf_flex5 .rb1 img,
 .sf_flex5 .rb2 img,
 .sf_flex5 .rb3 img,
@@ -1840,12 +1600,6 @@ body {
 .sf_flex5 .sf4 img,
 .sf_flex5 .sf5 img,
 .sf_flex5 .sf6 img,
-.sf_flex5 .s61 img,
-.sf_flex5 .s62 img,
-.sf_flex5 .s63 img,
-.sf_flex5 .s64 img,
-.sf_flex5 .s65 img,
-.sf_flex5 .s66 img,
 .sf_flex6 .rb1 img,
 .sf_flex6 .rb2 img,
 .sf_flex6 .rb3 img,
@@ -1857,126 +1611,12 @@ body {
 .sf_flex6 .sf3 img,
 .sf_flex6 .sf4 img,
 .sf_flex6 .sf5 img,
-.sf_flex6 .sf6 img,
-.sf_flex6 .s61 img,
-.sf_flex6 .s62 img,
-.sf_flex6 .s63 img,
-.sf_flex6 .s64 img,
-.sf_flex6 .s65 img,
-.sf_flex6 .s66 img,
-.s6_flex1 .rb1 img,
-.s6_flex1 .rb2 img,
-.s6_flex1 .rb3 img,
-.s6_flex1 .rb4 img,
-.s6_flex1 .rb5 img,
-.s6_flex1 .rb6 img,
-.s6_flex1 .sf1 img,
-.s6_flex1 .sf2 img,
-.s6_flex1 .sf3 img,
-.s6_flex1 .sf4 img,
-.s6_flex1 .sf5 img,
-.s6_flex1 .sf6 img,
-.s6_flex1 .s61 img,
-.s6_flex1 .s62 img,
-.s6_flex1 .s63 img,
-.s6_flex1 .s64 img,
-.s6_flex1 .s65 img,
-.s6_flex1 .s66 img,
-.s6_flex2 .rb1 img,
-.s6_flex2 .rb2 img,
-.s6_flex2 .rb3 img,
-.s6_flex2 .rb4 img,
-.s6_flex2 .rb5 img,
-.s6_flex2 .rb6 img,
-.s6_flex2 .sf1 img,
-.s6_flex2 .sf2 img,
-.s6_flex2 .sf3 img,
-.s6_flex2 .sf4 img,
-.s6_flex2 .sf5 img,
-.s6_flex2 .sf6 img,
-.s6_flex2 .s61 img,
-.s6_flex2 .s62 img,
-.s6_flex2 .s63 img,
-.s6_flex2 .s64 img,
-.s6_flex2 .s65 img,
-.s6_flex2 .s66 img,
-.s6_flex3 .rb1 img,
-.s6_flex3 .rb2 img,
-.s6_flex3 .rb3 img,
-.s6_flex3 .rb4 img,
-.s6_flex3 .rb5 img,
-.s6_flex3 .rb6 img,
-.s6_flex3 .sf1 img,
-.s6_flex3 .sf2 img,
-.s6_flex3 .sf3 img,
-.s6_flex3 .sf4 img,
-.s6_flex3 .sf5 img,
-.s6_flex3 .sf6 img,
-.s6_flex3 .s61 img,
-.s6_flex3 .s62 img,
-.s6_flex3 .s63 img,
-.s6_flex3 .s64 img,
-.s6_flex3 .s65 img,
-.s6_flex3 .s66 img,
-.s6_flex4 .rb1 img,
-.s6_flex4 .rb2 img,
-.s6_flex4 .rb3 img,
-.s6_flex4 .rb4 img,
-.s6_flex4 .rb5 img,
-.s6_flex4 .rb6 img,
-.s6_flex4 .sf1 img,
-.s6_flex4 .sf2 img,
-.s6_flex4 .sf3 img,
-.s6_flex4 .sf4 img,
-.s6_flex4 .sf5 img,
-.s6_flex4 .sf6 img,
-.s6_flex4 .s61 img,
-.s6_flex4 .s62 img,
-.s6_flex4 .s63 img,
-.s6_flex4 .s64 img,
-.s6_flex4 .s65 img,
-.s6_flex4 .s66 img,
-.s6_flex5 .rb1 img,
-.s6_flex5 .rb2 img,
-.s6_flex5 .rb3 img,
-.s6_flex5 .rb4 img,
-.s6_flex5 .rb5 img,
-.s6_flex5 .rb6 img,
-.s6_flex5 .sf1 img,
-.s6_flex5 .sf2 img,
-.s6_flex5 .sf3 img,
-.s6_flex5 .sf4 img,
-.s6_flex5 .sf5 img,
-.s6_flex5 .sf6 img,
-.s6_flex5 .s61 img,
-.s6_flex5 .s62 img,
-.s6_flex5 .s63 img,
-.s6_flex5 .s64 img,
-.s6_flex5 .s65 img,
-.s6_flex5 .s66 img,
-.s6_flex6 .rb1 img,
-.s6_flex6 .rb2 img,
-.s6_flex6 .rb3 img,
-.s6_flex6 .rb4 img,
-.s6_flex6 .rb5 img,
-.s6_flex6 .rb6 img,
-.s6_flex6 .sf1 img,
-.s6_flex6 .sf2 img,
-.s6_flex6 .sf3 img,
-.s6_flex6 .sf4 img,
-.s6_flex6 .sf5 img,
-.s6_flex6 .sf6 img,
-.s6_flex6 .s61 img,
-.s6_flex6 .s62 img,
-.s6_flex6 .s63 img,
-.s6_flex6 .s64 img,
-.s6_flex6 .s65 img,
-.s6_flex6 .s66 img {
+.sf_flex6 .sf6 img {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  width: 168px;
+  width: 100%;
   height: auto;
   margin: 16px;
   transition: transform 0.4s;
@@ -1993,13 +1633,371 @@ body {
 .sf3:hover,
 .sf4:hover,
 .sf5:hover,
-.sf6:hover,
-.s61:hover,
-.s62:hover,
-.s63:hover,
-.s64:hover,
-.s65:hover,
-.s66:hover {
+.sf6:hover {
+  transition: transform 0.4s;
+  transform: scale(1.5);
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .pod_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+  }
+  .pod_info h3 {
+    font-size: 36px;
+    margin: 24px;
+  }
+  .pod_flex_container1,
+  .pod_flex_container2,
+  .pod_flex_container3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 60%;
+    padding: 18px;
+  }
+}
+.rb_flex1,
+.rb_flex2,
+.rb_flex3,
+.rb_flex4,
+.rb_flex5,
+.rb_flex6,
+.sf_flex1,
+.sf_flex2,
+.sf_flex3,
+.sf_flex4,
+.sf_flex5,
+.sf_flex6 {
+  display: flex;
+  height: 50%;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+}
+.rb_flex1 .rb1,
+.rb_flex1 .rb2,
+.rb_flex1 .rb3,
+.rb_flex1 .rb4,
+.rb_flex1 .rb5,
+.rb_flex1 .rb6,
+.rb_flex1 .sf1,
+.rb_flex1 .sf2,
+.rb_flex1 .sf3,
+.rb_flex1 .sf4,
+.rb_flex1 .sf5,
+.rb_flex1 .sf6,
+.rb_flex2 .rb1,
+.rb_flex2 .rb2,
+.rb_flex2 .rb3,
+.rb_flex2 .rb4,
+.rb_flex2 .rb5,
+.rb_flex2 .rb6,
+.rb_flex2 .sf1,
+.rb_flex2 .sf2,
+.rb_flex2 .sf3,
+.rb_flex2 .sf4,
+.rb_flex2 .sf5,
+.rb_flex2 .sf6,
+.rb_flex3 .rb1,
+.rb_flex3 .rb2,
+.rb_flex3 .rb3,
+.rb_flex3 .rb4,
+.rb_flex3 .rb5,
+.rb_flex3 .rb6,
+.rb_flex3 .sf1,
+.rb_flex3 .sf2,
+.rb_flex3 .sf3,
+.rb_flex3 .sf4,
+.rb_flex3 .sf5,
+.rb_flex3 .sf6,
+.rb_flex4 .rb1,
+.rb_flex4 .rb2,
+.rb_flex4 .rb3,
+.rb_flex4 .rb4,
+.rb_flex4 .rb5,
+.rb_flex4 .rb6,
+.rb_flex4 .sf1,
+.rb_flex4 .sf2,
+.rb_flex4 .sf3,
+.rb_flex4 .sf4,
+.rb_flex4 .sf5,
+.rb_flex4 .sf6,
+.rb_flex5 .rb1,
+.rb_flex5 .rb2,
+.rb_flex5 .rb3,
+.rb_flex5 .rb4,
+.rb_flex5 .rb5,
+.rb_flex5 .rb6,
+.rb_flex5 .sf1,
+.rb_flex5 .sf2,
+.rb_flex5 .sf3,
+.rb_flex5 .sf4,
+.rb_flex5 .sf5,
+.rb_flex5 .sf6,
+.rb_flex6 .rb1,
+.rb_flex6 .rb2,
+.rb_flex6 .rb3,
+.rb_flex6 .rb4,
+.rb_flex6 .rb5,
+.rb_flex6 .rb6,
+.rb_flex6 .sf1,
+.rb_flex6 .sf2,
+.rb_flex6 .sf3,
+.rb_flex6 .sf4,
+.rb_flex6 .sf5,
+.rb_flex6 .sf6,
+.sf_flex1 .rb1,
+.sf_flex1 .rb2,
+.sf_flex1 .rb3,
+.sf_flex1 .rb4,
+.sf_flex1 .rb5,
+.sf_flex1 .rb6,
+.sf_flex1 .sf1,
+.sf_flex1 .sf2,
+.sf_flex1 .sf3,
+.sf_flex1 .sf4,
+.sf_flex1 .sf5,
+.sf_flex1 .sf6,
+.sf_flex2 .rb1,
+.sf_flex2 .rb2,
+.sf_flex2 .rb3,
+.sf_flex2 .rb4,
+.sf_flex2 .rb5,
+.sf_flex2 .rb6,
+.sf_flex2 .sf1,
+.sf_flex2 .sf2,
+.sf_flex2 .sf3,
+.sf_flex2 .sf4,
+.sf_flex2 .sf5,
+.sf_flex2 .sf6,
+.sf_flex3 .rb1,
+.sf_flex3 .rb2,
+.sf_flex3 .rb3,
+.sf_flex3 .rb4,
+.sf_flex3 .rb5,
+.sf_flex3 .rb6,
+.sf_flex3 .sf1,
+.sf_flex3 .sf2,
+.sf_flex3 .sf3,
+.sf_flex3 .sf4,
+.sf_flex3 .sf5,
+.sf_flex3 .sf6,
+.sf_flex4 .rb1,
+.sf_flex4 .rb2,
+.sf_flex4 .rb3,
+.sf_flex4 .rb4,
+.sf_flex4 .rb5,
+.sf_flex4 .rb6,
+.sf_flex4 .sf1,
+.sf_flex4 .sf2,
+.sf_flex4 .sf3,
+.sf_flex4 .sf4,
+.sf_flex4 .sf5,
+.sf_flex4 .sf6,
+.sf_flex5 .rb1,
+.sf_flex5 .rb2,
+.sf_flex5 .rb3,
+.sf_flex5 .rb4,
+.sf_flex5 .rb5,
+.sf_flex5 .rb6,
+.sf_flex5 .sf1,
+.sf_flex5 .sf2,
+.sf_flex5 .sf3,
+.sf_flex5 .sf4,
+.sf_flex5 .sf5,
+.sf_flex5 .sf6,
+.sf_flex6 .rb1,
+.sf_flex6 .rb2,
+.sf_flex6 .rb3,
+.sf_flex6 .rb4,
+.sf_flex6 .rb5,
+.sf_flex6 .rb6,
+.sf_flex6 .sf1,
+.sf_flex6 .sf2,
+.sf_flex6 .sf3,
+.sf_flex6 .sf4,
+.sf_flex6 .sf5,
+.sf_flex6 .sf6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.rb_flex1 .rb1 img,
+.rb_flex1 .rb2 img,
+.rb_flex1 .rb3 img,
+.rb_flex1 .rb4 img,
+.rb_flex1 .rb5 img,
+.rb_flex1 .rb6 img,
+.rb_flex1 .sf1 img,
+.rb_flex1 .sf2 img,
+.rb_flex1 .sf3 img,
+.rb_flex1 .sf4 img,
+.rb_flex1 .sf5 img,
+.rb_flex1 .sf6 img,
+.rb_flex2 .rb1 img,
+.rb_flex2 .rb2 img,
+.rb_flex2 .rb3 img,
+.rb_flex2 .rb4 img,
+.rb_flex2 .rb5 img,
+.rb_flex2 .rb6 img,
+.rb_flex2 .sf1 img,
+.rb_flex2 .sf2 img,
+.rb_flex2 .sf3 img,
+.rb_flex2 .sf4 img,
+.rb_flex2 .sf5 img,
+.rb_flex2 .sf6 img,
+.rb_flex3 .rb1 img,
+.rb_flex3 .rb2 img,
+.rb_flex3 .rb3 img,
+.rb_flex3 .rb4 img,
+.rb_flex3 .rb5 img,
+.rb_flex3 .rb6 img,
+.rb_flex3 .sf1 img,
+.rb_flex3 .sf2 img,
+.rb_flex3 .sf3 img,
+.rb_flex3 .sf4 img,
+.rb_flex3 .sf5 img,
+.rb_flex3 .sf6 img,
+.rb_flex4 .rb1 img,
+.rb_flex4 .rb2 img,
+.rb_flex4 .rb3 img,
+.rb_flex4 .rb4 img,
+.rb_flex4 .rb5 img,
+.rb_flex4 .rb6 img,
+.rb_flex4 .sf1 img,
+.rb_flex4 .sf2 img,
+.rb_flex4 .sf3 img,
+.rb_flex4 .sf4 img,
+.rb_flex4 .sf5 img,
+.rb_flex4 .sf6 img,
+.rb_flex5 .rb1 img,
+.rb_flex5 .rb2 img,
+.rb_flex5 .rb3 img,
+.rb_flex5 .rb4 img,
+.rb_flex5 .rb5 img,
+.rb_flex5 .rb6 img,
+.rb_flex5 .sf1 img,
+.rb_flex5 .sf2 img,
+.rb_flex5 .sf3 img,
+.rb_flex5 .sf4 img,
+.rb_flex5 .sf5 img,
+.rb_flex5 .sf6 img,
+.rb_flex6 .rb1 img,
+.rb_flex6 .rb2 img,
+.rb_flex6 .rb3 img,
+.rb_flex6 .rb4 img,
+.rb_flex6 .rb5 img,
+.rb_flex6 .rb6 img,
+.rb_flex6 .sf1 img,
+.rb_flex6 .sf2 img,
+.rb_flex6 .sf3 img,
+.rb_flex6 .sf4 img,
+.rb_flex6 .sf5 img,
+.rb_flex6 .sf6 img,
+.sf_flex1 .rb1 img,
+.sf_flex1 .rb2 img,
+.sf_flex1 .rb3 img,
+.sf_flex1 .rb4 img,
+.sf_flex1 .rb5 img,
+.sf_flex1 .rb6 img,
+.sf_flex1 .sf1 img,
+.sf_flex1 .sf2 img,
+.sf_flex1 .sf3 img,
+.sf_flex1 .sf4 img,
+.sf_flex1 .sf5 img,
+.sf_flex1 .sf6 img,
+.sf_flex2 .rb1 img,
+.sf_flex2 .rb2 img,
+.sf_flex2 .rb3 img,
+.sf_flex2 .rb4 img,
+.sf_flex2 .rb5 img,
+.sf_flex2 .rb6 img,
+.sf_flex2 .sf1 img,
+.sf_flex2 .sf2 img,
+.sf_flex2 .sf3 img,
+.sf_flex2 .sf4 img,
+.sf_flex2 .sf5 img,
+.sf_flex2 .sf6 img,
+.sf_flex3 .rb1 img,
+.sf_flex3 .rb2 img,
+.sf_flex3 .rb3 img,
+.sf_flex3 .rb4 img,
+.sf_flex3 .rb5 img,
+.sf_flex3 .rb6 img,
+.sf_flex3 .sf1 img,
+.sf_flex3 .sf2 img,
+.sf_flex3 .sf3 img,
+.sf_flex3 .sf4 img,
+.sf_flex3 .sf5 img,
+.sf_flex3 .sf6 img,
+.sf_flex4 .rb1 img,
+.sf_flex4 .rb2 img,
+.sf_flex4 .rb3 img,
+.sf_flex4 .rb4 img,
+.sf_flex4 .rb5 img,
+.sf_flex4 .rb6 img,
+.sf_flex4 .sf1 img,
+.sf_flex4 .sf2 img,
+.sf_flex4 .sf3 img,
+.sf_flex4 .sf4 img,
+.sf_flex4 .sf5 img,
+.sf_flex4 .sf6 img,
+.sf_flex5 .rb1 img,
+.sf_flex5 .rb2 img,
+.sf_flex5 .rb3 img,
+.sf_flex5 .rb4 img,
+.sf_flex5 .rb5 img,
+.sf_flex5 .rb6 img,
+.sf_flex5 .sf1 img,
+.sf_flex5 .sf2 img,
+.sf_flex5 .sf3 img,
+.sf_flex5 .sf4 img,
+.sf_flex5 .sf5 img,
+.sf_flex5 .sf6 img,
+.sf_flex6 .rb1 img,
+.sf_flex6 .rb2 img,
+.sf_flex6 .rb3 img,
+.sf_flex6 .rb4 img,
+.sf_flex6 .rb5 img,
+.sf_flex6 .rb6 img,
+.sf_flex6 .sf1 img,
+.sf_flex6 .sf2 img,
+.sf_flex6 .sf3 img,
+.sf_flex6 .sf4 img,
+.sf_flex6 .sf5 img,
+.sf_flex6 .sf6 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  width: 60%;
+  height: auto;
+  margin: 16px;
+  transition: transform 0.4s;
+}
+
+.rb1:hover,
+.rb2:hover,
+.rb3:hover,
+.rb4:hover,
+.rb5:hover,
+.rb6:hover,
+.sf1:hover,
+.sf2:hover,
+.sf3:hover,
+.sf4:hover,
+.sf5:hover,
+.sf6:hover {
   transition: transform 0.4s;
   transform: scale(1.5);
 }
@@ -2009,12 +2007,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 525px;
+  max-width: 1600px;
   background-color: rgb(252, 245, 235);
   justify-content: space-around;
   align-content: space-between;
   column-gap: 30px;
-  padding: 10px 30px 30px 30px;
-  margin: 0 auto;
+  padding: 10px 20px;
 }
 #services h1 {
   display: flex;
@@ -2036,8 +2034,7 @@ body {
   height: 425px;
   flex-direction: row;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(81, 49, 39);
-  text-align: center;
+  border: 1px solid rgb(81, 49, 39);
   justify-content: center;
   align-content: space-around;
   padding: 15px;
@@ -2122,7 +2119,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  min-height: 200px;
+  min-height: 300px;
   background: rgb(252, 245, 235);
   color: rgb(81, 49, 39);
   text-align: center;
@@ -2131,11 +2128,11 @@ body {
 }
 .footer1 .logo-ftr1 {
   display: flex;
-  width: 20vw;
+  width: 20%;
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
-  background-color: -webkit-gradient(linear, right top, left bottom, from(rgb(189, 131, 91)), to(rgb(105, 138, 133)));
+  background-color: rgb(105, 138, 133);
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -2160,20 +2157,20 @@ body {
 .footer1 #contact-info {
   display: flex;
   flex-direction: column;
-  width: 33vw;
+  width: 33%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 .footer1 #contact-info a {
   text-decoration: none;
-  color: rgb(11, 38, 58);
+  color: rgb(105, 138, 133);
   font-size: 14pt;
   padding: 12px 20px;
 }
 .footer1 #contact-info a:hover {
-  color: rgb(41, 99, 143);
-  filter: drop-shadow(3px 3px 3px black);
+  color: rgb(81, 49, 39);
+  filter: drop-shadow(2px 2px 2px black);
 }
 .footer1 #contact-info h3 {
   font-weight: 700;
@@ -2584,14 +2581,15 @@ body {
     align-content: center;
     margin: 0 auto;
     padding: 10px;
+    color: rgb(252, 245, 235);
     height: auto;
     text-decoration: none;
     font-size: 12px;
     transition: all 0.3s ease;
   }
   header .header-accent #nav-links ul a:hover {
-    background-color: rgb(11, 38, 58);
-    color: rgb(214, 224, 242);
+    background-color: rgb(105, 138, 133);
+    color: rgb(252, 245, 235);
   }
 }
 /*intro/meet*/
@@ -2912,7 +2910,6 @@ body {
   .stwo,
   .sthree {
     display: flex;
-    flex-flow: row wrap;
     height: auto;
     width: 35vw;
     margin: 20px auto;
@@ -2986,7 +2983,7 @@ body {
   .stwo,
   .sthree {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     width: 50vw;
     margin: 20px auto;
@@ -3115,6 +3112,8 @@ body {
   .footer1 .logo-ftr1 {
     min-width: 100vw;
     margin: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   .footer1 .logo-ftr1 img {
     height: 100px;
@@ -3148,12 +3147,12 @@ body {
 @media (min-width: 321px) and (max-width: 480px) */
 /*mobiles in portrait mode
 @media (max-width: 320px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   .pod {
     display: flex;
     flex-flow: row wrap;
     min-height: 1000px;
-    width: 100vw;
+    width: 100%;
     justify-content: space-around;
     align-content: space-between;
     column-gap: 20px;
@@ -3252,7 +3251,7 @@ body {
   .pod .flex-container11,
   .pod .flex-container2 {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: auto;
     justify-content: space-between;
     align-items: center;
@@ -3270,7 +3269,7 @@ body {
   .pod .flex-item14,
   .pod .flex-item15,
   .pod .flex-item16 {
-    height: 25%;
+    height: 20%;
     width: 20%;
     display: flex;
     flex-flow: row wrap;
@@ -3294,8 +3293,6 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    min-width: 175px;
-    min-height: 175px;
     padding: 8px;
     margin-bottom: 12px;
   }
@@ -3321,15 +3318,102 @@ body {
     transition: transform 0.4s;
   }
 }
+/*tablets in portrait mode*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .pod .pattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+    padding: 10px 30px;
+    height: auto;
+  }
+  .pod .flex-container11,
+  .pod .flex-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .pod .flex-item1,
+  .pod .flex-item2,
+  .pod .flex-item3,
+  .pod .flex-item4,
+  .pod .flex-item5,
+  .pod .flex-item6,
+  .pod .flex-item11,
+  .pod .flex-item12,
+  .pod .flex-item13,
+  .pod .flex-item14,
+  .pod .flex-item15,
+  .pod .flex-item16 {
+    height: 20%;
+    width: 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 24px auto;
+  }
+  .pod .box111,
+  .pod .box112,
+  .pod .box113,
+  .pod .box114,
+  .pod .box115,
+  .pod .box6,
+  .pod .box11,
+  .pod .box12,
+  .pod .box13,
+  .pod .box14,
+  .pod .box15,
+  .pod .box16 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.4s;
+  }
+  .pod .box111 img,
+  .pod .box112 img,
+  .pod .box113 img,
+  .pod .box114 img,
+  .pod .box115 img,
+  .pod .box6 img,
+  .pod .box11 img,
+  .pod .box12 img,
+  .pod .box13 img,
+  .pod .box14 img,
+  .pod .box15 img,
+  .pod .box16 img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin: 8px auto;
+    transition: transform 0.4s;
+  }
+}
+/*mobiles in landscape mode
+@media (min-width: 321px) and (max-width: 480px) */
+/*mobiles in portrait mode
+@media (max-width: 320px) */
 body {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .body-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3347,30 +3431,32 @@ body {
 }*/
 .bgi1 {
   height: 300px;
-  width: 100vw;
-  background-image: url(homepage_images/copperBGI1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 1600px;
 }
 
 .bgi2 {
   height: 300px;
-  width: 100vw;
-  background-image: url(homepage_images/copperBGI2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 1600px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .bgi1 {
-    height: 150px;
-    width: 100vw;
-    background-image: url(public/homepage_images/blue.aqua.300.1440.horizintal-100.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
+    width: 800px;
+  }
+  .bgi2 {
+    height: auto;
+    width: 800px;
+  }
+}
+@media (max-width: 480px) {
+  .bgi1 {
+    height: auto;
+    width: 480px;
+  }
+  .bgi2 {
+    height: auto;
+    width: 480px;
   }
 }
 
