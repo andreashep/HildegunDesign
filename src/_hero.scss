@@ -130,8 +130,8 @@ body {
 .intro {
 	display: flex;
 	height: 500px;
-	min-width: 100vw;
-	background-color: $white;
+	width: 100%;
+	background-color: $cream;
 	align-items: center;
 	justify-content: center;
 	padding: 25px;
@@ -146,17 +146,46 @@ body {
 		align-self: center;
 	}
 }
-.meet {
+
+.construction{
+	display: flex;
+	height: 700px;
+	width: 100%;
+	background-color: $cream;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	img {
+		display: flex;
+		height: 600px;
+		width: auto;
+		margin: 50px;
+		background-color: $dk_verdigris;
+		padding: 25px;
+		justify-content: right;
+		align-self: center;
+	}
+}
+.meet, .graphic_title {
 	display: flex;
 	flex-direction: column;
+	width: 30%;
 	margin: 50px;
 	padding: 45px 75px;
+	background-color: $white;
 	border: 1px solid $brown-text;
 	line-height: 60px;
 	text-align: center;
 	justify-content: center;
-	align-items: space-around;
-
+	align-items: center;
+h1 {
+	display: flex;
+	font-size: 48px;
+}
+h4 {
+	display: flex;
+	font-size: 24px;
+}
 }
 
 /*******************************end of intro/meet***************************/

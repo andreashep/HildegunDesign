@@ -22,7 +22,7 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .btn {
     margin: 35px;
-    min-width: 125px;
+    min-width: 150px;
     min-height: 25px;
     font-size: 16px;
   }
@@ -35,7 +35,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .btn {
     margin: 25px;
-    min-width: 100px;
+    min-width: 125px;
     min-height: 25px;
   }
 }
@@ -46,6 +46,7 @@
     margin: 15px;
     min-width: 100px;
     min-height: 25px;
+    font-size: 12px;
   }
 }
 
@@ -56,6 +57,10 @@
     min-width: 100px;
     min-height: 25px;
   }
+  .btn a {
+    margin: 0;
+    padding: 0;
+}
 }
 
 /*mobiles in portrait mode*/
@@ -161,11 +166,11 @@
           padding: 10px;
 
           height: auto;
-       
+
           color: $cream;
           text-decoration: none;
           font-size: 14px;
-       
+
           transition: all 0.3s ease;
 
           &:hover {
@@ -189,7 +194,7 @@
       display: flex;
       height: auto;
       max-width: 150px;
-    background-color: transparent;
+      background-color: transparent;
       margin: 0 auto 15px;
       justify-content: center;
       align-content: center;
@@ -216,14 +221,13 @@
           justify-content: center;
           align-content: center;
           margin: 0 auto;
-          padding: 10px;
-color: $cream;
+          padding: 4px;
+          color: $cream;
           height: auto;
-        
-  
+
           text-decoration: none;
           font-size: 12px;
-       
+
           transition: all 0.3s ease;
 
           &:hover {
@@ -246,10 +250,10 @@ color: $cream;
 }*/
 /*tablets in landscape mode*/
 @media (min-width: 769px) and (max-width: 1024px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -262,10 +266,17 @@ color: $cream;
     padding: 25px;
     transition: all 0.3s ease;
   }
+  .construction img {
+    height: 300px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
 
-  .meet {
-    height: 200px;
-    width: 200px;
+  .meet, .graphic_title {
+    width: 30%;
+    height: auto;
     margin: 15px;
     padding: 30px 45px;
     line-height: 25px;
@@ -273,18 +284,21 @@ color: $cream;
     transition: all 0.3s ease;
 
     h1 {
-      font-size: 32px;
+      font-size: 36px;
+      margin: 8px;
+    
     }
 
-    h2 {
+    h4 {
       font-size: 16px;
+      margin: 4px;
     }
   }
 }
 
 /*tablets in portrait mode*/
 @media (min-width: 481px) and (max-width: 768px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -302,7 +316,16 @@ color: $cream;
     transition: all 0.3s ease;
   }
 
-  .meet {
+  .construction img {
+    height: 200px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+
+
+  .meet, .graphic_title {
     display: flex;
     height: 200px;
     width: 200px;
@@ -317,7 +340,7 @@ color: $cream;
       font-size: 32px;
     }
 
-    h2 {
+    h4 {
       font-size: 16px;
     }
   }
@@ -325,21 +348,21 @@ color: $cream;
 
 /*mobiles in landscape mode*/
 @media (min-width: 321px) and (max-width: 480px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     line-height: 25px;
     justify-content: center;
     align-content: center;
 
     h1 {
-      font-size: 28px;
+      font-size: 24px;
     }
 
-    h2 {
+    h4 {
       font-size: 12px;
     }
   }
@@ -351,7 +374,16 @@ color: $cream;
     padding: 15px;
   }
 
-  .meet {
+  .construction img {
+    height: 300px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+
+
+  .meet, .graphic_title {
     display: flex;
     height: 200px;
     width: 200px;
@@ -362,7 +394,7 @@ color: $cream;
     align-content: center;
 
     h1 {
-      font-size: 28px;
+      font-size: 24px;
     }
 
     h2 {
@@ -581,7 +613,7 @@ color: $cream;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 15px;
 
     justify-content: center;
@@ -595,7 +627,7 @@ color: $cream;
   .stwo,
   .sthree {
     display: flex;
- 
+
     height: auto;
     width: 35vw;
     margin: 20px auto;
@@ -630,23 +662,22 @@ color: $cream;
   display: flex;
   flex-direction: row;
   height: auto;
-  width: 75vw;
+
   margin: 20px auto;
-  padding: 15px;
+
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
   img {
     display: flex;
-    justify-content: flex-start;
-
-    height:300px;
-    width: auto;
+    justify-content: center;
+    height: auto;
+    width: 50%;
   }
 }
 
 /*mobiles in landscape mode*/
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width: 480px) {
   #cards,
   #services,
   #web_cards,
@@ -654,7 +685,7 @@ color: $cream;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 75vw;
+
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -675,6 +706,9 @@ color: $cream;
     justify-content: center;
     align-content: center;
     transition: all 0.3s ease;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -784,8 +818,6 @@ color: $cream;
       margin: 0 auto;
     }
 
-   
-
     .social-icons {
       width: 100vw;
       margin: 0;
@@ -818,7 +850,7 @@ color: $cream;
       min-width: 100vw;
       margin: 0;
       justify-content: flex-end;
-align-items: flex-end;
+      align-items: flex-end;
       img {
         height: 100px;
         width: 100px;
@@ -903,8 +935,8 @@ align-items: flex-end;
     .flex-item14,
     .flex-item15,
     .flex-item16 {
-      height: 25%;
-      width: 20%;
+      height: 18%;
+      width: 18%;
       display: flex;
       flex-flow: column wrap;
 
@@ -918,6 +950,7 @@ align-items: flex-end;
     .box113,
     .box114,
     .box115,
+    .box116,
     .box6,
     .box11,
     .box12,
@@ -1005,7 +1038,7 @@ align-items: flex-end;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-    
+
       padding: 8px;
       margin-bottom: 12px;
       img {
@@ -1013,7 +1046,7 @@ align-items: flex-end;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        width: 175px;
+        width: 100%;
         height: auto;
         margin: 8px auto;
         transition: transform 0.4s;
@@ -1042,7 +1075,6 @@ align-items: flex-end;
       height: auto;
       justify-content: center;
       align-items: center;
-  
     }
     .flex-item1,
     .flex-item2,
@@ -1057,7 +1089,7 @@ align-items: flex-end;
     .flex-item15,
     .flex-item16 {
       height: 20%;
-      width: 15%;
+      width: 20%;
       display: flex;
       flex-flow: row wrap;
 
@@ -1082,20 +1114,11 @@ align-items: flex-end;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center;
-    
+
       padding: 8px;
       margin-bottom: 12px;
       transition: transform 0.4s;
-      img {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: auto;
-        margin: 8px auto;
-        transition: transform 0.4s;
-      }
+      
     }
   }
 }

@@ -588,8 +588,8 @@ body {
 .intro {
   display: flex;
   height: 500px;
-  min-width: 100vw;
-  background-color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgb(252, 245, 235);
   align-items: center;
   justify-content: center;
   padding: 25px;
@@ -605,16 +605,46 @@ body {
   align-self: center;
 }
 
-.meet {
+.construction {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  background-color: rgb(252, 245, 235);
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.construction img {
+  display: flex;
+  height: 600px;
+  width: auto;
+  margin: 50px;
+  background-color: rgb(105, 138, 133);
+  padding: 25px;
+  justify-content: right;
+  align-self: center;
+}
+
+.meet, .graphic_title {
   display: flex;
   flex-direction: column;
+  width: 30%;
   margin: 50px;
   padding: 45px 75px;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgb(81, 49, 39);
   line-height: 60px;
   text-align: center;
   justify-content: center;
-  align-items: space-around;
+  align-items: center;
+}
+.meet h1, .graphic_title h1 {
+  display: flex;
+  font-size: 48px;
+}
+.meet h4, .graphic_title h4 {
+  display: flex;
+  font-size: 24px;
 }
 
 /*******************************end of intro/meet***************************/
@@ -998,7 +1028,7 @@ body {
   justify-content: space-around;
   align-content: space-between;
   column-gap: 20px;
-  padding: 0px 30px 30px 30px;
+  padding: 10px 30px 30px 30px;
 }
 #web_cards h1 {
   display: flex;
@@ -1027,7 +1057,7 @@ body {
   text-align: center;
   justify-content: center;
   align-content: space-around;
-  padding: 15px;
+  padding: 24px;
 }
 .one a:hover,
 .two a:hover,
@@ -1061,13 +1091,17 @@ body {
   margin: 15px;
 }
 
-.one .lang_imgs {
+.one .lang_imgs,
+.two .lang_imgs,
+.three .lang_imgs {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
 }
-.one .lang_imgs img {
+.one .lang_imgs img,
+.two .lang_imgs img,
+.three .lang_imgs img {
   height: 100px;
   width: auto;
   margin: 8px;
@@ -1160,12 +1194,12 @@ body {
 .flex-item15,
 .flex-item16 {
   height: 25%;
-  width: 20%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 0 24px 0;
+  margin: 8px 18px;
 }
 
 .box111,
@@ -1173,6 +1207,7 @@ body {
 .box113,
 .box114,
 .box115,
+.box116,
 .box6,
 .box11,
 .box12,
@@ -1184,8 +1219,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 200px;
-  min-height: 200px;
+  width: 100%;
+  height: 100%;
   padding: 8px;
   margin-bottom: 12px;
 }
@@ -1194,6 +1229,7 @@ body {
 .box113 img,
 .box114 img,
 .box115 img,
+.box116 img,
 .box6 img,
 .box11 img,
 .box12 img,
@@ -1205,7 +1241,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  width: 200px;
+  width: 100%;
   height: auto;
   margin: 8px 0;
   transition: transform 0.4s;
@@ -1638,7 +1674,7 @@ body {
   transform: scale(1.5);
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .pod_info {
     display: flex;
     flex-direction: column;
@@ -1650,6 +1686,10 @@ body {
     font-size: 36px;
     margin: 24px;
   }
+  .pod_sales {
+    padding: 18px;
+    margin: 18px;
+  }
   .pod_flex_container1,
   .pod_flex_container2,
   .pod_flex_container3 {
@@ -1658,7 +1698,7 @@ body {
     justify-content: space-around;
     align-content: space-around;
     width: 60%;
-    padding: 18px;
+    padding: 12px;
   }
 }
 .rb_flex1,
@@ -1674,12 +1714,12 @@ body {
 .sf_flex5,
 .sf_flex6 {
   display: flex;
-  height: 50%;
-  width: 25%;
+  height: 33%;
+  width: 33%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 16px;
+  margin: 8px;
 }
 .rb_flex1 .rb1,
 .rb_flex1 .rb2,
@@ -1980,7 +2020,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  width: 60%;
+  width: 100%;
   height: auto;
   margin: 16px;
   transition: transform 0.4s;
@@ -2002,6 +2042,136 @@ body {
   transform: scale(1.5);
 }
 
+@media (max-width: 480px) {
+  .pod {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 30px;
+    padding: 10px 30px 30px 30px;
+    background-color: rgb(252, 245, 235);
+  }
+  .pod .pod_title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 36px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(81, 49, 39);
+  }
+  .pod h1 {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  .pod h4 {
+    display: flex;
+    font-family: 16px;
+    width: 100%;
+    margin-top: 5px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(105, 138, 133);
+  }
+  .pod_sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 16px;
+  }
+  .pod_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin: 0 auto;
+  }
+  .pod_info h3 {
+    font-size: 24px;
+    margin: 24px;
+  }
+  .pattern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+  }
+  .pattern h4 {
+    display: flex;
+    font-family: 16px;
+    width: 100%;
+    margin: 24px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(105, 138, 133);
+  }
+  .flex-container11,
+  .flex-container2,
+  .flex-container3 {
+    display: flex;
+    width: 100%;
+    height: 400%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .flex-container11 h1,
+  .flex-container2 h1,
+  .flex-container3 h1 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .box111,
+  .box112,
+  .box113,
+  .box114,
+  .box115,
+  .box6,
+  .box11,
+  .box12,
+  .box13,
+  .box14,
+  .box15,
+  .box16 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .box111 img,
+  .box112 img,
+  .box113 img,
+  .box114 img,
+  .box115 img,
+  .box6 img,
+  .box11 img,
+  .box12 img,
+  .box13 img,
+  .box14 img,
+  .box15 img,
+  .box16 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    margin: 8px;
+    transition: transform 0.4s;
+  }
+}
 /***************************************cards / Services**********************************/
 #services {
   display: flex;
@@ -2412,7 +2582,7 @@ body {
 @media (min-width: 1025px) and (max-width: 1280px) {
   .btn {
     margin: 35px;
-    min-width: 125px;
+    min-width: 150px;
     min-height: 25px;
     font-size: 16px;
   }
@@ -2424,7 +2594,7 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .btn {
     margin: 25px;
-    min-width: 100px;
+    min-width: 125px;
     min-height: 25px;
   }
 }
@@ -2434,6 +2604,7 @@ body {
     margin: 15px;
     min-width: 100px;
     min-height: 25px;
+    font-size: 12px;
   }
 }
 /*mobiles in landscape mode*/
@@ -2442,6 +2613,10 @@ body {
     margin: 15px 10px;
     min-width: 100px;
     min-height: 25px;
+  }
+  .btn a {
+    margin: 0;
+    padding: 0;
   }
 }
 /*mobiles in portrait mode*/
@@ -2580,7 +2755,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding: 10px;
+    padding: 4px;
     color: rgb(252, 245, 235);
     height: auto;
     text-decoration: none;
@@ -2599,10 +2774,10 @@ body {
 }*/
 /*tablets in landscape mode*/
 @media (min-width: 769px) and (max-width: 1024px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -2614,25 +2789,34 @@ body {
     padding: 25px;
     transition: all 0.3s ease;
   }
-  .meet {
-    height: 200px;
-    width: 200px;
+  .construction img {
+    height: 300px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+  .meet, .graphic_title {
+    width: 30%;
+    height: auto;
     margin: 15px;
     padding: 30px 45px;
     line-height: 25px;
     align-content: center;
     transition: all 0.3s ease;
   }
-  .meet h1 {
-    font-size: 32px;
+  .meet h1, .graphic_title h1 {
+    font-size: 36px;
+    margin: 8px;
   }
-  .meet h2 {
+  .meet h4, .graphic_title h4 {
     font-size: 16px;
+    margin: 4px;
   }
 }
 /*tablets in portrait mode*/
 @media (min-width: 481px) and (max-width: 768px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -2648,7 +2832,14 @@ body {
     padding: 20px;
     transition: all 0.3s ease;
   }
-  .meet {
+  .construction img {
+    height: 200px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+  .meet, .graphic_title {
     display: flex;
     height: 200px;
     width: 200px;
@@ -2659,29 +2850,29 @@ body {
     align-content: center;
     transition: all 0.3s ease;
   }
-  .meet h1 {
+  .meet h1, .graphic_title h1 {
     font-size: 32px;
   }
-  .meet h2 {
+  .meet h4, .graphic_title h4 {
     font-size: 16px;
   }
 }
 /*mobiles in landscape mode*/
 @media (min-width: 321px) and (max-width: 480px) {
-  .intro {
+  .intro, .construction {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 10px;
     line-height: 25px;
     justify-content: center;
     align-content: center;
   }
-  .intro h1 {
-    font-size: 28px;
+  .intro h1, .construction h1 {
+    font-size: 24px;
   }
-  .intro h2 {
+  .intro h4, .construction h4 {
     font-size: 12px;
   }
   .intro img {
@@ -2690,7 +2881,14 @@ body {
     margin: 35px;
     padding: 15px;
   }
-  .meet {
+  .construction img {
+    height: 300px;
+    width: auto;
+    margin: 25px 10px;
+    padding: 25px;
+    transition: all 0.3s ease;
+  }
+  .meet, .graphic_title {
     display: flex;
     height: 200px;
     width: 200px;
@@ -2700,10 +2898,10 @@ body {
     justify-content: center;
     align-content: center;
   }
-  .meet h1 {
-    font-size: 28px;
+  .meet h1, .graphic_title h1 {
+    font-size: 24px;
   }
-  .meet h2 {
+  .meet h2, .graphic_title h2 {
     font-size: 12px;
   }
 }
@@ -2898,7 +3096,7 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -2943,9 +3141,7 @@ body {
   display: flex;
   flex-direction: row;
   height: auto;
-  width: 75vw;
   margin: 20px auto;
-  padding: 15px;
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
@@ -2957,13 +3153,13 @@ body {
 .stwo img,
 .sthree img {
   display: flex;
-  justify-content: flex-start;
-  height: 300px;
-  width: auto;
+  justify-content: center;
+  height: auto;
+  width: 50%;
 }
 
 /*mobiles in landscape mode*/
-@media (min-width: 321px) and (max-width: 480px) {
+@media (max-width: 480px) {
   #cards,
   #services,
   #web_cards,
@@ -2971,7 +3167,6 @@ body {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 75vw;
     padding: 15px;
     justify-content: center;
     align-content: center;
@@ -2991,6 +3186,9 @@ body {
     justify-content: center;
     align-content: center;
     transition: all 0.3s ease;
+  }
+  img {
+    width: 100%;
   }
 }
 /*mobiles in portrait mode*/
@@ -3187,8 +3385,8 @@ body {
   .pod .flex-item14,
   .pod .flex-item15,
   .pod .flex-item16 {
-    height: 25%;
-    width: 20%;
+    height: 18%;
+    width: 18%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -3200,6 +3398,7 @@ body {
   .pod .box113,
   .pod .box114,
   .pod .box115,
+  .pod .box116,
   .pod .box6,
   .pod .box11,
   .pod .box12,
@@ -3221,6 +3420,7 @@ body {
   .pod .box113 img,
   .pod .box114 img,
   .pod .box115 img,
+  .pod .box116 img,
   .pod .box6 img,
   .pod .box11 img,
   .pod .box12 img,
@@ -3312,7 +3512,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 175px;
+    width: 100%;
     height: auto;
     margin: 8px auto;
     transition: transform 0.4s;
@@ -3351,7 +3551,7 @@ body {
   .pod .flex-item15,
   .pod .flex-item16 {
     height: 20%;
-    width: 15%;
+    width: 20%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -3378,27 +3578,6 @@ body {
     margin-bottom: 12px;
     transition: transform 0.4s;
   }
-  .pod .box111 img,
-  .pod .box112 img,
-  .pod .box113 img,
-  .pod .box114 img,
-  .pod .box115 img,
-  .pod .box6 img,
-  .pod .box11 img,
-  .pod .box12 img,
-  .pod .box13 img,
-  .pod .box14 img,
-  .pod .box15 img,
-  .pod .box16 img {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    height: auto;
-    margin: 8px auto;
-    transition: transform 0.4s;
-  }
 }
 /*mobiles in landscape mode
 @media (min-width: 321px) and (max-width: 480px) */
@@ -3410,15 +3589,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: rgb(252, 245, 235);
 }
 
 .body-container {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -3430,23 +3609,27 @@ body {
 	justify-content: space-between;
 }*/
 .bgi1 {
+  display: flex;
+  justify-content: center;
   height: 300px;
-  width: 1600px;
+  width: 100%;
 }
 
 .bgi2 {
+  display: flex;
+  justify-content: center;
   height: 300px;
-  width: 1600px;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
   .bgi1 {
-    height: auto;
-    width: 800px;
+    height: 150px;
+    width: 100%;
   }
   .bgi2 {
-    height: auto;
-    width: 800px;
+    height: 150px;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
